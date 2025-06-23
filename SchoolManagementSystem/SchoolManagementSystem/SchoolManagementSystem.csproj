@@ -46,19 +46,57 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\GradesDal.cs" />
+    <Compile Include="DAL\GradesSubjects.cs" />
+    <Compile Include="DAL\StudentsDal.cs" />
+    <Compile Include="DAL\StudentsSubjectsDal.cs" />
+    <Compile Include="DAL\SubjectsDal.cs" />
+    <Compile Include="DAL\SubjectsTeachersDal.cs" />
+    <Compile Include="DAL\TeachersDal.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\Grades.cs" />
+    <Compile Include="Model\GradesSubjects.cs" />
+    <Compile Include="Model\Students.cs" />
+    <Compile Include="Model\StudentsSubjects.cs" />
+    <Compile Include="Model\Subjects.cs" />
+    <Compile Include="Model\SubjectsTeachers.cs" />
+    <Compile Include="Model\Teachers.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Grades-Subjects\GradesStudentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Grades-Subjects\GradesStudentsForm.Designer.cs">
+      <DependentUpon>GradesStudentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Grades-Subjects\StudentsGradesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Grades-Subjects\StudentsGradesForm.Designer.cs">
+      <DependentUpon>StudentsGradesForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Grades\GradesForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\Grades\GradesForm.Designer.cs">
       <DependentUpon>GradesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Students-Subjects\StudentsSubjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Students-Subjects\StudentsSubjects.Designer.cs">
+      <DependentUpon>StudentsSubjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Students-Subjects\SubjectsStudentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Students-Subjects\SubjectsStudentsForm.Designer.cs">
+      <DependentUpon>SubjectsStudentsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Students\CreateStudentsForm.cs">
       <SubType>Form</SubType>
@@ -84,11 +122,23 @@
     <Compile Include="UI\Students\ShowStudentsForm.Designer.cs">
       <DependentUpon>ShowStudentsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Subjects-Teachers\SubjectsTeachersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Subjects-Teachers\SubjectsTeachersForm.Designer.cs">
+      <DependentUpon>SubjectsTeachersForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Subjects\SubjectsForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\Subjects\SubjectsForm.Designer.cs">
       <DependentUpon>SubjectsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Subjects-Teachers\TeachersSubjectsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Subjects-Teachers\TeachersSubjectsForm.Designer.cs">
+      <DependentUpon>TeachersSubjectsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Teachers\CreateTeachersForm.cs">
       <SubType>Form</SubType>
@@ -136,10 +186,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UI\Grades-Subjects\" />
-    <Folder Include="UI\Students-Subjects\" />
-    <Folder Include="UI\Subjects-Teachers\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
