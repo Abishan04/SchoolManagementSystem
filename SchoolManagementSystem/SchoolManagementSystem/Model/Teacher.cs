@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SchoolManagementSystem.Model
 {
-    internal class Teachers
+    internal class Teacher
     {
     }
 }

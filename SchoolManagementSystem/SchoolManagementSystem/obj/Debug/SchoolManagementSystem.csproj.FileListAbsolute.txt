@@ -1,0 +1,14 @@
+C:\Users\user\Documents\GitHub\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Debug\SchoolManagementSystem.exe.config
+C:\Users\user\Documents\GitHub\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Debug\SchoolManagementSystem.exe
+C:\Users\user\Documents\GitHub\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Debug\SchoolManagementSystem.pdb
+C:\Users\user\Documents\GitHub\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.AssemblyReference.cache
+C:\Users\user\Documents\GitHub\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Properties.Resources.resources
+C:\Users\user\Documents\GitHub\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.UI.DashBoardForm.resources
+C:\Users\user\Documents\GitHub\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.UI.Students.CreateStudentsForm.resources
+C:\Users\user\Documents\GitHub\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.GenerateResource.cache
+C:\Users\user\Documents\GitHub\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.exe
+C:\Users\user\Documents\GitHub\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.pdb
+C:\Users\user\Documents\GitHub\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.exe.config
+C:\Users\user\Documents\GitHub\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.UI.Students_Subjects.StudentsSubjects.resources
+C:\Users\user\Documents\GitHub\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.UI.Students.ListStudentsForm.resources

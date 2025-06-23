@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SchoolManagementSystem.Model;
+using SchoolManagementSystem.UI.Students;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +18,7 @@ namespace SchoolManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new CreateStudentsForm());
         }
     }
 }

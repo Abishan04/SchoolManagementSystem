@@ -8,15 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SchoolManagementSystem.UI.Grades
+namespace SchoolManagementSystem.UI.user
 {
-    public partial class GradesForm : Form
+    public partial class RegistrationForm : Form
     {
-        public GradesForm()
+        public RegistrationForm()
         {
             InitializeComponent();
         }
-
-      
     }
 }
