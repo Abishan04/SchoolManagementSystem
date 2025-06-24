@@ -46,7 +46,6 @@
             this.btnprint = new System.Windows.Forms.Button();
             this.btnexport = new System.Windows.Forms.Button();
             this.btnsubjects = new System.Windows.Forms.Button();
-            this.btngrade = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -123,7 +122,7 @@
             this.btnadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnadd.Location = new System.Drawing.Point(33, 798);
             this.btnadd.Name = "btnadd";
-            this.btnadd.Size = new System.Drawing.Size(115, 45);
+            this.btnadd.Size = new System.Drawing.Size(115, 75);
             this.btnadd.TabIndex = 6;
             this.btnadd.Text = "Add";
             this.btnadd.UseVisualStyleBackColor = true;
@@ -141,9 +140,9 @@
             // btnedit
             // 
             this.btnedit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnedit.Location = new System.Drawing.Point(162, 798);
+            this.btnedit.Location = new System.Drawing.Point(173, 798);
             this.btnedit.Name = "btnedit";
-            this.btnedit.Size = new System.Drawing.Size(115, 45);
+            this.btnedit.Size = new System.Drawing.Size(115, 75);
             this.btnedit.TabIndex = 6;
             this.btnedit.Text = "Edit";
             this.btnedit.UseVisualStyleBackColor = true;
@@ -151,9 +150,9 @@
             // btndelete
             // 
             this.btndelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndelete.Location = new System.Drawing.Point(291, 798);
+            this.btndelete.Location = new System.Drawing.Point(313, 798);
             this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(115, 45);
+            this.btndelete.Size = new System.Drawing.Size(115, 75);
             this.btndelete.TabIndex = 6;
             this.btndelete.Text = "Delete";
             this.btndelete.UseVisualStyleBackColor = true;
@@ -161,9 +160,9 @@
             // btnupdate
             // 
             this.btnupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnupdate.Location = new System.Drawing.Point(420, 798);
+            this.btnupdate.Location = new System.Drawing.Point(453, 798);
             this.btnupdate.Name = "btnupdate";
-            this.btnupdate.Size = new System.Drawing.Size(115, 45);
+            this.btnupdate.Size = new System.Drawing.Size(115, 75);
             this.btnupdate.TabIndex = 6;
             this.btnupdate.Text = "Update";
             this.btnupdate.UseVisualStyleBackColor = true;
@@ -171,9 +170,9 @@
             // btnshow
             // 
             this.btnshow.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnshow.Location = new System.Drawing.Point(549, 798);
+            this.btnshow.Location = new System.Drawing.Point(593, 798);
             this.btnshow.Name = "btnshow";
-            this.btnshow.Size = new System.Drawing.Size(115, 45);
+            this.btnshow.Size = new System.Drawing.Size(115, 75);
             this.btnshow.TabIndex = 6;
             this.btnshow.Text = "Show";
             this.btnshow.UseVisualStyleBackColor = true;
@@ -181,9 +180,9 @@
             // btnrefresh
             // 
             this.btnrefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnrefresh.Location = new System.Drawing.Point(678, 798);
+            this.btnrefresh.Location = new System.Drawing.Point(733, 798);
             this.btnrefresh.Name = "btnrefresh";
-            this.btnrefresh.Size = new System.Drawing.Size(115, 45);
+            this.btnrefresh.Size = new System.Drawing.Size(115, 75);
             this.btnrefresh.TabIndex = 6;
             this.btnrefresh.Text = "Refresh";
             this.btnrefresh.UseVisualStyleBackColor = true;
@@ -191,9 +190,9 @@
             // btnclose
             // 
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnclose.Location = new System.Drawing.Point(1298, 798);
+            this.btnclose.Location = new System.Drawing.Point(1293, 798);
             this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(115, 45);
+            this.btnclose.Size = new System.Drawing.Size(115, 75);
             this.btnclose.TabIndex = 6;
             this.btnclose.Text = "Close";
             this.btnclose.UseVisualStyleBackColor = true;
@@ -201,9 +200,9 @@
             // btnprint
             // 
             this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnprint.Location = new System.Drawing.Point(1040, 798);
+            this.btnprint.Location = new System.Drawing.Point(1013, 798);
             this.btnprint.Name = "btnprint";
-            this.btnprint.Size = new System.Drawing.Size(115, 45);
+            this.btnprint.Size = new System.Drawing.Size(115, 75);
             this.btnprint.TabIndex = 6;
             this.btnprint.Text = "Print";
             this.btnprint.UseVisualStyleBackColor = true;
@@ -211,9 +210,9 @@
             // btnexport
             // 
             this.btnexport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnexport.Location = new System.Drawing.Point(1169, 798);
+            this.btnexport.Location = new System.Drawing.Point(1153, 798);
             this.btnexport.Name = "btnexport";
-            this.btnexport.Size = new System.Drawing.Size(115, 45);
+            this.btnexport.Size = new System.Drawing.Size(115, 75);
             this.btnexport.TabIndex = 6;
             this.btnexport.Text = "Export";
             this.btnexport.UseVisualStyleBackColor = true;
@@ -221,33 +220,22 @@
             // btnsubjects
             // 
             this.btnsubjects.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsubjects.Location = new System.Drawing.Point(807, 798);
+            this.btnsubjects.Location = new System.Drawing.Point(873, 798);
             this.btnsubjects.Name = "btnsubjects";
-            this.btnsubjects.Size = new System.Drawing.Size(115, 45);
+            this.btnsubjects.Size = new System.Drawing.Size(115, 75);
             this.btnsubjects.TabIndex = 6;
-            this.btnsubjects.Text = "Subjects";
+            this.btnsubjects.Text = "Add subjects";
             this.btnsubjects.UseVisualStyleBackColor = true;
-            // 
-            // btngrade
-            // 
-            this.btngrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btngrade.Location = new System.Drawing.Point(928, 798);
-            this.btngrade.Name = "btngrade";
-            this.btngrade.Size = new System.Drawing.Size(115, 45);
-            this.btngrade.TabIndex = 6;
-            this.btngrade.Text = "Grade";
-            this.btngrade.UseVisualStyleBackColor = true;
             // 
             // ListStudentsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1423, 855);
+            this.ClientSize = new System.Drawing.Size(1423, 873);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnsubjects);
             this.Controls.Add(this.btnexport);
             this.Controls.Add(this.btnrefresh);
-            this.Controls.Add(this.btngrade);
             this.Controls.Add(this.btnprint);
             this.Controls.Add(this.btnshow);
             this.Controls.Add(this.btnclose);
@@ -290,6 +278,5 @@
         private System.Windows.Forms.Button btnprint;
         private System.Windows.Forms.Button btnexport;
         private System.Windows.Forms.Button btnsubjects;
-        private System.Windows.Forms.Button btngrade;
     }
 }

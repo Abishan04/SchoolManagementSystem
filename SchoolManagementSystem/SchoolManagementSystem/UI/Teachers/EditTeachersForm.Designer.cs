@@ -238,7 +238,7 @@
             this.lblstu.Name = "lblstu";
             this.lblstu.Size = new System.Drawing.Size(619, 48);
             this.lblstu.TabIndex = 46;
-            this.lblstu.Text = "Create Student";
+            this.lblstu.Text = "Create Teacher";
             this.lblstu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbladmission

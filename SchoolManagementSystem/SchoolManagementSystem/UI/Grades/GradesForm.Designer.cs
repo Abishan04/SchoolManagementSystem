@@ -168,7 +168,7 @@
             this.btnsub.Name = "btnsub";
             this.btnsub.Size = new System.Drawing.Size(115, 66);
             this.btnsub.TabIndex = 25;
-            this.btnsub.Text = "Add student";
+            this.btnsub.Text = "Add subjects";
             this.btnsub.UseVisualStyleBackColor = true;
             // 
             // txtgrade

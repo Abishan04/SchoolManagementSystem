@@ -75,17 +75,17 @@
     <Compile Include="UI\DashBoard.Designer.cs">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Grades-Subjects\GradesStudentsForm.cs">
+    <Compile Include="UI\Grades-Subjects\GradesSubjects.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Grades-Subjects\GradesStudentsForm.Designer.cs">
-      <DependentUpon>GradesStudentsForm.cs</DependentUpon>
+    <Compile Include="UI\Grades-Subjects\GradesSubjects.Designer.cs">
+      <DependentUpon>GradesSubjects.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Grades-Subjects\StudentsGradesForm.cs">
+    <Compile Include="UI\Grades-Subjects\SubjectsGrades.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Grades-Subjects\StudentsGradesForm.Designer.cs">
-      <DependentUpon>StudentsGradesForm.cs</DependentUpon>
+    <Compile Include="UI\Grades-Subjects\SubjectsGrades.Designer.cs">
+      <DependentUpon>SubjectsGrades.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Grades\GradesForm.cs">
       <SubType>Form</SubType>
@@ -195,11 +195,11 @@
     <EmbeddedResource Include="UI\DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Grades-Subjects\GradesStudentsForm.resx">
-      <DependentUpon>GradesStudentsForm.cs</DependentUpon>
+    <EmbeddedResource Include="UI\Grades-Subjects\GradesSubjects.resx">
+      <DependentUpon>GradesSubjects.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Grades-Subjects\StudentsGradesForm.resx">
-      <DependentUpon>StudentsGradesForm.cs</DependentUpon>
+    <EmbeddedResource Include="UI\Grades-Subjects\SubjectsGrades.resx">
+      <DependentUpon>SubjectsGrades.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Grades\GradesForm.resx">
       <DependentUpon>GradesForm.cs</DependentUpon>

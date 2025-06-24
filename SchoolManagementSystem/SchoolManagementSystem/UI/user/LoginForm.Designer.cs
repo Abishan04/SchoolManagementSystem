@@ -79,10 +79,10 @@
             // lbllogin
             // 
             this.lbllogin.AutoSize = true;
-            this.lbllogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbllogin.Location = new System.Drawing.Point(504, 90);
+            this.lbllogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbllogin.Location = new System.Drawing.Point(483, 53);
             this.lbllogin.Name = "lbllogin";
-            this.lbllogin.Size = new System.Drawing.Size(142, 55);
+            this.lbllogin.Size = new System.Drawing.Size(212, 82);
             this.lbllogin.TabIndex = 10;
             this.lbllogin.Text = "Login";
             // 
