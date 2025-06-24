@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SchoolManagementSystem.UI.Grades_Subjects
 {
-    public partial class StudentsGradesForm : Form
+    public partial class SubjectsGrades : Form
     {
-        public StudentsGradesForm()
+        public SubjectsGrades()
         {
             InitializeComponent();
         }
