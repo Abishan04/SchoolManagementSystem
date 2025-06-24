@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtsearch = new System.Windows.Forms.TextBox();
             this.lblsearch = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnsearch = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dgv = new System.Windows.Forms.DataGridView();
@@ -46,16 +46,17 @@
             this.btnprint = new System.Windows.Forms.Button();
             this.btnexport = new System.Windows.Forms.Button();
             this.btnsubjects = new System.Windows.Forms.Button();
+            this.btngrade = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtsearch
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(148, 63);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(186, 26);
-            this.textBox1.TabIndex = 0;
+            this.txtsearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsearch.Location = new System.Drawing.Point(148, 63);
+            this.txtsearch.Name = "txtsearch";
+            this.txtsearch.Size = new System.Drawing.Size(186, 26);
+            this.txtsearch.TabIndex = 0;
             // 
             // lblsearch
             // 
@@ -67,15 +68,15 @@
             this.lblsearch.TabIndex = 1;
             this.lblsearch.Text = "Enter Student ID";
             // 
-            // button1
+            // btnsearch
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(340, 59);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 35);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "search";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnsearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsearch.Location = new System.Drawing.Point(340, 59);
+            this.btnsearch.Name = "btnsearch";
+            this.btnsearch.Size = new System.Drawing.Size(94, 35);
+            this.btnsearch.TabIndex = 2;
+            this.btnsearch.Text = "search";
+            this.btnsearch.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -112,7 +113,7 @@
             this.lblstu.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblstu.Location = new System.Drawing.Point(0, 0);
             this.lblstu.Name = "lblstu";
-            this.lblstu.Size = new System.Drawing.Size(1342, 43);
+            this.lblstu.Size = new System.Drawing.Size(1423, 43);
             this.lblstu.TabIndex = 5;
             this.lblstu.Text = "Students Detail";
             this.lblstu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -190,7 +191,7 @@
             // btnclose
             // 
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnclose.Location = new System.Drawing.Point(1194, 798);
+            this.btnclose.Location = new System.Drawing.Point(1298, 798);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(115, 45);
             this.btnclose.TabIndex = 6;
@@ -200,7 +201,7 @@
             // btnprint
             // 
             this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnprint.Location = new System.Drawing.Point(936, 798);
+            this.btnprint.Location = new System.Drawing.Point(1040, 798);
             this.btnprint.Name = "btnprint";
             this.btnprint.Size = new System.Drawing.Size(115, 45);
             this.btnprint.TabIndex = 6;
@@ -210,7 +211,7 @@
             // btnexport
             // 
             this.btnexport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnexport.Location = new System.Drawing.Point(1065, 798);
+            this.btnexport.Location = new System.Drawing.Point(1169, 798);
             this.btnexport.Name = "btnexport";
             this.btnexport.Size = new System.Drawing.Size(115, 45);
             this.btnexport.TabIndex = 6;
@@ -224,18 +225,29 @@
             this.btnsubjects.Name = "btnsubjects";
             this.btnsubjects.Size = new System.Drawing.Size(115, 45);
             this.btnsubjects.TabIndex = 6;
-            this.btnsubjects.Text = "subjects";
+            this.btnsubjects.Text = "Subjects";
             this.btnsubjects.UseVisualStyleBackColor = true;
+            // 
+            // btngrade
+            // 
+            this.btngrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btngrade.Location = new System.Drawing.Point(928, 798);
+            this.btngrade.Name = "btngrade";
+            this.btngrade.Size = new System.Drawing.Size(115, 45);
+            this.btngrade.TabIndex = 6;
+            this.btngrade.Text = "Grade";
+            this.btngrade.UseVisualStyleBackColor = true;
             // 
             // ListStudentsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1342, 855);
+            this.ClientSize = new System.Drawing.Size(1423, 855);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnsubjects);
             this.Controls.Add(this.btnexport);
             this.Controls.Add(this.btnrefresh);
+            this.Controls.Add(this.btngrade);
             this.Controls.Add(this.btnprint);
             this.Controls.Add(this.btnshow);
             this.Controls.Add(this.btnclose);
@@ -247,9 +259,9 @@
             this.Controls.Add(this.dgv);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnsearch);
             this.Controls.Add(this.lblsearch);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtsearch);
             this.Name = "ListStudentsForm";
             this.Text = "ListStudentsForm";
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
@@ -260,9 +272,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtsearch;
         private System.Windows.Forms.Label lblsearch;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnsearch;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dgv;
@@ -278,5 +290,6 @@
         private System.Windows.Forms.Button btnprint;
         private System.Windows.Forms.Button btnexport;
         private System.Windows.Forms.Button btnsubjects;
+        private System.Windows.Forms.Button btngrade;
     }
 }

@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SchoolManagementSystem.UI.Subjects
+namespace SchoolManagementSystem.UI
 {
-    public partial class SubjectsForm : Form
+    public partial class DashBoard : Form
     {
-        public SubjectsForm()
+        public DashBoard()
         {
             InitializeComponent();
-        }
-
-        private void btnprint_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

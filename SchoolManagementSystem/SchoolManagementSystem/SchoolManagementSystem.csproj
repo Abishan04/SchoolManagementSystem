@@ -69,11 +69,11 @@
     <Compile Include="Model\Teacher.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UI\DashBoardForm.cs">
+    <Compile Include="UI\DashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\DashBoardForm.Designer.cs">
-      <DependentUpon>DashBoardForm.cs</DependentUpon>
+    <Compile Include="UI\DashBoard.Designer.cs">
+      <DependentUpon>DashBoard.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Grades-Subjects\GradesStudentsForm.cs">
       <SubType>Form</SubType>
@@ -93,11 +93,11 @@
     <Compile Include="UI\Grades\GradesForm.Designer.cs">
       <DependentUpon>GradesForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Students-Subjects\StudentsSubjects.cs">
+    <Compile Include="UI\Students-Subjects\StudentsSubjectsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Students-Subjects\StudentsSubjects.Designer.cs">
-      <DependentUpon>StudentsSubjects.cs</DependentUpon>
+    <Compile Include="UI\Students-Subjects\StudentsSubjectsForm.Designer.cs">
+      <DependentUpon>StudentsSubjectsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Students-Subjects\SubjectsStudentsForm.cs">
       <SubType>Form</SubType>
@@ -192,14 +192,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UI\DashBoardForm.resx">
-      <DependentUpon>DashBoardForm.cs</DependentUpon>
+    <EmbeddedResource Include="UI\DashBoard.resx">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Grades-Subjects\GradesStudentsForm.resx">
+      <DependentUpon>GradesStudentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Grades-Subjects\StudentsGradesForm.resx">
+      <DependentUpon>StudentsGradesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Grades\GradesForm.resx">
       <DependentUpon>GradesForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Students-Subjects\StudentsSubjects.resx">
-      <DependentUpon>StudentsSubjects.cs</DependentUpon>
+    <EmbeddedResource Include="UI\Students-Subjects\StudentsSubjectsForm.resx">
+      <DependentUpon>StudentsSubjectsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Students-Subjects\SubjectsStudentsForm.resx">
       <DependentUpon>SubjectsStudentsForm.cs</DependentUpon>
@@ -207,11 +213,35 @@
     <EmbeddedResource Include="UI\Students\CreateStudentsForm.resx">
       <DependentUpon>CreateStudentsForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\Students\EditStudentsForm.resx">
+      <DependentUpon>EditStudentsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Students\ListStudentsForm.resx">
       <DependentUpon>ListStudentsForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\Students\ShowStudentsForm.resx">
+      <DependentUpon>ShowStudentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Subjects-Teachers\SubjectsTeachersForm.resx">
+      <DependentUpon>SubjectsTeachersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Subjects-Teachers\TeachersSubjectsForm.resx">
+      <DependentUpon>TeachersSubjectsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Subjects\SubjectsForm.resx">
       <DependentUpon>SubjectsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Teachers\CreateTeachersForm.resx">
+      <DependentUpon>CreateTeachersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Teachers\EditTeachersForm.resx">
+      <DependentUpon>EditTeachersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Teachers\ListTeachersForm.resx">
+      <DependentUpon>ListTeachersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Teachers\ShowTeachersForm.resx">
+      <DependentUpon>ShowTeachersForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\user\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>

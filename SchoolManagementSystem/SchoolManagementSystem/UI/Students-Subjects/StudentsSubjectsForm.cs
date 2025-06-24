@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SchoolManagementSystem.UI.Subjects
+namespace SchoolManagementSystem.UI.Students_Subjects
 {
-    public partial class SubjectsForm : Form
+    public partial class StudentsSubjectsForm : Form
     {
-        public SubjectsForm()
+        public StudentsSubjectsForm()
         {
             InitializeComponent();
-        }
-
-        private void btnprint_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
