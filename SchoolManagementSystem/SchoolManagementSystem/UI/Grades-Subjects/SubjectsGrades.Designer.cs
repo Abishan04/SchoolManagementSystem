@@ -38,8 +38,6 @@
             this.btnclose = new System.Windows.Forms.Button();
             this.btndel = new System.Windows.Forms.Button();
             this.btnadd = new System.Windows.Forms.Button();
-            this.lblgrade = new System.Windows.Forms.Label();
-            this.txtsub = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblname
@@ -51,7 +49,7 @@
             this.lblname.Location = new System.Drawing.Point(0, 0);
             this.lblname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblname.Name = "lblname";
-            this.lblname.Size = new System.Drawing.Size(754, 28);
+            this.lblname.Size = new System.Drawing.Size(598, 28);
             this.lblname.TabIndex = 55;
             this.lblname.Text = "SubjectsGrades";
             this.lblname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -74,7 +72,7 @@
             this.lvsubjectsstudents.Location = new System.Drawing.Point(11, 30);
             this.lvsubjectsstudents.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lvsubjectsstudents.Name = "lvsubjectsstudents";
-            this.lvsubjectsstudents.Size = new System.Drawing.Size(515, 200);
+            this.lvsubjectsstudents.Size = new System.Drawing.Size(578, 200);
             this.lvsubjectsstudents.TabIndex = 44;
             this.lvsubjectsstudents.UseCompatibleStateImageBehavior = false;
             // 
@@ -86,10 +84,10 @@
             this.btnex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnex.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnex.Image = global::SchoolManagementSystem.Properties.Resources.icons8_export_32;
-            this.btnex.Location = new System.Drawing.Point(553, 243);
+            this.btnex.Location = new System.Drawing.Point(403, 238);
             this.btnex.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnex.Name = "btnex";
-            this.btnex.Size = new System.Drawing.Size(92, 44);
+            this.btnex.Size = new System.Drawing.Size(90, 39);
             this.btnex.TabIndex = 56;
             this.btnex.Text = "Export";
             this.btnex.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -103,10 +101,10 @@
             this.btnrefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnrefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnrefresh.Image = global::SchoolManagementSystem.Properties.Resources.icons8_refresh_32;
-            this.btnrefresh.Location = new System.Drawing.Point(348, 243);
+            this.btnrefresh.Location = new System.Drawing.Point(202, 238);
             this.btnrefresh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnrefresh.Name = "btnrefresh";
-            this.btnrefresh.Size = new System.Drawing.Size(102, 44);
+            this.btnrefresh.Size = new System.Drawing.Size(100, 39);
             this.btnrefresh.TabIndex = 57;
             this.btnrefresh.Text = "Refresh";
             this.btnrefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -120,10 +118,10 @@
             this.btnprint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnprint.Image = global::SchoolManagementSystem.Properties.Resources.icons8_print_32;
-            this.btnprint.Location = new System.Drawing.Point(461, 243);
+            this.btnprint.Location = new System.Drawing.Point(313, 238);
             this.btnprint.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnprint.Name = "btnprint";
-            this.btnprint.Size = new System.Drawing.Size(81, 44);
+            this.btnprint.Size = new System.Drawing.Size(79, 39);
             this.btnprint.TabIndex = 58;
             this.btnprint.Text = "Print";
             this.btnprint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -137,10 +135,10 @@
             this.btnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclose.Image = global::SchoolManagementSystem.Properties.Resources.icons8_close_32;
-            this.btnclose.Location = new System.Drawing.Point(656, 243);
+            this.btnclose.Location = new System.Drawing.Point(504, 238);
             this.btnclose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(87, 44);
+            this.btnclose.Size = new System.Drawing.Size(85, 39);
             this.btnclose.TabIndex = 59;
             this.btnclose.Text = "Close";
             this.btnclose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -154,10 +152,10 @@
             this.btndel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btndel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndel.Image = global::SchoolManagementSystem.Properties.Resources.icons8_delete_32;
-            this.btndel.Location = new System.Drawing.Point(244, 243);
+            this.btndel.Location = new System.Drawing.Point(100, 238);
             this.btndel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btndel.Name = "btndel";
-            this.btndel.Size = new System.Drawing.Size(93, 44);
+            this.btndel.Size = new System.Drawing.Size(91, 39);
             this.btndel.TabIndex = 60;
             this.btndel.Text = "Delete";
             this.btndel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -170,7 +168,7 @@
             this.btnadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnadd.Image = ((System.Drawing.Image)(resources.GetObject("btnadd.Image")));
-            this.btnadd.Location = new System.Drawing.Point(668, 96);
+            this.btnadd.Location = new System.Drawing.Point(11, 237);
             this.btnadd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(78, 39);
@@ -179,35 +177,13 @@
             this.btnadd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnadd.UseVisualStyleBackColor = false;
             // 
-            // lblgrade
-            // 
-            this.lblgrade.AutoSize = true;
-            this.lblgrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblgrade.Location = new System.Drawing.Point(545, 62);
-            this.lblgrade.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblgrade.Name = "lblgrade";
-            this.lblgrade.Size = new System.Drawing.Size(54, 20);
-            this.lblgrade.TabIndex = 66;
-            this.lblgrade.Text = "Grade";
-            // 
-            // txtsub
-            // 
-            this.txtsub.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsub.Location = new System.Drawing.Point(621, 62);
-            this.txtsub.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtsub.Name = "txtsub";
-            this.txtsub.Size = new System.Drawing.Size(125, 20);
-            this.txtsub.TabIndex = 65;
-            // 
             // SubjectsGrades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(754, 298);
+            this.ClientSize = new System.Drawing.Size(598, 283);
             this.Controls.Add(this.btnadd);
-            this.Controls.Add(this.lblgrade);
-            this.Controls.Add(this.txtsub);
             this.Controls.Add(this.btnex);
             this.Controls.Add(this.btnrefresh);
             this.Controls.Add(this.btnprint);
@@ -236,7 +212,5 @@
         private System.Windows.Forms.Button btnclose;
         private System.Windows.Forms.Button btndel;
         private System.Windows.Forms.Button btnadd;
-        private System.Windows.Forms.Label lblgrade;
-        private System.Windows.Forms.TextBox txtsub;
     }
 }

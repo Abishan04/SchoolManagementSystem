@@ -38,8 +38,6 @@
             this.btnclose = new System.Windows.Forms.Button();
             this.btndel = new System.Windows.Forms.Button();
             this.btnadd = new System.Windows.Forms.Button();
-            this.lblsub = new System.Windows.Forms.Label();
-            this.txtsub = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblname
@@ -180,26 +178,6 @@
             this.btnadd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnadd.UseVisualStyleBackColor = false;
             // 
-            // lblsub
-            // 
-            this.lblsub.AutoSize = true;
-            this.lblsub.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblsub.Location = new System.Drawing.Point(529, 62);
-            this.lblsub.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblsub.Name = "lblsub";
-            this.lblsub.Size = new System.Drawing.Size(63, 20);
-            this.lblsub.TabIndex = 66;
-            this.lblsub.Text = "Subject";
-            // 
-            // txtsub
-            // 
-            this.txtsub.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsub.Location = new System.Drawing.Point(641, 62);
-            this.txtsub.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtsub.Name = "txtsub";
-            this.txtsub.Size = new System.Drawing.Size(125, 20);
-            this.txtsub.TabIndex = 65;
-            // 
             // StudentsSubjectsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -207,8 +185,6 @@
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(775, 284);
             this.Controls.Add(this.btnadd);
-            this.Controls.Add(this.lblsub);
-            this.Controls.Add(this.txtsub);
             this.Controls.Add(this.btnex);
             this.Controls.Add(this.btnrefresh);
             this.Controls.Add(this.btnprint);
@@ -236,7 +212,5 @@
         private System.Windows.Forms.Button btnclose;
         private System.Windows.Forms.Button btndel;
         private System.Windows.Forms.Button btnadd;
-        private System.Windows.Forms.Label lblsub;
-        private System.Windows.Forms.TextBox txtsub;
     }
 }

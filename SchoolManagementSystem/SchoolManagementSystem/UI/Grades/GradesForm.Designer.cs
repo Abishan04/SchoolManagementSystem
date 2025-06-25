@@ -40,6 +40,12 @@
             this.btnprint = new System.Windows.Forms.Button();
             this.btnclose = new System.Windows.Forms.Button();
             this.btndel = new System.Windows.Forms.Button();
+            this.txtorder = new System.Windows.Forms.TextBox();
+            this.lblorder = new System.Windows.Forms.Label();
+            this.txtcolor = new System.Windows.Forms.TextBox();
+            this.lblcolor = new System.Windows.Forms.Label();
+            this.txtgroup = new System.Windows.Forms.TextBox();
+            this.lblgroup = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnadd
@@ -51,7 +57,7 @@
             this.btnadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnadd.ForeColor = System.Drawing.Color.Black;
             this.btnadd.Image = global::SchoolManagementSystem.Properties.Resources.icons8_add_32;
-            this.btnadd.Location = new System.Drawing.Point(658, 106);
+            this.btnadd.Location = new System.Drawing.Point(717, 161);
             this.btnadd.Margin = new System.Windows.Forms.Padding(2);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(77, 41);
@@ -86,12 +92,12 @@
             // 
             this.lblgrade.AutoSize = true;
             this.lblgrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblgrade.Location = new System.Drawing.Point(553, 63);
+            this.lblgrade.Location = new System.Drawing.Point(555, 65);
             this.lblgrade.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblgrade.Name = "lblgrade";
-            this.lblgrade.Size = new System.Drawing.Size(54, 20);
+            this.lblgrade.Size = new System.Drawing.Size(100, 20);
             this.lblgrade.TabIndex = 29;
-            this.lblgrade.Text = "Grade";
+            this.lblgrade.Text = "Grade Name";
             // 
             // btnsub
             // 
@@ -114,7 +120,7 @@
             // txtgrade
             // 
             this.txtgrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtgrade.Location = new System.Drawing.Point(608, 65);
+            this.txtgrade.Location = new System.Drawing.Point(669, 65);
             this.txtgrade.Margin = new System.Windows.Forms.Padding(2);
             this.txtgrade.Name = "txtgrade";
             this.txtgrade.Size = new System.Drawing.Size(125, 20);
@@ -129,7 +135,7 @@
             this.lblname.Location = new System.Drawing.Point(0, 0);
             this.lblname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblname.Name = "lblname";
-            this.lblname.Size = new System.Drawing.Size(739, 33);
+            this.lblname.Size = new System.Drawing.Size(802, 33);
             this.lblname.TabIndex = 56;
             this.lblname.Text = "Grades";
             this.lblname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -224,19 +230,85 @@
             this.btndel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btndel.UseVisualStyleBackColor = false;
             // 
+            // txtorder
+            // 
+            this.txtorder.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtorder.Location = new System.Drawing.Point(669, 89);
+            this.txtorder.Margin = new System.Windows.Forms.Padding(2);
+            this.txtorder.Name = "txtorder";
+            this.txtorder.Size = new System.Drawing.Size(125, 20);
+            this.txtorder.TabIndex = 28;
+            // 
+            // lblorder
+            // 
+            this.lblorder.AutoSize = true;
+            this.lblorder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblorder.Location = new System.Drawing.Point(553, 88);
+            this.lblorder.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblorder.Name = "lblorder";
+            this.lblorder.Size = new System.Drawing.Size(98, 20);
+            this.lblorder.TabIndex = 29;
+            this.lblorder.Text = "Grade Order";
+            // 
+            // txtcolor
+            // 
+            this.txtcolor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcolor.Location = new System.Drawing.Point(669, 113);
+            this.txtcolor.Margin = new System.Windows.Forms.Padding(2);
+            this.txtcolor.Name = "txtcolor";
+            this.txtcolor.Size = new System.Drawing.Size(125, 20);
+            this.txtcolor.TabIndex = 28;
+            // 
+            // lblcolor
+            // 
+            this.lblcolor.AutoSize = true;
+            this.lblcolor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcolor.Location = new System.Drawing.Point(553, 111);
+            this.lblcolor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblcolor.Name = "lblcolor";
+            this.lblcolor.Size = new System.Drawing.Size(95, 20);
+            this.lblcolor.TabIndex = 29;
+            this.lblcolor.Text = "Grade Color";
+            // 
+            // txtgroup
+            // 
+            this.txtgroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtgroup.Location = new System.Drawing.Point(669, 137);
+            this.txtgroup.Margin = new System.Windows.Forms.Padding(2);
+            this.txtgroup.Name = "txtgroup";
+            this.txtgroup.Size = new System.Drawing.Size(125, 20);
+            this.txtgroup.TabIndex = 28;
+            // 
+            // lblgroup
+            // 
+            this.lblgroup.AutoSize = true;
+            this.lblgroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblgroup.Location = new System.Drawing.Point(553, 134);
+            this.lblgroup.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblgroup.Name = "lblgroup";
+            this.lblgroup.Size = new System.Drawing.Size(103, 20);
+            this.lblgroup.TabIndex = 29;
+            this.lblgroup.Text = "Grade Group";
+            // 
             // GradesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(739, 304);
+            this.ClientSize = new System.Drawing.Size(802, 304);
             this.Controls.Add(this.btnex);
             this.Controls.Add(this.btnrefresh);
             this.Controls.Add(this.btnprint);
             this.Controls.Add(this.btnclose);
             this.Controls.Add(this.btndel);
             this.Controls.Add(this.lblname);
+            this.Controls.Add(this.lblgroup);
+            this.Controls.Add(this.lblcolor);
+            this.Controls.Add(this.lblorder);
             this.Controls.Add(this.lblgrade);
+            this.Controls.Add(this.txtgroup);
+            this.Controls.Add(this.txtcolor);
+            this.Controls.Add(this.txtorder);
             this.Controls.Add(this.txtgrade);
             this.Controls.Add(this.btnsub);
             this.Controls.Add(this.btnadd);
@@ -264,5 +336,11 @@
         private System.Windows.Forms.Button btnprint;
         private System.Windows.Forms.Button btnclose;
         private System.Windows.Forms.Button btndel;
+        private System.Windows.Forms.TextBox txtorder;
+        private System.Windows.Forms.Label lblorder;
+        private System.Windows.Forms.TextBox txtcolor;
+        private System.Windows.Forms.Label lblcolor;
+        private System.Windows.Forms.TextBox txtgroup;
+        private System.Windows.Forms.Label lblgroup;
     }
 }

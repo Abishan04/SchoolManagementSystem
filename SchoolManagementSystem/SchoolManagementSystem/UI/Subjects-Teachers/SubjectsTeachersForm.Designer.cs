@@ -31,8 +31,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblname = new System.Windows.Forms.Label();
             this.lvstudentssubjects = new System.Windows.Forms.ListView();
-            this.lbltea = new System.Windows.Forms.Label();
-            this.txttea = new System.Windows.Forms.TextBox();
             this.btnadd = new System.Windows.Forms.Button();
             this.btnexport = new System.Windows.Forms.Button();
             this.btnrefresh = new System.Windows.Forms.Button();
@@ -62,7 +60,7 @@
             this.lblname.Location = new System.Drawing.Point(0, 0);
             this.lblname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblname.Name = "lblname";
-            this.lblname.Size = new System.Drawing.Size(787, 28);
+            this.lblname.Size = new System.Drawing.Size(601, 28);
             this.lblname.TabIndex = 21;
             this.lblname.Text = "SubjectsTeachers";
             this.lblname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -73,29 +71,9 @@
             this.lvstudentssubjects.Location = new System.Drawing.Point(5, 30);
             this.lvstudentssubjects.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lvstudentssubjects.Name = "lvstudentssubjects";
-            this.lvstudentssubjects.Size = new System.Drawing.Size(522, 204);
+            this.lvstudentssubjects.Size = new System.Drawing.Size(585, 204);
             this.lvstudentssubjects.TabIndex = 20;
             this.lvstudentssubjects.UseCompatibleStateImageBehavior = false;
-            // 
-            // lbltea
-            // 
-            this.lbltea.AutoSize = true;
-            this.lbltea.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltea.Location = new System.Drawing.Point(531, 59);
-            this.lbltea.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbltea.Name = "lbltea";
-            this.lbltea.Size = new System.Drawing.Size(67, 20);
-            this.lbltea.TabIndex = 37;
-            this.lbltea.Text = "Teacher";
-            // 
-            // txttea
-            // 
-            this.txttea.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttea.Location = new System.Drawing.Point(643, 59);
-            this.txttea.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txttea.Name = "txttea";
-            this.txttea.Size = new System.Drawing.Size(125, 20);
-            this.txttea.TabIndex = 35;
             // 
             // btnadd
             // 
@@ -105,10 +83,10 @@
             this.btnadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnadd.Image = global::SchoolManagementSystem.Properties.Resources.icons8_add_32;
-            this.btnadd.Location = new System.Drawing.Point(691, 100);
+            this.btnadd.Location = new System.Drawing.Point(11, 242);
             this.btnadd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnadd.Name = "btnadd";
-            this.btnadd.Size = new System.Drawing.Size(77, 41);
+            this.btnadd.Size = new System.Drawing.Size(77, 43);
             this.btnadd.TabIndex = 33;
             this.btnadd.Text = "Add";
             this.btnadd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -122,7 +100,7 @@
             this.btnexport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnexport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnexport.Image = global::SchoolManagementSystem.Properties.Resources.icons8_export_32;
-            this.btnexport.Location = new System.Drawing.Point(590, 243);
+            this.btnexport.Location = new System.Drawing.Point(400, 242);
             this.btnexport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnexport.Name = "btnexport";
             this.btnexport.Size = new System.Drawing.Size(92, 43);
@@ -139,7 +117,7 @@
             this.btnrefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnrefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnrefresh.Image = global::SchoolManagementSystem.Properties.Resources.icons8_refresh_32;
-            this.btnrefresh.Location = new System.Drawing.Point(385, 243);
+            this.btnrefresh.Location = new System.Drawing.Point(199, 242);
             this.btnrefresh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnrefresh.Name = "btnrefresh";
             this.btnrefresh.Size = new System.Drawing.Size(102, 43);
@@ -156,7 +134,7 @@
             this.btnprint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnprint.Image = global::SchoolManagementSystem.Properties.Resources.icons8_print_32;
-            this.btnprint.Location = new System.Drawing.Point(498, 243);
+            this.btnprint.Location = new System.Drawing.Point(310, 242);
             this.btnprint.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnprint.Name = "btnprint";
             this.btnprint.Size = new System.Drawing.Size(81, 43);
@@ -173,7 +151,7 @@
             this.btnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclose.Image = global::SchoolManagementSystem.Properties.Resources.icons8_close_32;
-            this.btnclose.Location = new System.Drawing.Point(693, 243);
+            this.btnclose.Location = new System.Drawing.Point(501, 242);
             this.btnclose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(91, 43);
@@ -190,7 +168,7 @@
             this.btndel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btndel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndel.Image = global::SchoolManagementSystem.Properties.Resources.icons8_delete_32;
-            this.btndel.Location = new System.Drawing.Point(281, 243);
+            this.btndel.Location = new System.Drawing.Point(97, 242);
             this.btndel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btndel.Name = "btndel";
             this.btndel.Size = new System.Drawing.Size(93, 43);
@@ -204,14 +182,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(787, 292);
+            this.ClientSize = new System.Drawing.Size(601, 292);
             this.Controls.Add(this.btnexport);
             this.Controls.Add(this.btnrefresh);
             this.Controls.Add(this.btnprint);
             this.Controls.Add(this.btnclose);
             this.Controls.Add(this.btndel);
-            this.Controls.Add(this.lbltea);
-            this.Controls.Add(this.txttea);
             this.Controls.Add(this.btnadd);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblname);
@@ -228,8 +204,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lblname;
         private System.Windows.Forms.ListView lvstudentssubjects;
-        private System.Windows.Forms.Label lbltea;
-        private System.Windows.Forms.TextBox txttea;
         private System.Windows.Forms.Button btnadd;
         private System.Windows.Forms.Button btnexport;
         private System.Windows.Forms.Button btnrefresh;
