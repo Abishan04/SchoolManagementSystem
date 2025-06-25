@@ -46,7 +46,7 @@
             this.lbladd = new System.Windows.Forms.Label();
             this.txtadmission = new System.Windows.Forms.TextBox();
             this.lbladmission = new System.Windows.Forms.Label();
-            this.btnexport = new System.Windows.Forms.Button();
+            this.btnex = new System.Windows.Forms.Button();
             this.btnprint = new System.Windows.Forms.Button();
             this.btnclose = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -240,54 +240,64 @@
             this.lbladmission.TabIndex = 66;
             this.lbladmission.Text = "Admission No";
             // 
-            // btnexport
+            // btnex
             // 
-            this.btnexport.AutoSize = true;
-            this.btnexport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnexport.Image = ((System.Drawing.Image)(resources.GetObject("btnexport.Image")));
-            this.btnexport.Location = new System.Drawing.Point(212, 424);
-            this.btnexport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnexport.Name = "btnexport";
-            this.btnexport.Size = new System.Drawing.Size(90, 41);
-            this.btnexport.TabIndex = 77;
-            this.btnexport.Text = "Export";
-            this.btnexport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnexport.UseVisualStyleBackColor = true;
+            this.btnex.AutoSize = true;
+            this.btnex.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnex.FlatAppearance.BorderSize = 0;
+            this.btnex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnex.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnex.Image = ((System.Drawing.Image)(resources.GetObject("btnex.Image")));
+            this.btnex.Location = new System.Drawing.Point(200, 424);
+            this.btnex.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnex.Name = "btnex";
+            this.btnex.Size = new System.Drawing.Size(92, 41);
+            this.btnex.TabIndex = 77;
+            this.btnex.Text = "Export";
+            this.btnex.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnex.UseVisualStyleBackColor = false;
             // 
             // btnprint
             // 
             this.btnprint.AutoSize = true;
+            this.btnprint.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnprint.FlatAppearance.BorderSize = 0;
+            this.btnprint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnprint.Image = ((System.Drawing.Image)(resources.GetObject("btnprint.Image")));
-            this.btnprint.Location = new System.Drawing.Point(127, 424);
+            this.btnprint.Location = new System.Drawing.Point(110, 424);
             this.btnprint.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnprint.Name = "btnprint";
-            this.btnprint.Size = new System.Drawing.Size(79, 41);
+            this.btnprint.Size = new System.Drawing.Size(81, 41);
             this.btnprint.TabIndex = 76;
             this.btnprint.Text = "Print";
             this.btnprint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnprint.UseVisualStyleBackColor = true;
+            this.btnprint.UseVisualStyleBackColor = false;
             // 
             // btnclose
             // 
             this.btnclose.AutoSize = true;
+            this.btnclose.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnclose.FlatAppearance.BorderSize = 0;
+            this.btnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclose.Image = ((System.Drawing.Image)(resources.GetObject("btnclose.Image")));
-            this.btnclose.Location = new System.Drawing.Point(303, 424);
+            this.btnclose.Location = new System.Drawing.Point(301, 424);
             this.btnclose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(85, 41);
+            this.btnclose.Size = new System.Drawing.Size(87, 41);
             this.btnclose.TabIndex = 75;
             this.btnclose.Text = "Close";
             this.btnclose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnclose.UseVisualStyleBackColor = true;
+            this.btnclose.UseVisualStyleBackColor = false;
             // 
             // ShowStudentsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(399, 473);
-            this.Controls.Add(this.btnexport);
+            this.Controls.Add(this.btnex);
             this.Controls.Add(this.btnprint);
             this.Controls.Add(this.btnclose);
             this.Controls.Add(this.dtp);
@@ -335,7 +345,7 @@
         private System.Windows.Forms.Label lbladd;
         private System.Windows.Forms.TextBox txtadmission;
         private System.Windows.Forms.Label lbladmission;
-        private System.Windows.Forms.Button btnexport;
+        private System.Windows.Forms.Button btnex;
         private System.Windows.Forms.Button btnprint;
         private System.Windows.Forms.Button btnclose;
     }

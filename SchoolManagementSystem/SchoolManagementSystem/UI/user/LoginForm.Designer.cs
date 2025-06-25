@@ -104,6 +104,8 @@
             // btnreset
             // 
             this.btnreset.AutoSize = true;
+            this.btnreset.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnreset.FlatAppearance.BorderSize = 0;
             this.btnreset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnreset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnreset.Image = ((System.Drawing.Image)(resources.GetObject("btnreset.Image")));
@@ -113,11 +115,13 @@
             this.btnreset.TabIndex = 14;
             this.btnreset.Text = "Reset";
             this.btnreset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnreset.UseVisualStyleBackColor = true;
+            this.btnreset.UseVisualStyleBackColor = false;
             // 
             // btnclose
             // 
             this.btnclose.AutoSize = true;
+            this.btnclose.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnclose.FlatAppearance.BorderSize = 0;
             this.btnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclose.Image = ((System.Drawing.Image)(resources.GetObject("btnclose.Image")));
@@ -127,11 +131,13 @@
             this.btnclose.TabIndex = 14;
             this.btnclose.Text = "Close";
             this.btnclose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnclose.UseVisualStyleBackColor = true;
+            this.btnclose.UseVisualStyleBackColor = false;
             // 
             // btnlogin
             // 
             this.btnlogin.AutoSize = true;
+            this.btnlogin.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnlogin.FlatAppearance.BorderSize = 0;
             this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnlogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlogin.Image = ((System.Drawing.Image)(resources.GetObject("btnlogin.Image")));
@@ -141,7 +147,7 @@
             this.btnlogin.TabIndex = 14;
             this.btnlogin.Text = "Login";
             this.btnlogin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnlogin.UseVisualStyleBackColor = true;
+            this.btnlogin.UseVisualStyleBackColor = false;
             // 
             // groupBox1
             // 
@@ -157,6 +163,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(407, 458);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);

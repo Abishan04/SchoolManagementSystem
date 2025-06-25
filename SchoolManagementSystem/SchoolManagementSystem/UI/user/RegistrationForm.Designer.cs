@@ -154,46 +154,55 @@
             // btnreset
             // 
             this.btnreset.AutoSize = true;
+            this.btnreset.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnreset.FlatAppearance.BorderSize = 0;
+            this.btnreset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnreset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnreset.Image = ((System.Drawing.Image)(resources.GetObject("btnreset.Image")));
-            this.btnreset.Location = new System.Drawing.Point(20, 337);
+            this.btnreset.Location = new System.Drawing.Point(10, 333);
             this.btnreset.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnreset.Name = "btnreset";
-            this.btnreset.Size = new System.Drawing.Size(87, 46);
+            this.btnreset.Size = new System.Drawing.Size(89, 46);
             this.btnreset.TabIndex = 15;
             this.btnreset.Text = "Reset";
             this.btnreset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnreset.UseVisualStyleBackColor = true;
+            this.btnreset.UseVisualStyleBackColor = false;
             // 
             // btnclose
             // 
             this.btnclose.AutoSize = true;
+            this.btnclose.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnclose.FlatAppearance.BorderSize = 0;
+            this.btnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclose.Image = ((System.Drawing.Image)(resources.GetObject("btnclose.Image")));
             this.btnclose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnclose.Location = new System.Drawing.Point(210, 337);
+            this.btnclose.Location = new System.Drawing.Point(216, 333);
             this.btnclose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(85, 46);
+            this.btnclose.Size = new System.Drawing.Size(87, 46);
             this.btnclose.TabIndex = 15;
             this.btnclose.Text = "Close";
             this.btnclose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnclose.UseVisualStyleBackColor = true;
+            this.btnclose.UseVisualStyleBackColor = false;
             // 
             // btnregister
             // 
             this.btnregister.AutoSize = true;
+            this.btnregister.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnregister.FlatAppearance.BorderSize = 0;
+            this.btnregister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnregister.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnregister.Image = ((System.Drawing.Image)(resources.GetObject("btnregister.Image")));
             this.btnregister.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnregister.Location = new System.Drawing.Point(107, 337);
+            this.btnregister.Location = new System.Drawing.Point(105, 333);
             this.btnregister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnregister.Name = "btnregister";
-            this.btnregister.Size = new System.Drawing.Size(103, 46);
+            this.btnregister.Size = new System.Drawing.Size(105, 46);
             this.btnregister.TabIndex = 15;
             this.btnregister.Text = "Register";
             this.btnregister.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnregister.UseVisualStyleBackColor = true;
+            this.btnregister.UseVisualStyleBackColor = false;
             // 
             // groupBox1
             // 
@@ -211,7 +220,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(314, 390);
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ClientSize = new System.Drawing.Size(314, 384);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblname);
             this.Controls.Add(this.pictureBox1);

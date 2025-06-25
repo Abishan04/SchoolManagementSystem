@@ -112,44 +112,53 @@
             // btnclose
             // 
             this.btnclose.AutoSize = true;
+            this.btnclose.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnclose.FlatAppearance.BorderSize = 0;
+            this.btnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclose.Image = global::SchoolManagementSystem.Properties.Resources.icons8_close_32;
             this.btnclose.Location = new System.Drawing.Point(264, 390);
             this.btnclose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(83, 39);
+            this.btnclose.Size = new System.Drawing.Size(85, 40);
             this.btnclose.TabIndex = 52;
             this.btnclose.Text = "close";
             this.btnclose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnclose.UseVisualStyleBackColor = true;
+            this.btnclose.UseVisualStyleBackColor = false;
             // 
             // btnreset
             // 
             this.btnreset.AutoSize = true;
+            this.btnreset.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnreset.FlatAppearance.BorderSize = 0;
+            this.btnreset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnreset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnreset.Image = global::SchoolManagementSystem.Properties.Resources.icons8_reset_32;
-            this.btnreset.Location = new System.Drawing.Point(102, 391);
+            this.btnreset.Location = new System.Drawing.Point(86, 391);
             this.btnreset.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnreset.Name = "btnreset";
-            this.btnreset.Size = new System.Drawing.Size(82, 39);
+            this.btnreset.Size = new System.Drawing.Size(84, 40);
             this.btnreset.TabIndex = 51;
             this.btnreset.Text = "reset";
             this.btnreset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnreset.UseVisualStyleBackColor = true;
+            this.btnreset.UseVisualStyleBackColor = false;
             // 
             // btnsave
             // 
             this.btnsave.AutoSize = true;
+            this.btnsave.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnsave.FlatAppearance.BorderSize = 0;
+            this.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsave.Image = global::SchoolManagementSystem.Properties.Resources.icons8_save_32;
-            this.btnsave.Location = new System.Drawing.Point(184, 391);
+            this.btnsave.Location = new System.Drawing.Point(176, 391);
             this.btnsave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(80, 39);
+            this.btnsave.Size = new System.Drawing.Size(82, 40);
             this.btnsave.TabIndex = 53;
             this.btnsave.Text = "save";
             this.btnsave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.UseVisualStyleBackColor = false;
             // 
             // txtlname
             // 
@@ -266,7 +275,7 @@
             this.lbltea.Location = new System.Drawing.Point(0, 0);
             this.lbltea.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbltea.Name = "lbltea";
-            this.lbltea.Size = new System.Drawing.Size(358, 31);
+            this.lbltea.Size = new System.Drawing.Size(356, 31);
             this.lbltea.TabIndex = 46;
             this.lbltea.Text = "Create Teacher";
             this.lbltea.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -286,7 +295,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(358, 436);
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ClientSize = new System.Drawing.Size(356, 436);
             this.Controls.Add(this.dtp);
             this.Controls.Add(this.rdofemale);
             this.Controls.Add(this.rdomale);

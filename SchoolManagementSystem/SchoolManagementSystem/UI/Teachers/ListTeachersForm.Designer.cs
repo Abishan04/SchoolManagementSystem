@@ -37,14 +37,14 @@
             this.btnsubjects = new System.Windows.Forms.Button();
             this.btnsearch = new System.Windows.Forms.Button();
             this.dgv = new System.Windows.Forms.DataGridView();
-            this.btnexport = new System.Windows.Forms.Button();
+            this.btnex = new System.Windows.Forms.Button();
             this.btnclose = new System.Windows.Forms.Button();
             this.btnprint = new System.Windows.Forms.Button();
             this.btnrefresh = new System.Windows.Forms.Button();
             this.btnshow = new System.Windows.Forms.Button();
             this.btnupdate = new System.Windows.Forms.Button();
             this.btnadd = new System.Windows.Forms.Button();
-            this.btndelete = new System.Windows.Forms.Button();
+            this.btndel = new System.Windows.Forms.Button();
             this.btnedit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
@@ -106,16 +106,19 @@
             // 
             // btnsubjects
             // 
+            this.btnsubjects.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnsubjects.FlatAppearance.BorderSize = 0;
+            this.btnsubjects.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsubjects.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsubjects.Image = ((System.Drawing.Image)(resources.GetObject("btnsubjects.Image")));
-            this.btnsubjects.Location = new System.Drawing.Point(629, 538);
+            this.btnsubjects.Location = new System.Drawing.Point(627, 538);
             this.btnsubjects.Margin = new System.Windows.Forms.Padding(2);
             this.btnsubjects.Name = "btnsubjects";
             this.btnsubjects.Size = new System.Drawing.Size(151, 45);
             this.btnsubjects.TabIndex = 45;
             this.btnsubjects.Text = "Add subjects";
             this.btnsubjects.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnsubjects.UseVisualStyleBackColor = true;
+            this.btnsubjects.UseVisualStyleBackColor = false;
             // 
             // btnsearch
             // 
@@ -140,21 +143,27 @@
             this.dgv.Size = new System.Drawing.Size(1095, 431);
             this.dgv.TabIndex = 34;
             // 
-            // btnexport
+            // btnex
             // 
-            this.btnexport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnexport.Image = ((System.Drawing.Image)(resources.GetObject("btnexport.Image")));
-            this.btnexport.Location = new System.Drawing.Point(910, 538);
-            this.btnexport.Margin = new System.Windows.Forms.Padding(2);
-            this.btnexport.Name = "btnexport";
-            this.btnexport.Size = new System.Drawing.Size(100, 45);
-            this.btnexport.TabIndex = 44;
-            this.btnexport.Text = "Export";
-            this.btnexport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnexport.UseVisualStyleBackColor = true;
+            this.btnex.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnex.FlatAppearance.BorderSize = 0;
+            this.btnex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnex.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnex.Image = ((System.Drawing.Image)(resources.GetObject("btnex.Image")));
+            this.btnex.Location = new System.Drawing.Point(910, 538);
+            this.btnex.Margin = new System.Windows.Forms.Padding(2);
+            this.btnex.Name = "btnex";
+            this.btnex.Size = new System.Drawing.Size(100, 45);
+            this.btnex.TabIndex = 44;
+            this.btnex.Text = "Export";
+            this.btnex.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnex.UseVisualStyleBackColor = false;
             // 
             // btnclose
             // 
+            this.btnclose.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnclose.FlatAppearance.BorderSize = 0;
+            this.btnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclose.Image = ((System.Drawing.Image)(resources.GetObject("btnclose.Image")));
             this.btnclose.Location = new System.Drawing.Point(1013, 538);
@@ -164,10 +173,13 @@
             this.btnclose.TabIndex = 39;
             this.btnclose.Text = "Close";
             this.btnclose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnclose.UseVisualStyleBackColor = true;
+            this.btnclose.UseVisualStyleBackColor = false;
             // 
             // btnprint
             // 
+            this.btnprint.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnprint.FlatAppearance.BorderSize = 0;
+            this.btnprint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnprint.Image = ((System.Drawing.Image)(resources.GetObject("btnprint.Image")));
             this.btnprint.Location = new System.Drawing.Point(781, 538);
@@ -177,23 +189,29 @@
             this.btnprint.TabIndex = 41;
             this.btnprint.Text = "Print";
             this.btnprint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnprint.UseVisualStyleBackColor = true;
+            this.btnprint.UseVisualStyleBackColor = false;
             // 
             // btnrefresh
             // 
+            this.btnrefresh.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnrefresh.FlatAppearance.BorderSize = 0;
+            this.btnrefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnrefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnrefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnrefresh.Image")));
-            this.btnrefresh.Location = new System.Drawing.Point(515, 538);
+            this.btnrefresh.Location = new System.Drawing.Point(514, 538);
             this.btnrefresh.Margin = new System.Windows.Forms.Padding(2);
             this.btnrefresh.Name = "btnrefresh";
             this.btnrefresh.Size = new System.Drawing.Size(110, 45);
             this.btnrefresh.TabIndex = 43;
             this.btnrefresh.Text = "Refresh";
             this.btnrefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnrefresh.UseVisualStyleBackColor = true;
+            this.btnrefresh.UseVisualStyleBackColor = false;
             // 
             // btnshow
             // 
+            this.btnshow.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnshow.FlatAppearance.BorderSize = 0;
+            this.btnshow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnshow.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnshow.Image = global::SchoolManagementSystem.Properties.Resources.icons8_show_32;
             this.btnshow.Location = new System.Drawing.Point(409, 538);
@@ -203,23 +221,29 @@
             this.btnshow.TabIndex = 40;
             this.btnshow.Text = "Show";
             this.btnshow.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnshow.UseVisualStyleBackColor = true;
+            this.btnshow.UseVisualStyleBackColor = false;
             // 
             // btnupdate
             // 
+            this.btnupdate.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnupdate.FlatAppearance.BorderSize = 0;
+            this.btnupdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnupdate.Image = ((System.Drawing.Image)(resources.GetObject("btnupdate.Image")));
-            this.btnupdate.Location = new System.Drawing.Point(301, 538);
+            this.btnupdate.Location = new System.Drawing.Point(300, 538);
             this.btnupdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(106, 45);
             this.btnupdate.TabIndex = 46;
             this.btnupdate.Text = "Update";
             this.btnupdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnupdate.UseVisualStyleBackColor = true;
+            this.btnupdate.UseVisualStyleBackColor = false;
             // 
             // btnadd
             // 
+            this.btnadd.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnadd.FlatAppearance.BorderSize = 0;
+            this.btnadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnadd.Image = ((System.Drawing.Image)(resources.GetObject("btnadd.Image")));
             this.btnadd.Location = new System.Drawing.Point(4, 538);
@@ -229,23 +253,29 @@
             this.btnadd.TabIndex = 36;
             this.btnadd.Text = "Add";
             this.btnadd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnadd.UseVisualStyleBackColor = true;
+            this.btnadd.UseVisualStyleBackColor = false;
             // 
-            // btndelete
+            // btndel
             // 
-            this.btndelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndelete.Image = ((System.Drawing.Image)(resources.GetObject("btndelete.Image")));
-            this.btndelete.Location = new System.Drawing.Point(194, 538);
-            this.btndelete.Margin = new System.Windows.Forms.Padding(2);
-            this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(103, 45);
-            this.btndelete.TabIndex = 38;
-            this.btndelete.Text = "Delete";
-            this.btndelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btndelete.UseVisualStyleBackColor = true;
+            this.btndel.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btndel.FlatAppearance.BorderSize = 0;
+            this.btndel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndel.Image = ((System.Drawing.Image)(resources.GetObject("btndel.Image")));
+            this.btndel.Location = new System.Drawing.Point(194, 538);
+            this.btndel.Margin = new System.Windows.Forms.Padding(2);
+            this.btndel.Name = "btndel";
+            this.btndel.Size = new System.Drawing.Size(103, 45);
+            this.btndel.TabIndex = 38;
+            this.btndel.Text = "Delete";
+            this.btndel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btndel.UseVisualStyleBackColor = false;
             // 
             // btnedit
             // 
+            this.btnedit.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnedit.FlatAppearance.BorderSize = 0;
+            this.btnedit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnedit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnedit.Image = ((System.Drawing.Image)(resources.GetObject("btnedit.Image")));
             this.btnedit.Location = new System.Drawing.Point(94, 538);
@@ -255,22 +285,23 @@
             this.btnedit.TabIndex = 37;
             this.btnedit.Text = "Edit";
             this.btnedit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnedit.UseVisualStyleBackColor = true;
+            this.btnedit.UseVisualStyleBackColor = false;
             // 
             // ListTeachersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(1117, 594);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnsubjects);
-            this.Controls.Add(this.btnexport);
+            this.Controls.Add(this.btnex);
             this.Controls.Add(this.btnrefresh);
             this.Controls.Add(this.btnprint);
             this.Controls.Add(this.btnshow);
             this.Controls.Add(this.btnclose);
             this.Controls.Add(this.btnupdate);
-            this.Controls.Add(this.btndelete);
+            this.Controls.Add(this.btndel);
             this.Controls.Add(this.btnedit);
             this.Controls.Add(this.btnadd);
             this.Controls.Add(this.lblstu);
@@ -298,14 +329,14 @@
         private System.Windows.Forms.Button btnsearch;
         private System.Windows.Forms.TextBox txtsearch;
         private System.Windows.Forms.DataGridView dgv;
-        private System.Windows.Forms.Button btnexport;
+        private System.Windows.Forms.Button btnex;
         private System.Windows.Forms.Button btnclose;
         private System.Windows.Forms.Button btnprint;
         private System.Windows.Forms.Button btnrefresh;
         private System.Windows.Forms.Button btnshow;
         private System.Windows.Forms.Button btnupdate;
         private System.Windows.Forms.Button btnadd;
-        private System.Windows.Forms.Button btndelete;
+        private System.Windows.Forms.Button btndel;
         private System.Windows.Forms.Button btnedit;
     }
 }

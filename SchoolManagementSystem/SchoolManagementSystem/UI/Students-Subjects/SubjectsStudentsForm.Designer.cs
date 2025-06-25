@@ -32,11 +32,11 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lvsubjectsstudents = new System.Windows.Forms.ListView();
             this.lblname = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnex = new System.Windows.Forms.Button();
+            this.btnrefresh = new System.Windows.Forms.Button();
+            this.btnprint = new System.Windows.Forms.Button();
+            this.btnclose = new System.Windows.Forms.Button();
+            this.btndel = new System.Windows.Forms.Button();
             this.btnadd = new System.Windows.Forms.Button();
             this.lblstu = new System.Windows.Forms.Label();
             this.txtsub = new System.Windows.Forms.TextBox();
@@ -78,89 +78,107 @@
             this.lblname.Text = "SubjectsStudents";
             this.lblname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // btnex
             // 
-            this.button1.AutoSize = true;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::SchoolManagementSystem.Properties.Resources.icons8_export_32;
-            this.button1.Location = new System.Drawing.Point(588, 244);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 45);
-            this.button1.TabIndex = 32;
-            this.button1.Text = "Export";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnex.AutoSize = true;
+            this.btnex.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnex.FlatAppearance.BorderSize = 0;
+            this.btnex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnex.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnex.Image = global::SchoolManagementSystem.Properties.Resources.icons8_export_32;
+            this.btnex.Location = new System.Drawing.Point(588, 244);
+            this.btnex.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnex.Name = "btnex";
+            this.btnex.Size = new System.Drawing.Size(92, 45);
+            this.btnex.TabIndex = 32;
+            this.btnex.Text = "Export";
+            this.btnex.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnex.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnrefresh
             // 
-            this.button2.AutoSize = true;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::SchoolManagementSystem.Properties.Resources.icons8_refresh_32;
-            this.button2.Location = new System.Drawing.Point(407, 244);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 45);
-            this.button2.TabIndex = 33;
-            this.button2.Text = "Refresh";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnrefresh.AutoSize = true;
+            this.btnrefresh.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnrefresh.FlatAppearance.BorderSize = 0;
+            this.btnrefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnrefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnrefresh.Image = global::SchoolManagementSystem.Properties.Resources.icons8_refresh_32;
+            this.btnrefresh.Location = new System.Drawing.Point(391, 244);
+            this.btnrefresh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnrefresh.Name = "btnrefresh";
+            this.btnrefresh.Size = new System.Drawing.Size(102, 45);
+            this.btnrefresh.TabIndex = 33;
+            this.btnrefresh.Text = "Refresh";
+            this.btnrefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnrefresh.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnprint
             // 
-            this.button3.AutoSize = true;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Image = global::SchoolManagementSystem.Properties.Resources.icons8_print_32;
-            this.button3.Location = new System.Drawing.Point(508, 244);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(79, 45);
-            this.button3.TabIndex = 34;
-            this.button3.Text = "Print";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnprint.AutoSize = true;
+            this.btnprint.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnprint.FlatAppearance.BorderSize = 0;
+            this.btnprint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnprint.Image = global::SchoolManagementSystem.Properties.Resources.icons8_print_32;
+            this.btnprint.Location = new System.Drawing.Point(500, 244);
+            this.btnprint.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnprint.Name = "btnprint";
+            this.btnprint.Size = new System.Drawing.Size(81, 45);
+            this.btnprint.TabIndex = 34;
+            this.btnprint.Text = "Print";
+            this.btnprint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnprint.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnclose
             // 
-            this.button4.AutoSize = true;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Image = global::SchoolManagementSystem.Properties.Resources.icons8_close_32;
-            this.button4.Location = new System.Drawing.Point(679, 244);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(85, 45);
-            this.button4.TabIndex = 35;
-            this.button4.Text = "Close";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnclose.AutoSize = true;
+            this.btnclose.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnclose.FlatAppearance.BorderSize = 0;
+            this.btnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnclose.Image = global::SchoolManagementSystem.Properties.Resources.icons8_close_32;
+            this.btnclose.Location = new System.Drawing.Point(687, 244);
+            this.btnclose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnclose.Name = "btnclose";
+            this.btnclose.Size = new System.Drawing.Size(87, 45);
+            this.btnclose.TabIndex = 35;
+            this.btnclose.Text = "Close";
+            this.btnclose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnclose.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btndel
             // 
-            this.button5.AutoSize = true;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Image = global::SchoolManagementSystem.Properties.Resources.icons8_delete_32;
-            this.button5.Location = new System.Drawing.Point(315, 244);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(91, 45);
-            this.button5.TabIndex = 36;
-            this.button5.Text = "Delete";
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button5.UseVisualStyleBackColor = true;
+            this.btndel.AutoSize = true;
+            this.btndel.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btndel.FlatAppearance.BorderSize = 0;
+            this.btndel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndel.Image = global::SchoolManagementSystem.Properties.Resources.icons8_delete_32;
+            this.btndel.Location = new System.Drawing.Point(291, 244);
+            this.btndel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btndel.Name = "btndel";
+            this.btndel.Size = new System.Drawing.Size(93, 45);
+            this.btndel.TabIndex = 36;
+            this.btndel.Text = "Delete";
+            this.btndel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btndel.UseVisualStyleBackColor = false;
             // 
             // btnadd
             // 
             this.btnadd.AutoSize = true;
+            this.btnadd.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnadd.FlatAppearance.BorderSize = 0;
+            this.btnadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnadd.Image = ((System.Drawing.Image)(resources.GetObject("btnadd.Image")));
-            this.btnadd.Location = new System.Drawing.Point(693, 88);
+            this.btnadd.Location = new System.Drawing.Point(689, 91);
             this.btnadd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnadd.Name = "btnadd";
-            this.btnadd.Size = new System.Drawing.Size(75, 40);
+            this.btnadd.Size = new System.Drawing.Size(77, 40);
             this.btnadd.TabIndex = 67;
             this.btnadd.Text = "Add";
             this.btnadd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnadd.UseVisualStyleBackColor = true;
+            this.btnadd.UseVisualStyleBackColor = false;
             // 
             // lblstu
             // 
@@ -186,15 +204,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(775, 292);
             this.Controls.Add(this.btnadd);
             this.Controls.Add(this.lblstu);
             this.Controls.Add(this.txtsub);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnex);
+            this.Controls.Add(this.btnrefresh);
+            this.Controls.Add(this.btnprint);
+            this.Controls.Add(this.btnclose);
+            this.Controls.Add(this.btndel);
             this.Controls.Add(this.lblname);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lvsubjectsstudents);
@@ -210,11 +229,11 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ListView lvsubjectsstudents;
         private System.Windows.Forms.Label lblname;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnex;
+        private System.Windows.Forms.Button btnrefresh;
+        private System.Windows.Forms.Button btnprint;
+        private System.Windows.Forms.Button btnclose;
+        private System.Windows.Forms.Button btndel;
         private System.Windows.Forms.Button btnadd;
         private System.Windows.Forms.Label lblstu;
         private System.Windows.Forms.TextBox txtsub;

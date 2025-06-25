@@ -16,5 +16,10 @@ namespace SchoolManagementSystem.UI.Teachers
         {
             InitializeComponent();
         }
+
+        private void EditTeachersForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
