@@ -53,9 +53,9 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(132, 517);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(967, 1);
             this.groupBox1.TabIndex = 47;
             this.groupBox1.TabStop = false;
@@ -65,8 +65,8 @@
             // 
             this.btnshow.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnshow.Image = global::SchoolManagementSystem.Properties.Resources.icons8_show_32;
-            this.btnshow.Location = new System.Drawing.Point(361, 517);
-            this.btnshow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnshow.Location = new System.Drawing.Point(249, 517);
+            this.btnshow.Margin = new System.Windows.Forms.Padding(2);
             this.btnshow.Name = "btnshow";
             this.btnshow.Size = new System.Drawing.Size(125, 59);
             this.btnshow.TabIndex = 40;
@@ -92,7 +92,7 @@
             // 
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv.Location = new System.Drawing.Point(11, 84);
-            this.dgv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgv.Margin = new System.Windows.Forms.Padding(2);
             this.dgv.Name = "dgv";
             this.dgv.RowHeadersWidth = 62;
             this.dgv.RowTemplate.Height = 28;
@@ -122,7 +122,7 @@
             // 
             this.txtsearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtsearch.Location = new System.Drawing.Point(21, 39);
-            this.txtsearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtsearch.Margin = new System.Windows.Forms.Padding(2);
             this.txtsearch.Name = "txtsearch";
             this.txtsearch.Size = new System.Drawing.Size(125, 26);
             this.txtsearch.TabIndex = 29;
@@ -133,7 +133,7 @@
             this.btnsubjects.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsubjects.Image = ((System.Drawing.Image)(resources.GetObject("btnsubjects.Image")));
             this.btnsubjects.Location = new System.Drawing.Point(483, 521);
-            this.btnsubjects.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnsubjects.Margin = new System.Windows.Forms.Padding(2);
             this.btnsubjects.Name = "btnsubjects";
             this.btnsubjects.Size = new System.Drawing.Size(125, 59);
             this.btnsubjects.TabIndex = 45;
@@ -145,8 +145,8 @@
             // 
             this.btnexport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnexport.Image = ((System.Drawing.Image)(resources.GetObject("btnexport.Image")));
-            this.btnexport.Location = new System.Drawing.Point(605, 521);
-            this.btnexport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnexport.Location = new System.Drawing.Point(717, 521);
+            this.btnexport.Margin = new System.Windows.Forms.Padding(2);
             this.btnexport.Name = "btnexport";
             this.btnexport.Size = new System.Drawing.Size(125, 59);
             this.btnexport.TabIndex = 44;
@@ -158,8 +158,8 @@
             // 
             this.btnrefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnrefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnrefresh.Image")));
-            this.btnrefresh.Location = new System.Drawing.Point(422, 521);
-            this.btnrefresh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnrefresh.Location = new System.Drawing.Point(366, 521);
+            this.btnrefresh.Margin = new System.Windows.Forms.Padding(2);
             this.btnrefresh.Name = "btnrefresh";
             this.btnrefresh.Size = new System.Drawing.Size(125, 59);
             this.btnrefresh.TabIndex = 43;
@@ -171,8 +171,8 @@
             // 
             this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnprint.Image = ((System.Drawing.Image)(resources.GetObject("btnprint.Image")));
-            this.btnprint.Location = new System.Drawing.Point(544, 521);
-            this.btnprint.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnprint.Location = new System.Drawing.Point(600, 521);
+            this.btnprint.Margin = new System.Windows.Forms.Padding(2);
             this.btnprint.Name = "btnprint";
             this.btnprint.Size = new System.Drawing.Size(125, 59);
             this.btnprint.TabIndex = 41;
@@ -184,8 +184,8 @@
             // 
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclose.Image = ((System.Drawing.Image)(resources.GetObject("btnclose.Image")));
-            this.btnclose.Location = new System.Drawing.Point(666, 521);
-            this.btnclose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnclose.Location = new System.Drawing.Point(834, 521);
+            this.btnclose.Margin = new System.Windows.Forms.Padding(2);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(125, 59);
             this.btnclose.TabIndex = 39;
@@ -197,8 +197,8 @@
             // 
             this.btnupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnupdate.Image = ((System.Drawing.Image)(resources.GetObject("btnupdate.Image")));
-            this.btnupdate.Location = new System.Drawing.Point(300, 521);
-            this.btnupdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnupdate.Location = new System.Drawing.Point(132, 521);
+            this.btnupdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(125, 59);
             this.btnupdate.TabIndex = 46;
@@ -210,8 +210,8 @@
             // 
             this.btndelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndelete.Image = ((System.Drawing.Image)(resources.GetObject("btndelete.Image")));
-            this.btndelete.Location = new System.Drawing.Point(239, 521);
-            this.btndelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btndelete.Location = new System.Drawing.Point(15, 521);
+            this.btndelete.Margin = new System.Windows.Forms.Padding(2);
             this.btndelete.Name = "btndelete";
             this.btndelete.Size = new System.Drawing.Size(125, 59);
             this.btndelete.TabIndex = 38;
@@ -223,8 +223,8 @@
             // 
             this.btnedit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnedit.Image = ((System.Drawing.Image)(resources.GetObject("btnedit.Image")));
-            this.btnedit.Location = new System.Drawing.Point(129, 521);
-            this.btnedit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnedit.Location = new System.Drawing.Point(-151, 521);
+            this.btnedit.Margin = new System.Windows.Forms.Padding(2);
             this.btnedit.Name = "btnedit";
             this.btnedit.Size = new System.Drawing.Size(125, 59);
             this.btnedit.TabIndex = 37;
@@ -236,8 +236,8 @@
             // 
             this.btnadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnadd.Image = ((System.Drawing.Image)(resources.GetObject("btnadd.Image")));
-            this.btnadd.Location = new System.Drawing.Point(12, 521);
-            this.btnadd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnadd.Location = new System.Drawing.Point(11, 530);
+            this.btnadd.Margin = new System.Windows.Forms.Padding(2);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(122, 46);
             this.btnadd.TabIndex = 36;
@@ -250,9 +250,9 @@
             this.btnsearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsearch.Image = ((System.Drawing.Image)(resources.GetObject("btnsearch.Image")));
             this.btnsearch.Location = new System.Drawing.Point(149, 39);
-            this.btnsearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnsearch.Margin = new System.Windows.Forms.Padding(2);
             this.btnsearch.Name = "btnsearch";
-            this.btnsearch.Size = new System.Drawing.Size(35, 23);
+            this.btnsearch.Size = new System.Drawing.Size(45, 26);
             this.btnsearch.TabIndex = 31;
             this.btnsearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnsearch.UseVisualStyleBackColor = true;
@@ -279,7 +279,7 @@
             this.Controls.Add(this.lbltea);
             this.Controls.Add(this.btnsearch);
             this.Controls.Add(this.txtsearch);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ListTeachersForm";
             this.Text = "ListTeachersForm";
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();

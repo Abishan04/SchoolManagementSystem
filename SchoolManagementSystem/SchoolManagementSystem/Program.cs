@@ -1,5 +1,7 @@
-﻿using SchoolManagementSystem.Model;
+﻿using SchoolManagementSystem.DAL;
+using SchoolManagementSystem.Model;
 using SchoolManagementSystem.UI.Grades;
+using SchoolManagementSystem.UI.Grades_Subjects;
 using SchoolManagementSystem.UI.Students;
 using SchoolManagementSystem.UI.user;
 using System;
@@ -20,7 +22,7 @@ namespace SchoolManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GradesForm());
+            Application.Run(new SubjectsGrades());
         }
     }
 }

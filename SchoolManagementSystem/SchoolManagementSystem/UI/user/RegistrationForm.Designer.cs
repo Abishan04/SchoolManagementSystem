@@ -156,7 +156,7 @@
             this.btnreset.AutoSize = true;
             this.btnreset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnreset.Image = ((System.Drawing.Image)(resources.GetObject("btnreset.Image")));
-            this.btnreset.Location = new System.Drawing.Point(8, 336);
+            this.btnreset.Location = new System.Drawing.Point(29, 337);
             this.btnreset.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnreset.Name = "btnreset";
             this.btnreset.Size = new System.Drawing.Size(87, 38);
@@ -171,10 +171,10 @@
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclose.Image = ((System.Drawing.Image)(resources.GetObject("btnclose.Image")));
             this.btnclose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnclose.Location = new System.Drawing.Point(215, 336);
+            this.btnclose.Location = new System.Drawing.Point(215, 337);
             this.btnclose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(86, 38);
+            this.btnclose.Size = new System.Drawing.Size(85, 38);
             this.btnclose.TabIndex = 15;
             this.btnclose.Text = "Close";
             this.btnclose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -186,7 +186,7 @@
             this.btnregister.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnregister.Image = ((System.Drawing.Image)(resources.GetObject("btnregister.Image")));
             this.btnregister.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnregister.Location = new System.Drawing.Point(106, 336);
+            this.btnregister.Location = new System.Drawing.Point(117, 337);
             this.btnregister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnregister.Name = "btnregister";
             this.btnregister.Size = new System.Drawing.Size(103, 38);

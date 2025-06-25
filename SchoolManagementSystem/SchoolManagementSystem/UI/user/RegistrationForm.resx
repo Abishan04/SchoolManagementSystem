@@ -184,7 +184,7 @@
   <data name="btnreset.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAAmNJREFUWEfVlzuvTVEQgD+vEAqFUMklCjoh8UqES4lodPwColFIJB7RKnREFB4X
+        DAAACwwBP0AiyAAAAmNJREFUWEfVlzuvTVEQgD+vEAqFUMklCjoh8UqES4lodPwColFIJB7RKnREFB4X
         iYKGEoWIH+AniNAIHZEgHvmSPSdz19n7nH2cvYUvWc2emTXrzJo1Mwf+Y5YAl4FHwD3gArAfWFwqtmUL
         cBo407DWFvq7gV816yNwG9hU6I9kGfC5ZrO89hQ2y4EHwDvgW43+d+A6sLqwq2UB8Kpmk1EHyGi/DjgO
         PAF+Jrs3VXTHshBYD2wAThWbjDtAyXbgebI1uodKpSb2Al8njEAdRuV8+iEeYmwk1gDvKwMNH05xgOAo
@@ -200,7 +200,7 @@
   <data name="btnclose.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAAldJREFUWEfVl8mOD1EUhz9hYdga3sC0wgMYV6bwCNqwEF7AuBPxAghiTIdYkeje
+        DAAACwwBP0AiyAAAAldJREFUWEfVl8mOD1EUhz9hYdga3sC0wgMYV6bwCNqwEF7AuBPxAghiTIdYkeje
         Nx5ACLaGJXZsDIl8cuuf66RuTSmNL6mkcs6tO55z7q/gP2MRsB04A9wBHgIP0ru2banN6KwDbgKfgO/A
         M+ARcC09vmvT9xG4AayNnQxhJXAF+AbMAVPAitgoQ99B4HH65nLqYxCbgPfAC2BXdHZgN/ASeAdsjM42
         9gJfgGlgcXT2YAlwF/gM7InOEq7cwc8BC6JzAPZxPk2idSc8L7fdlY8xeIV93QPetsTQr4DzzN26sVkK
@@ -216,7 +216,7 @@
   <data name="btnregister.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAAslJREFUWEe1l0nITmEYhi9j5illIUSRBbJAUpKMRcksQn82piQlGxaGhWIj48aK
+        DAAACwwBP0AiyAAAAslJREFUWEe1l0nITmEYhi9j5illIUSRBbJAUpKMRcksQn82piQlGxaGhWIj48aK
         siGUYaGQKLIRC0SmKHMyy9j995yc7s75v/P/53xXvXW+937POe95pvf5oBg9gVXAQeAMcBLYDPTxhfVg
         LfANeAEcB/YAx4BHwHNgCdDRb6qKNfHyFUAb09oDB4A3wF2gn+ml6QZ8BNa7YHQFrodbKmVOfH1nFzKY
         BvwBerhQhk3ALZ/MoRfwFxjrQhm2Atd8Mge5QRsY70IZ1gH3fDKHwbGBoS6UYUbEgKK9FguAz0BbF8qg
