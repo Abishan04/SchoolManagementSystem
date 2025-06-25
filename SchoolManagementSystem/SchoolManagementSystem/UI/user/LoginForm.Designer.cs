@@ -86,7 +86,7 @@
             this.lblname.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblname.Location = new System.Drawing.Point(0, 0);
             this.lblname.Name = "lblname";
-            this.lblname.Size = new System.Drawing.Size(436, 57);
+            this.lblname.Size = new System.Drawing.Size(407, 57);
             this.lblname.TabIndex = 56;
             this.lblname.Text = "Login";
             this.lblname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -94,7 +94,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(138, 85);
+            this.pictureBox1.Location = new System.Drawing.Point(123, 85);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(160, 162);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -107,9 +107,9 @@
             this.btnreset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnreset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnreset.Image = ((System.Drawing.Image)(resources.GetObject("btnreset.Image")));
-            this.btnreset.Location = new System.Drawing.Point(12, 419);
+            this.btnreset.Location = new System.Drawing.Point(112, 410);
             this.btnreset.Name = "btnreset";
-            this.btnreset.Size = new System.Drawing.Size(122, 40);
+            this.btnreset.Size = new System.Drawing.Size(89, 40);
             this.btnreset.TabIndex = 14;
             this.btnreset.Text = "Reset";
             this.btnreset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -121,9 +121,9 @@
             this.btnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclose.Image = ((System.Drawing.Image)(resources.GetObject("btnclose.Image")));
-            this.btnclose.Location = new System.Drawing.Point(304, 419);
+            this.btnclose.Location = new System.Drawing.Point(308, 410);
             this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(120, 40);
+            this.btnclose.Size = new System.Drawing.Size(87, 40);
             this.btnclose.TabIndex = 14;
             this.btnclose.Text = "Close";
             this.btnclose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -135,9 +135,9 @@
             this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnlogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlogin.Image = ((System.Drawing.Image)(resources.GetObject("btnlogin.Image")));
-            this.btnlogin.Location = new System.Drawing.Point(158, 419);
+            this.btnlogin.Location = new System.Drawing.Point(211, 410);
             this.btnlogin.Name = "btnlogin";
-            this.btnlogin.Size = new System.Drawing.Size(122, 40);
+            this.btnlogin.Size = new System.Drawing.Size(87, 40);
             this.btnlogin.TabIndex = 14;
             this.btnlogin.Text = "Login";
             this.btnlogin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -157,7 +157,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(436, 471);
+            this.ClientSize = new System.Drawing.Size(407, 458);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblname);

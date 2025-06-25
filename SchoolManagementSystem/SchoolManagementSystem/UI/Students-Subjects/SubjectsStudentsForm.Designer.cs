@@ -45,9 +45,11 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.Desktop;
-            this.groupBox1.Location = new System.Drawing.Point(7, 368);
+            this.groupBox1.Location = new System.Drawing.Point(5, 239);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1200, 1);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(800, 1);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
@@ -55,9 +57,10 @@
             // lvsubjectsstudents
             // 
             this.lvsubjectsstudents.HideSelection = false;
-            this.lvsubjectsstudents.Location = new System.Drawing.Point(7, 46);
+            this.lvsubjectsstudents.Location = new System.Drawing.Point(5, 30);
+            this.lvsubjectsstudents.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lvsubjectsstudents.Name = "lvsubjectsstudents";
-            this.lvsubjectsstudents.Size = new System.Drawing.Size(770, 316);
+            this.lvsubjectsstudents.Size = new System.Drawing.Size(515, 207);
             this.lvsubjectsstudents.TabIndex = 20;
             this.lvsubjectsstudents.UseCompatibleStateImageBehavior = false;
             // 
@@ -68,8 +71,9 @@
             this.lblname.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblname.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblname.Location = new System.Drawing.Point(0, 0);
+            this.lblname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblname.Name = "lblname";
-            this.lblname.Size = new System.Drawing.Size(1163, 43);
+            this.lblname.Size = new System.Drawing.Size(775, 28);
             this.lblname.TabIndex = 31;
             this.lblname.Text = "SubjectsStudents";
             this.lblname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -79,9 +83,10 @@
             this.button1.AutoSize = true;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::SchoolManagementSystem.Properties.Resources.icons8_export_32;
-            this.button1.Location = new System.Drawing.Point(653, 393);
+            this.button1.Location = new System.Drawing.Point(588, 244);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 45);
+            this.button1.Size = new System.Drawing.Size(90, 45);
             this.button1.TabIndex = 32;
             this.button1.Text = "Export";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -92,9 +97,10 @@
             this.button2.AutoSize = true;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = global::SchoolManagementSystem.Properties.Resources.icons8_refresh_32;
-            this.button2.Location = new System.Drawing.Point(405, 393);
+            this.button2.Location = new System.Drawing.Point(407, 244);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(121, 45);
+            this.button2.Size = new System.Drawing.Size(100, 45);
             this.button2.TabIndex = 33;
             this.button2.Text = "Refresh";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -105,9 +111,10 @@
             this.button3.AutoSize = true;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Image = global::SchoolManagementSystem.Properties.Resources.icons8_print_32;
-            this.button3.Location = new System.Drawing.Point(543, 393);
+            this.button3.Location = new System.Drawing.Point(508, 244);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(93, 45);
+            this.button3.Size = new System.Drawing.Size(79, 45);
             this.button3.TabIndex = 34;
             this.button3.Text = "Print";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -118,9 +125,10 @@
             this.button4.AutoSize = true;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Image = global::SchoolManagementSystem.Properties.Resources.icons8_close_32;
-            this.button4.Location = new System.Drawing.Point(780, 393);
+            this.button4.Location = new System.Drawing.Point(679, 244);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(105, 45);
+            this.button4.Size = new System.Drawing.Size(85, 45);
             this.button4.TabIndex = 35;
             this.button4.Text = "Close";
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -131,9 +139,10 @@
             this.button5.AutoSize = true;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Image = global::SchoolManagementSystem.Properties.Resources.icons8_delete_32;
-            this.button5.Location = new System.Drawing.Point(278, 393);
+            this.button5.Location = new System.Drawing.Point(315, 244);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(110, 45);
+            this.button5.Size = new System.Drawing.Size(91, 45);
             this.button5.TabIndex = 36;
             this.button5.Text = "Delete";
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -144,9 +153,10 @@
             this.btnadd.AutoSize = true;
             this.btnadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnadd.Image = ((System.Drawing.Image)(resources.GetObject("btnadd.Image")));
-            this.btnadd.Location = new System.Drawing.Point(1040, 136);
+            this.btnadd.Location = new System.Drawing.Point(693, 88);
+            this.btnadd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnadd.Name = "btnadd";
-            this.btnadd.Size = new System.Drawing.Size(107, 50);
+            this.btnadd.Size = new System.Drawing.Size(75, 40);
             this.btnadd.TabIndex = 67;
             this.btnadd.Text = "Add";
             this.btnadd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -156,25 +166,27 @@
             // 
             this.lblstu.AutoSize = true;
             this.lblstu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblstu.Location = new System.Drawing.Point(793, 86);
+            this.lblstu.Location = new System.Drawing.Point(529, 56);
+            this.lblstu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblstu.Name = "lblstu";
-            this.lblstu.Size = new System.Drawing.Size(107, 29);
+            this.lblstu.Size = new System.Drawing.Size(74, 20);
             this.lblstu.TabIndex = 66;
             this.lblstu.Text = "Students";
             // 
             // txtsub
             // 
             this.txtsub.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsub.Location = new System.Drawing.Point(961, 86);
+            this.txtsub.Location = new System.Drawing.Point(641, 56);
+            this.txtsub.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtsub.Name = "txtsub";
-            this.txtsub.Size = new System.Drawing.Size(186, 26);
+            this.txtsub.Size = new System.Drawing.Size(125, 20);
             this.txtsub.TabIndex = 65;
             // 
             // SubjectsStudentsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1163, 450);
+            this.ClientSize = new System.Drawing.Size(775, 292);
             this.Controls.Add(this.btnadd);
             this.Controls.Add(this.lblstu);
             this.Controls.Add(this.txtsub);
@@ -186,6 +198,7 @@
             this.Controls.Add(this.lblname);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lvsubjectsstudents);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "SubjectsStudentsForm";
             this.Text = "SubjectsStudentsForm";
             this.ResumeLayout(false);

@@ -47,10 +47,10 @@
             this.btnadd.AutoSize = true;
             this.btnadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnadd.Image = global::SchoolManagementSystem.Properties.Resources.icons8_add_32;
-            this.btnadd.Location = new System.Drawing.Point(633, 109);
-            this.btnadd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnadd.Location = new System.Drawing.Point(658, 107);
+            this.btnadd.Margin = new System.Windows.Forms.Padding(2);
             this.btnadd.Name = "btnadd";
-            this.btnadd.Size = new System.Drawing.Size(99, 40);
+            this.btnadd.Size = new System.Drawing.Size(75, 40);
             this.btnadd.TabIndex = 27;
             this.btnadd.Text = "Add";
             this.btnadd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -60,9 +60,9 @@
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.Desktop;
             this.groupBox1.Location = new System.Drawing.Point(3, 231);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(867, 1);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
@@ -72,7 +72,7 @@
             // 
             this.lvstudentssubjects.HideSelection = false;
             this.lvstudentssubjects.Location = new System.Drawing.Point(6, 35);
-            this.lvstudentssubjects.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lvstudentssubjects.Margin = new System.Windows.Forms.Padding(2);
             this.lvstudentssubjects.Name = "lvstudentssubjects";
             this.lvstudentssubjects.Size = new System.Drawing.Size(545, 193);
             this.lvstudentssubjects.TabIndex = 20;
@@ -94,8 +94,8 @@
             this.btnsub.AutoSize = true;
             this.btnsub.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsub.Image = global::SchoolManagementSystem.Properties.Resources.icons8_add_32__1_;
-            this.btnsub.Location = new System.Drawing.Point(539, 254);
-            this.btnsub.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnsub.Location = new System.Drawing.Point(593, 246);
+            this.btnsub.Margin = new System.Windows.Forms.Padding(2);
             this.btnsub.Name = "btnsub";
             this.btnsub.Size = new System.Drawing.Size(131, 47);
             this.btnsub.TabIndex = 25;
@@ -107,7 +107,7 @@
             // 
             this.txtgrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtgrade.Location = new System.Drawing.Point(608, 65);
-            this.txtgrade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtgrade.Margin = new System.Windows.Forms.Padding(2);
             this.txtgrade.Name = "txtgrade";
             this.txtgrade.Size = new System.Drawing.Size(125, 20);
             this.txtgrade.TabIndex = 28;
@@ -131,8 +131,8 @@
             this.button1.AutoSize = true;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::SchoolManagementSystem.Properties.Resources.icons8_export_32;
-            this.button1.Location = new System.Drawing.Point(359, 254);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(416, 246);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(90, 47);
             this.button1.TabIndex = 57;
@@ -145,8 +145,8 @@
             this.button2.AutoSize = true;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = global::SchoolManagementSystem.Properties.Resources.icons8_refresh_32;
-            this.button2.Location = new System.Drawing.Point(176, 254);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Location = new System.Drawing.Point(235, 246);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 47);
             this.button2.TabIndex = 58;
@@ -159,8 +159,8 @@
             this.button3.AutoSize = true;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Image = global::SchoolManagementSystem.Properties.Resources.icons8_print_32;
-            this.button3.Location = new System.Drawing.Point(276, 254);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Location = new System.Drawing.Point(336, 246);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(79, 47);
             this.button3.TabIndex = 59;
@@ -173,8 +173,8 @@
             this.button4.AutoSize = true;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Image = global::SchoolManagementSystem.Properties.Resources.icons8_close_32;
-            this.button4.Location = new System.Drawing.Point(449, 254);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Location = new System.Drawing.Point(507, 246);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(85, 47);
             this.button4.TabIndex = 60;
@@ -187,8 +187,8 @@
             this.button5.AutoSize = true;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Image = global::SchoolManagementSystem.Properties.Resources.icons8_delete_32;
-            this.button5.Location = new System.Drawing.Point(85, 254);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.Location = new System.Drawing.Point(143, 246);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(91, 47);
             this.button5.TabIndex = 61;
@@ -213,7 +213,7 @@
             this.Controls.Add(this.btnadd);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lvstudentssubjects);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GradesForm";
             this.Text = "GradesForm";
             this.ResumeLayout(false);

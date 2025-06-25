@@ -55,9 +55,9 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(5, 398);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(873, 1);
             this.groupBox1.TabIndex = 52;
             this.groupBox1.TabStop = false;
@@ -68,7 +68,7 @@
             this.dtp.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp.Location = new System.Drawing.Point(120, 290);
-            this.dtp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtp.Margin = new System.Windows.Forms.Padding(2);
             this.dtp.Name = "dtp";
             this.dtp.Size = new System.Drawing.Size(275, 26);
             this.dtp.TabIndex = 79;
@@ -78,7 +78,7 @@
             this.rdofemale.AutoSize = true;
             this.rdofemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdofemale.Location = new System.Drawing.Point(256, 196);
-            this.rdofemale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdofemale.Margin = new System.Windows.Forms.Padding(2);
             this.rdofemale.Name = "rdofemale";
             this.rdofemale.Size = new System.Drawing.Size(80, 24);
             this.rdofemale.TabIndex = 76;
@@ -91,7 +91,7 @@
             this.rdomale.AutoSize = true;
             this.rdomale.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdomale.Location = new System.Drawing.Point(121, 197);
-            this.rdomale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdomale.Margin = new System.Windows.Forms.Padding(2);
             this.rdomale.Name = "rdomale";
             this.rdomale.Size = new System.Drawing.Size(61, 24);
             this.rdomale.TabIndex = 75;
@@ -104,7 +104,7 @@
             this.cbograde.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbograde.FormattingEnabled = true;
             this.cbograde.Location = new System.Drawing.Point(120, 241);
-            this.cbograde.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbograde.Margin = new System.Windows.Forms.Padding(2);
             this.cbograde.Name = "cbograde";
             this.cbograde.Size = new System.Drawing.Size(155, 28);
             this.cbograde.TabIndex = 77;
@@ -114,7 +114,7 @@
             this.txtlname.BackColor = System.Drawing.SystemColors.Control;
             this.txtlname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtlname.Location = new System.Drawing.Point(120, 148);
-            this.txtlname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtlname.Margin = new System.Windows.Forms.Padding(2);
             this.txtlname.Name = "txtlname";
             this.txtlname.Size = new System.Drawing.Size(217, 26);
             this.txtlname.TabIndex = 70;
@@ -157,7 +157,7 @@
             this.txtfname.BackColor = System.Drawing.SystemColors.Control;
             this.txtfname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtfname.Location = new System.Drawing.Point(120, 100);
-            this.txtfname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtfname.Margin = new System.Windows.Forms.Padding(2);
             this.txtfname.Name = "txtfname";
             this.txtfname.Size = new System.Drawing.Size(217, 26);
             this.txtfname.TabIndex = 69;
@@ -189,7 +189,7 @@
             this.txtadd.BackColor = System.Drawing.SystemColors.Control;
             this.txtadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtadd.Location = new System.Drawing.Point(120, 342);
-            this.txtadd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtadd.Margin = new System.Windows.Forms.Padding(2);
             this.txtadd.Name = "txtadd";
             this.txtadd.Size = new System.Drawing.Size(217, 26);
             this.txtadd.TabIndex = 78;
@@ -210,7 +210,7 @@
             this.txtadmission.BackColor = System.Drawing.SystemColors.Control;
             this.txtadmission.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtadmission.Location = new System.Drawing.Point(120, 53);
-            this.txtadmission.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtadmission.Margin = new System.Windows.Forms.Padding(2);
             this.txtadmission.Name = "txtadmission";
             this.txtadmission.Size = new System.Drawing.Size(217, 26);
             this.txtadmission.TabIndex = 68;
@@ -246,7 +246,7 @@
             this.btnexport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnexport.Image = ((System.Drawing.Image)(resources.GetObject("btnexport.Image")));
             this.btnexport.Location = new System.Drawing.Point(216, 403);
-            this.btnexport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnexport.Margin = new System.Windows.Forms.Padding(2);
             this.btnexport.Name = "btnexport";
             this.btnexport.Size = new System.Drawing.Size(90, 48);
             this.btnexport.TabIndex = 51;
@@ -260,7 +260,7 @@
             this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnprint.Image = ((System.Drawing.Image)(resources.GetObject("btnprint.Image")));
             this.btnprint.Location = new System.Drawing.Point(134, 403);
-            this.btnprint.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnprint.Margin = new System.Windows.Forms.Padding(2);
             this.btnprint.Name = "btnprint";
             this.btnprint.Size = new System.Drawing.Size(79, 48);
             this.btnprint.TabIndex = 50;
@@ -273,8 +273,8 @@
             this.btnclose.AutoSize = true;
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclose.Image = ((System.Drawing.Image)(resources.GetObject("btnclose.Image")));
-            this.btnclose.Location = new System.Drawing.Point(310, 403);
-            this.btnclose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnclose.Location = new System.Drawing.Point(309, 403);
+            this.btnclose.Margin = new System.Windows.Forms.Padding(2);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(85, 48);
             this.btnclose.TabIndex = 49;
@@ -286,7 +286,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(404, 453);
+            this.ClientSize = new System.Drawing.Size(404, 456);
             this.Controls.Add(this.dtp);
             this.Controls.Add(this.rdofemale);
             this.Controls.Add(this.rdomale);
@@ -307,7 +307,7 @@
             this.Controls.Add(this.btnprint);
             this.Controls.Add(this.btnclose);
             this.Controls.Add(this.lblstu);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ShowTeachersForm";
             this.Text = "ShowTeachersForm";
             this.Load += new System.EventHandler(this.ShowTeachersForm_Load);

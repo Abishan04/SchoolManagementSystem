@@ -73,7 +73,7 @@
             this.lvstudentssubjects.Location = new System.Drawing.Point(5, 30);
             this.lvstudentssubjects.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lvstudentssubjects.Name = "lvstudentssubjects";
-            this.lvstudentssubjects.Size = new System.Drawing.Size(515, 204);
+            this.lvstudentssubjects.Size = new System.Drawing.Size(522, 204);
             this.lvstudentssubjects.TabIndex = 20;
             this.lvstudentssubjects.UseCompatibleStateImageBehavior = false;
             // 
@@ -105,7 +105,7 @@
             this.btnadd.Location = new System.Drawing.Point(691, 100);
             this.btnadd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnadd.Name = "btnadd";
-            this.btnadd.Size = new System.Drawing.Size(77, 38);
+            this.btnadd.Size = new System.Drawing.Size(77, 41);
             this.btnadd.TabIndex = 33;
             this.btnadd.Text = "Add";
             this.btnadd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -116,7 +116,7 @@
             this.btnexport.AutoSize = true;
             this.btnexport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnexport.Image = global::SchoolManagementSystem.Properties.Resources.icons8_export_32;
-            this.btnexport.Location = new System.Drawing.Point(595, 243);
+            this.btnexport.Location = new System.Drawing.Point(590, 243);
             this.btnexport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnexport.Name = "btnexport";
             this.btnexport.Size = new System.Drawing.Size(90, 43);
@@ -130,7 +130,7 @@
             this.btnrefresh.AutoSize = true;
             this.btnrefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnrefresh.Image = global::SchoolManagementSystem.Properties.Resources.icons8_refresh_32;
-            this.btnrefresh.Location = new System.Drawing.Point(400, 243);
+            this.btnrefresh.Location = new System.Drawing.Point(401, 243);
             this.btnrefresh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnrefresh.Name = "btnrefresh";
             this.btnrefresh.Size = new System.Drawing.Size(100, 43);
@@ -144,7 +144,7 @@
             this.btnprint.AutoSize = true;
             this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnprint.Image = global::SchoolManagementSystem.Properties.Resources.icons8_print_32;
-            this.btnprint.Location = new System.Drawing.Point(505, 243);
+            this.btnprint.Location = new System.Drawing.Point(506, 243);
             this.btnprint.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnprint.Name = "btnprint";
             this.btnprint.Size = new System.Drawing.Size(79, 43);
@@ -172,7 +172,7 @@
             this.btndelete.AutoSize = true;
             this.btndelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndelete.Image = global::SchoolManagementSystem.Properties.Resources.icons8_delete_32;
-            this.btndelete.Location = new System.Drawing.Point(304, 243);
+            this.btndelete.Location = new System.Drawing.Point(305, 243);
             this.btndelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btndelete.Name = "btndelete";
             this.btndelete.Size = new System.Drawing.Size(91, 43);
@@ -185,7 +185,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(787, 297);
+            this.ClientSize = new System.Drawing.Size(787, 292);
             this.Controls.Add(this.btnexport);
             this.Controls.Add(this.btnrefresh);
             this.Controls.Add(this.btnprint);

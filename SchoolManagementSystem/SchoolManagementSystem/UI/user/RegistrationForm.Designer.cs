@@ -143,7 +143,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(91, 54);
+            this.pictureBox1.Location = new System.Drawing.Point(104, 54);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(107, 94);
@@ -156,10 +156,10 @@
             this.btnreset.AutoSize = true;
             this.btnreset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnreset.Image = ((System.Drawing.Image)(resources.GetObject("btnreset.Image")));
-            this.btnreset.Location = new System.Drawing.Point(29, 337);
+            this.btnreset.Location = new System.Drawing.Point(20, 337);
             this.btnreset.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnreset.Name = "btnreset";
-            this.btnreset.Size = new System.Drawing.Size(87, 38);
+            this.btnreset.Size = new System.Drawing.Size(87, 46);
             this.btnreset.TabIndex = 15;
             this.btnreset.Text = "Reset";
             this.btnreset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -171,10 +171,10 @@
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclose.Image = ((System.Drawing.Image)(resources.GetObject("btnclose.Image")));
             this.btnclose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnclose.Location = new System.Drawing.Point(215, 337);
+            this.btnclose.Location = new System.Drawing.Point(210, 337);
             this.btnclose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(85, 38);
+            this.btnclose.Size = new System.Drawing.Size(85, 46);
             this.btnclose.TabIndex = 15;
             this.btnclose.Text = "Close";
             this.btnclose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -186,10 +186,10 @@
             this.btnregister.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnregister.Image = ((System.Drawing.Image)(resources.GetObject("btnregister.Image")));
             this.btnregister.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnregister.Location = new System.Drawing.Point(117, 337);
+            this.btnregister.Location = new System.Drawing.Point(107, 337);
             this.btnregister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnregister.Name = "btnregister";
-            this.btnregister.Size = new System.Drawing.Size(103, 38);
+            this.btnregister.Size = new System.Drawing.Size(103, 46);
             this.btnregister.TabIndex = 15;
             this.btnregister.Text = "Register";
             this.btnregister.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -211,7 +211,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(314, 383);
+            this.ClientSize = new System.Drawing.Size(314, 390);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblname);
             this.Controls.Add(this.pictureBox1);

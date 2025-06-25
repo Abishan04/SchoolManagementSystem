@@ -54,9 +54,11 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(-1, 645);
+            this.groupBox1.Location = new System.Drawing.Point(-1, 419);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1309, 1);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(873, 1);
             this.groupBox1.TabIndex = 46;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
@@ -68,8 +70,9 @@
             this.lblstu.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblstu.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblstu.Location = new System.Drawing.Point(0, 0);
+            this.lblstu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblstu.Name = "lblstu";
-            this.lblstu.Size = new System.Drawing.Size(598, 43);
+            this.lblstu.Size = new System.Drawing.Size(399, 28);
             this.lblstu.TabIndex = 35;
             this.lblstu.Text = "Students Detail";
             this.lblstu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -78,18 +81,20 @@
             // 
             this.dtp.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp.Location = new System.Drawing.Point(180, 458);
+            this.dtp.Location = new System.Drawing.Point(120, 298);
+            this.dtp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtp.Name = "dtp";
-            this.dtp.Size = new System.Drawing.Size(410, 35);
+            this.dtp.Size = new System.Drawing.Size(275, 26);
             this.dtp.TabIndex = 74;
             // 
             // rdofemale
             // 
             this.rdofemale.AutoSize = true;
             this.rdofemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdofemale.Location = new System.Drawing.Point(384, 314);
+            this.rdofemale.Location = new System.Drawing.Point(256, 204);
+            this.rdofemale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdofemale.Name = "rdofemale";
-            this.rdofemale.Size = new System.Drawing.Size(120, 33);
+            this.rdofemale.Size = new System.Drawing.Size(80, 24);
             this.rdofemale.TabIndex = 71;
             this.rdofemale.TabStop = true;
             this.rdofemale.Text = "Female";
@@ -99,9 +104,10 @@
             // 
             this.rdomale.AutoSize = true;
             this.rdomale.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdomale.Location = new System.Drawing.Point(181, 315);
+            this.rdomale.Location = new System.Drawing.Point(121, 205);
+            this.rdomale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdomale.Name = "rdomale";
-            this.rdomale.Size = new System.Drawing.Size(91, 33);
+            this.rdomale.Size = new System.Drawing.Size(61, 24);
             this.rdomale.TabIndex = 70;
             this.rdomale.TabStop = true;
             this.rdomale.Text = "Male";
@@ -111,27 +117,30 @@
             // 
             this.cbograde.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbograde.FormattingEnabled = true;
-            this.cbograde.Location = new System.Drawing.Point(180, 383);
+            this.cbograde.Location = new System.Drawing.Point(120, 249);
+            this.cbograde.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbograde.Name = "cbograde";
-            this.cbograde.Size = new System.Drawing.Size(230, 37);
+            this.cbograde.Size = new System.Drawing.Size(155, 28);
             this.cbograde.TabIndex = 72;
             // 
             // txtlname
             // 
             this.txtlname.BackColor = System.Drawing.SystemColors.Control;
             this.txtlname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtlname.Location = new System.Drawing.Point(180, 239);
+            this.txtlname.Location = new System.Drawing.Point(120, 155);
+            this.txtlname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtlname.Name = "txtlname";
-            this.txtlname.Size = new System.Drawing.Size(324, 35);
+            this.txtlname.Size = new System.Drawing.Size(217, 26);
             this.txtlname.TabIndex = 69;
             // 
             // lblgrade
             // 
             this.lblgrade.AutoSize = true;
             this.lblgrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblgrade.Location = new System.Drawing.Point(12, 392);
+            this.lblgrade.Location = new System.Drawing.Point(8, 255);
+            this.lblgrade.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblgrade.Name = "lblgrade";
-            this.lblgrade.Size = new System.Drawing.Size(80, 29);
+            this.lblgrade.Size = new System.Drawing.Size(54, 20);
             this.lblgrade.TabIndex = 65;
             this.lblgrade.Text = "Grade";
             // 
@@ -139,9 +148,10 @@
             // 
             this.lblgender.AutoSize = true;
             this.lblgender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblgender.Location = new System.Drawing.Point(12, 318);
+            this.lblgender.Location = new System.Drawing.Point(8, 207);
+            this.lblgender.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblgender.Name = "lblgender";
-            this.lblgender.Size = new System.Drawing.Size(94, 29);
+            this.lblgender.Size = new System.Drawing.Size(63, 20);
             this.lblgender.TabIndex = 64;
             this.lblgender.Text = "Gender";
             // 
@@ -149,9 +159,10 @@
             // 
             this.lbllname.AutoSize = true;
             this.lbllname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbllname.Location = new System.Drawing.Point(12, 244);
+            this.lbllname.Location = new System.Drawing.Point(8, 159);
+            this.lbllname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbllname.Name = "lbllname";
-            this.lbllname.Size = new System.Drawing.Size(128, 29);
+            this.lbllname.Size = new System.Drawing.Size(86, 20);
             this.lbllname.TabIndex = 63;
             this.lbllname.Text = "Last Name";
             // 
@@ -159,18 +170,20 @@
             // 
             this.txtfname.BackColor = System.Drawing.SystemColors.Control;
             this.txtfname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtfname.Location = new System.Drawing.Point(180, 166);
+            this.txtfname.Location = new System.Drawing.Point(120, 108);
+            this.txtfname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtfname.Name = "txtfname";
-            this.txtfname.Size = new System.Drawing.Size(324, 35);
+            this.txtfname.Size = new System.Drawing.Size(217, 26);
             this.txtfname.TabIndex = 68;
             // 
             // lblfname
             // 
             this.lblfname.AutoSize = true;
             this.lblfname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblfname.Location = new System.Drawing.Point(12, 170);
+            this.lblfname.Location = new System.Drawing.Point(8, 110);
+            this.lblfname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblfname.Name = "lblfname";
-            this.lblfname.Size = new System.Drawing.Size(131, 29);
+            this.lblfname.Size = new System.Drawing.Size(86, 20);
             this.lblfname.TabIndex = 62;
             this.lblfname.Text = "First Name";
             // 
@@ -178,9 +191,10 @@
             // 
             this.lbldob.AutoSize = true;
             this.lbldob.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldob.Location = new System.Drawing.Point(12, 466);
+            this.lbldob.Location = new System.Drawing.Point(8, 303);
+            this.lbldob.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbldob.Name = "lbldob";
-            this.lbldob.Size = new System.Drawing.Size(144, 29);
+            this.lbldob.Size = new System.Drawing.Size(99, 20);
             this.lbldob.TabIndex = 61;
             this.lbldob.Text = "Date of Birth";
             // 
@@ -188,18 +202,20 @@
             // 
             this.txtadd.BackColor = System.Drawing.SystemColors.Control;
             this.txtadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtadd.Location = new System.Drawing.Point(180, 538);
+            this.txtadd.Location = new System.Drawing.Point(120, 350);
+            this.txtadd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtadd.Name = "txtadd";
-            this.txtadd.Size = new System.Drawing.Size(324, 35);
+            this.txtadd.Size = new System.Drawing.Size(217, 26);
             this.txtadd.TabIndex = 73;
             // 
             // lbladd
             // 
             this.lbladd.AutoSize = true;
             this.lbladd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbladd.Location = new System.Drawing.Point(12, 540);
+            this.lbladd.Location = new System.Drawing.Point(8, 351);
+            this.lbladd.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbladd.Name = "lbladd";
-            this.lbladd.Size = new System.Drawing.Size(102, 29);
+            this.lbladd.Size = new System.Drawing.Size(68, 20);
             this.lbladd.TabIndex = 60;
             this.lbladd.Text = "Address";
             // 
@@ -207,18 +223,20 @@
             // 
             this.txtadmission.BackColor = System.Drawing.SystemColors.Control;
             this.txtadmission.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtadmission.Location = new System.Drawing.Point(180, 93);
+            this.txtadmission.Location = new System.Drawing.Point(120, 60);
+            this.txtadmission.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtadmission.Name = "txtadmission";
-            this.txtadmission.Size = new System.Drawing.Size(324, 35);
+            this.txtadmission.Size = new System.Drawing.Size(217, 26);
             this.txtadmission.TabIndex = 67;
             // 
             // lbladmission
             // 
             this.lbladmission.AutoSize = true;
             this.lbladmission.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbladmission.Location = new System.Drawing.Point(12, 96);
+            this.lbladmission.Location = new System.Drawing.Point(8, 62);
+            this.lbladmission.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbladmission.Name = "lbladmission";
-            this.lbladmission.Size = new System.Drawing.Size(163, 29);
+            this.lbladmission.Size = new System.Drawing.Size(106, 20);
             this.lbladmission.TabIndex = 66;
             this.lbladmission.Text = "Admission No";
             // 
@@ -227,9 +245,10 @@
             this.btnexport.AutoSize = true;
             this.btnexport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnexport.Image = ((System.Drawing.Image)(resources.GetObject("btnexport.Image")));
-            this.btnexport.Location = new System.Drawing.Point(232, 663);
+            this.btnexport.Location = new System.Drawing.Point(212, 424);
+            this.btnexport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnexport.Name = "btnexport";
-            this.btnexport.Size = new System.Drawing.Size(127, 45);
+            this.btnexport.Size = new System.Drawing.Size(90, 41);
             this.btnexport.TabIndex = 77;
             this.btnexport.Text = "Export";
             this.btnexport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -240,9 +259,10 @@
             this.btnprint.AutoSize = true;
             this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnprint.Image = ((System.Drawing.Image)(resources.GetObject("btnprint.Image")));
-            this.btnprint.Location = new System.Drawing.Point(105, 663);
+            this.btnprint.Location = new System.Drawing.Point(127, 424);
+            this.btnprint.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnprint.Name = "btnprint";
-            this.btnprint.Size = new System.Drawing.Size(117, 45);
+            this.btnprint.Size = new System.Drawing.Size(79, 41);
             this.btnprint.TabIndex = 76;
             this.btnprint.Text = "Print";
             this.btnprint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -253,9 +273,10 @@
             this.btnclose.AutoSize = true;
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclose.Image = ((System.Drawing.Image)(resources.GetObject("btnclose.Image")));
-            this.btnclose.Location = new System.Drawing.Point(369, 663);
+            this.btnclose.Location = new System.Drawing.Point(303, 424);
+            this.btnclose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(125, 45);
+            this.btnclose.Size = new System.Drawing.Size(85, 41);
             this.btnclose.TabIndex = 75;
             this.btnclose.Text = "Close";
             this.btnclose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -263,9 +284,9 @@
             // 
             // ShowStudentsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(598, 720);
+            this.ClientSize = new System.Drawing.Size(399, 473);
             this.Controls.Add(this.btnexport);
             this.Controls.Add(this.btnprint);
             this.Controls.Add(this.btnclose);
@@ -286,8 +307,10 @@
             this.Controls.Add(this.lbladmission);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblstu);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ShowStudentsForm";
             this.Text = "ShowStudentsForm";
+            this.Load += new System.EventHandler(this.ShowStudentsForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
