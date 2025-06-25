@@ -1,5 +1,7 @@
 ﻿using SchoolManagementSystem.Model;
+using SchoolManagementSystem.UI.Grades;
 using SchoolManagementSystem.UI.Students;
+using SchoolManagementSystem.UI.user;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +20,7 @@ namespace SchoolManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CreateStudentsForm());
+            Application.Run(new GradesForm());
         }
     }
 }

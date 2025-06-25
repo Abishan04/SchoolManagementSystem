@@ -29,95 +29,144 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
-            this.btnlogin = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblpass = new System.Windows.Forms.Label();
-            this.lbllogin = new System.Windows.Forms.Label();
             this.lbluser = new System.Windows.Forms.Label();
+            this.lblname = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnreset = new System.Windows.Forms.Button();
+            this.btnclose = new System.Windows.Forms.Button();
+            this.btnlogin = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnlogin
-            // 
-            this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnlogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnlogin.Location = new System.Drawing.Point(692, 313);
-            this.btnlogin.Name = "btnlogin";
-            this.btnlogin.Size = new System.Drawing.Size(89, 39);
-            this.btnlogin.TabIndex = 14;
-            this.btnlogin.Text = "Login";
-            this.btnlogin.UseVisualStyleBackColor = true;
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(692, 245);
+            this.textBox2.Location = new System.Drawing.Point(193, 332);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(201, 35);
+            this.textBox2.Size = new System.Drawing.Size(201, 26);
             this.textBox2.TabIndex = 12;
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(692, 185);
+            this.textBox1.Location = new System.Drawing.Point(193, 272);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(201, 35);
+            this.textBox1.Size = new System.Drawing.Size(201, 26);
             this.textBox1.TabIndex = 13;
             // 
             // lblpass
             // 
             this.lblpass.AutoSize = true;
             this.lblpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblpass.Location = new System.Drawing.Point(507, 251);
+            this.lblpass.Location = new System.Drawing.Point(12, 338);
             this.lblpass.Name = "lblpass";
-            this.lblpass.Size = new System.Drawing.Size(120, 29);
+            this.lblpass.Size = new System.Drawing.Size(78, 20);
             this.lblpass.TabIndex = 9;
             this.lblpass.Text = "Password";
-            // 
-            // lbllogin
-            // 
-            this.lbllogin.AutoSize = true;
-            this.lbllogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbllogin.Location = new System.Drawing.Point(483, 53);
-            this.lbllogin.Name = "lbllogin";
-            this.lbllogin.Size = new System.Drawing.Size(212, 82);
-            this.lbllogin.TabIndex = 10;
-            this.lbllogin.Text = "Login";
             // 
             // lbluser
             // 
             this.lbluser.AutoSize = true;
             this.lbluser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbluser.Location = new System.Drawing.Point(507, 191);
+            this.lbluser.Location = new System.Drawing.Point(12, 272);
             this.lbluser.Name = "lbluser";
-            this.lbluser.Size = new System.Drawing.Size(124, 29);
+            this.lbluser.Size = new System.Drawing.Size(83, 20);
             this.lbluser.TabIndex = 11;
             this.lbluser.Text = "Username";
             // 
+            // lblname
+            // 
+            this.lblname.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.lblname.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblname.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblname.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblname.Location = new System.Drawing.Point(0, 0);
+            this.lblname.Name = "lblname";
+            this.lblname.Size = new System.Drawing.Size(436, 57);
+            this.lblname.TabIndex = 56;
+            this.lblname.Text = "Login";
+            this.lblname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // pictureBox1
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(138, 85);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(467, 450);
+            this.pictureBox1.Size = new System.Drawing.Size(160, 162);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabIndex = 57;
             this.pictureBox1.TabStop = false;
+            // 
+            // btnreset
+            // 
+            this.btnreset.AutoSize = true;
+            this.btnreset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnreset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnreset.Image = ((System.Drawing.Image)(resources.GetObject("btnreset.Image")));
+            this.btnreset.Location = new System.Drawing.Point(12, 419);
+            this.btnreset.Name = "btnreset";
+            this.btnreset.Size = new System.Drawing.Size(122, 40);
+            this.btnreset.TabIndex = 14;
+            this.btnreset.Text = "Reset";
+            this.btnreset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnreset.UseVisualStyleBackColor = true;
+            // 
+            // btnclose
+            // 
+            this.btnclose.AutoSize = true;
+            this.btnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnclose.Image = ((System.Drawing.Image)(resources.GetObject("btnclose.Image")));
+            this.btnclose.Location = new System.Drawing.Point(304, 419);
+            this.btnclose.Name = "btnclose";
+            this.btnclose.Size = new System.Drawing.Size(120, 40);
+            this.btnclose.TabIndex = 14;
+            this.btnclose.Text = "Close";
+            this.btnclose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnclose.UseVisualStyleBackColor = true;
+            // 
+            // btnlogin
+            // 
+            this.btnlogin.AutoSize = true;
+            this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnlogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlogin.Image = ((System.Drawing.Image)(resources.GetObject("btnlogin.Image")));
+            this.btnlogin.Location = new System.Drawing.Point(158, 419);
+            this.btnlogin.Name = "btnlogin";
+            this.btnlogin.Size = new System.Drawing.Size(122, 40);
+            this.btnlogin.TabIndex = 14;
+            this.btnlogin.Text = "Login";
+            this.btnlogin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnlogin.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Black;
+            this.groupBox1.Location = new System.Drawing.Point(8, 403);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(700, 1);
+            this.groupBox1.TabIndex = 58;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(912, 450);
+            this.ClientSize = new System.Drawing.Size(436, 471);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.lblname);
+            this.Controls.Add(this.btnreset);
+            this.Controls.Add(this.btnclose);
             this.Controls.Add(this.btnlogin);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblpass);
-            this.Controls.Add(this.lbllogin);
             this.Controls.Add(this.lbluser);
             this.Font = new System.Drawing.Font("Arial Narrow", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "LoginForm";
@@ -134,8 +183,11 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lblpass;
-        private System.Windows.Forms.Label lbllogin;
         private System.Windows.Forms.Label lbluser;
+        private System.Windows.Forms.Label lblname;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnreset;
+        private System.Windows.Forms.Button btnclose;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

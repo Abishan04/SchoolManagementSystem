@@ -16,5 +16,10 @@ namespace SchoolManagementSystem.UI.Grades_Subjects
         {
             InitializeComponent();
         }
+
+        private void GradesSubjects_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

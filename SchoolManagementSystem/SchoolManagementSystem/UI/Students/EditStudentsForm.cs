@@ -16,5 +16,20 @@ namespace SchoolManagementSystem.UI.Students
         {
             InitializeComponent();
         }
+
+        private void btnclose_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnreset_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnsave_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -54,9 +54,10 @@
             // 
             this.dtp.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp.Location = new System.Drawing.Point(196, 443);
+            this.dtp.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp.Location = new System.Drawing.Point(196, 445);
             this.dtp.Name = "dtp";
-            this.dtp.Size = new System.Drawing.Size(410, 35);
+            this.dtp.Size = new System.Drawing.Size(230, 35);
             this.dtp.TabIndex = 59;
             // 
             // rdofemale
@@ -104,32 +105,41 @@
             // 
             // btnclose
             // 
-            this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnclose.Location = new System.Drawing.Point(494, 613);
+            this.btnclose.AutoSize = true;
+            this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnclose.Image = global::SchoolManagementSystem.Properties.Resources.icons8_close_32;
+            this.btnclose.Location = new System.Drawing.Point(413, 613);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(112, 40);
             this.btnclose.TabIndex = 52;
             this.btnclose.Text = "close";
+            this.btnclose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnclose.UseVisualStyleBackColor = true;
             // 
             // btnreset
             // 
-            this.btnreset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnreset.Location = new System.Drawing.Point(258, 614);
+            this.btnreset.AutoSize = true;
+            this.btnreset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnreset.Image = global::SchoolManagementSystem.Properties.Resources.icons8_reset_32;
+            this.btnreset.Location = new System.Drawing.Point(177, 614);
             this.btnreset.Name = "btnreset";
             this.btnreset.Size = new System.Drawing.Size(112, 40);
             this.btnreset.TabIndex = 51;
             this.btnreset.Text = "reset";
+            this.btnreset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnreset.UseVisualStyleBackColor = true;
             // 
             // btnsave
             // 
-            this.btnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsave.Location = new System.Drawing.Point(376, 614);
+            this.btnsave.AutoSize = true;
+            this.btnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsave.Image = global::SchoolManagementSystem.Properties.Resources.icons8_save_32;
+            this.btnsave.Location = new System.Drawing.Point(295, 614);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(112, 40);
             this.btnsave.TabIndex = 53;
             this.btnsave.Text = "save";
+            this.btnsave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnsave.UseVisualStyleBackColor = true;
             // 
             // txtlname
@@ -236,7 +246,7 @@
             this.lbltea.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbltea.Location = new System.Drawing.Point(0, 0);
             this.lbltea.Name = "lbltea";
-            this.lbltea.Size = new System.Drawing.Size(689, 48);
+            this.lbltea.Size = new System.Drawing.Size(537, 48);
             this.lbltea.TabIndex = 46;
             this.lbltea.Text = "Create Teacher";
             this.lbltea.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -255,7 +265,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(689, 675);
+            this.ClientSize = new System.Drawing.Size(537, 675);
             this.Controls.Add(this.dtp);
             this.Controls.Add(this.rdofemale);
             this.Controls.Add(this.rdomale);

@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnsearch = new System.Windows.Forms.Button();
-            this.lblsearch = new System.Windows.Forms.Label();
-            this.txtsearch = new System.Windows.Forms.TextBox();
             this.btnexport = new System.Windows.Forms.Button();
             this.btnrefresh = new System.Windows.Forms.Button();
             this.btnprint = new System.Windows.Forms.Button();
@@ -44,82 +41,69 @@
             this.btnadd = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnsearch
-            // 
-            this.btnsearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsearch.Location = new System.Drawing.Point(528, 53);
-            this.btnsearch.Name = "btnsearch";
-            this.btnsearch.Size = new System.Drawing.Size(94, 35);
-            this.btnsearch.TabIndex = 31;
-            this.btnsearch.Text = "search";
-            this.btnsearch.UseVisualStyleBackColor = true;
-            // 
-            // lblsearch
-            // 
-            this.lblsearch.AutoSize = true;
-            this.lblsearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblsearch.Location = new System.Drawing.Point(178, 60);
-            this.lblsearch.Name = "lblsearch";
-            this.lblsearch.Size = new System.Drawing.Size(152, 20);
-            this.lblsearch.TabIndex = 30;
-            this.lblsearch.Text = "Enter Subject Name";
-            // 
-            // txtsearch
-            // 
-            this.txtsearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsearch.Location = new System.Drawing.Point(336, 57);
-            this.txtsearch.Name = "txtsearch";
-            this.txtsearch.Size = new System.Drawing.Size(186, 26);
-            this.txtsearch.TabIndex = 29;
-            // 
             // btnexport
             // 
-            this.btnexport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnexport.Location = new System.Drawing.Point(525, 380);
+            this.btnexport.AutoSize = true;
+            this.btnexport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnexport.Image = global::SchoolManagementSystem.Properties.Resources.icons8_export_32;
+            this.btnexport.Location = new System.Drawing.Point(514, 380);
             this.btnexport.Name = "btnexport";
-            this.btnexport.Size = new System.Drawing.Size(115, 45);
+            this.btnexport.Size = new System.Drawing.Size(129, 45);
             this.btnexport.TabIndex = 23;
             this.btnexport.Text = "Export";
+            this.btnexport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnexport.UseVisualStyleBackColor = true;
             // 
             // btnrefresh
             // 
-            this.btnrefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnrefresh.Location = new System.Drawing.Point(279, 380);
+            this.btnrefresh.AutoSize = true;
+            this.btnrefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnrefresh.Image = global::SchoolManagementSystem.Properties.Resources.icons8_refresh_32;
+            this.btnrefresh.Location = new System.Drawing.Point(253, 380);
             this.btnrefresh.Name = "btnrefresh";
-            this.btnrefresh.Size = new System.Drawing.Size(115, 45);
+            this.btnrefresh.Size = new System.Drawing.Size(140, 45);
             this.btnrefresh.TabIndex = 24;
             this.btnrefresh.Text = "Refresh";
+            this.btnrefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnrefresh.UseVisualStyleBackColor = true;
             // 
             // btnprint
             // 
-            this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnprint.Location = new System.Drawing.Point(402, 380);
+            this.btnprint.AutoSize = true;
+            this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnprint.Image = global::SchoolManagementSystem.Properties.Resources.icons8_print_32;
+            this.btnprint.Location = new System.Drawing.Point(396, 380);
             this.btnprint.Name = "btnprint";
             this.btnprint.Size = new System.Drawing.Size(115, 45);
             this.btnprint.TabIndex = 25;
             this.btnprint.Text = "Print";
+            this.btnprint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnprint.UseVisualStyleBackColor = true;
             // 
             // btnclose
             // 
-            this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnclose.Location = new System.Drawing.Point(648, 380);
+            this.btnclose.AutoSize = true;
+            this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnclose.Image = global::SchoolManagementSystem.Properties.Resources.icons8_close_32;
+            this.btnclose.Location = new System.Drawing.Point(646, 380);
             this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(115, 45);
+            this.btnclose.Size = new System.Drawing.Size(136, 45);
             this.btnclose.TabIndex = 26;
             this.btnclose.Text = "Close";
+            this.btnclose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnclose.UseVisualStyleBackColor = true;
             // 
             // btndelete
             // 
-            this.btndelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndelete.Location = new System.Drawing.Point(156, 380);
+            this.btndelete.AutoSize = true;
+            this.btndelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndelete.Image = global::SchoolManagementSystem.Properties.Resources.icons8_delete_32;
+            this.btndelete.Location = new System.Drawing.Point(124, 380);
             this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(115, 45);
+            this.btndelete.Size = new System.Drawing.Size(126, 45);
             this.btndelete.TabIndex = 27;
             this.btndelete.Text = "Delete";
+            this.btndelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btndelete.UseVisualStyleBackColor = true;
             // 
             // groupBox1
@@ -140,16 +124,17 @@
             this.lblname.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblname.Location = new System.Drawing.Point(0, 0);
             this.lblname.Name = "lblname";
-            this.lblname.Size = new System.Drawing.Size(1193, 43);
+            this.lblname.Size = new System.Drawing.Size(1168, 43);
             this.lblname.TabIndex = 21;
+            this.lblname.Text = "TeachersSubjects";
             this.lblname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lvstudentssubjects
             // 
             this.lvstudentssubjects.HideSelection = false;
-            this.lvstudentssubjects.Location = new System.Drawing.Point(14, 94);
+            this.lvstudentssubjects.Location = new System.Drawing.Point(14, 46);
             this.lvstudentssubjects.Name = "lvstudentssubjects";
-            this.lvstudentssubjects.Size = new System.Drawing.Size(770, 243);
+            this.lvstudentssubjects.Size = new System.Drawing.Size(770, 303);
             this.lvstudentssubjects.TabIndex = 20;
             this.lvstudentssubjects.UseCompatibleStateImageBehavior = false;
             // 
@@ -157,7 +142,7 @@
             // 
             this.lblsub.AutoSize = true;
             this.lblsub.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblsub.Location = new System.Drawing.Point(803, 94);
+            this.lblsub.Location = new System.Drawing.Point(801, 94);
             this.lblsub.Name = "lblsub";
             this.lblsub.Size = new System.Drawing.Size(94, 29);
             this.lblsub.TabIndex = 40;
@@ -166,32 +151,32 @@
             // txtsub
             // 
             this.txtsub.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsub.Location = new System.Drawing.Point(971, 94);
+            this.txtsub.Location = new System.Drawing.Point(969, 94);
             this.txtsub.Name = "txtsub";
             this.txtsub.Size = new System.Drawing.Size(186, 26);
             this.txtsub.TabIndex = 39;
             // 
             // btnadd
             // 
-            this.btnadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnadd.Location = new System.Drawing.Point(1042, 156);
+            this.btnadd.AutoSize = true;
+            this.btnadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnadd.Image = global::SchoolManagementSystem.Properties.Resources.icons8_add_32;
+            this.btnadd.Location = new System.Drawing.Point(1040, 156);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(115, 45);
             this.btnadd.TabIndex = 38;
             this.btnadd.Text = "Add";
+            this.btnadd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnadd.UseVisualStyleBackColor = true;
             // 
             // TeachersSubjectsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1193, 450);
+            this.ClientSize = new System.Drawing.Size(1168, 450);
             this.Controls.Add(this.lblsub);
             this.Controls.Add(this.txtsub);
             this.Controls.Add(this.btnadd);
-            this.Controls.Add(this.btnsearch);
-            this.Controls.Add(this.lblsearch);
-            this.Controls.Add(this.txtsearch);
             this.Controls.Add(this.btnexport);
             this.Controls.Add(this.btnrefresh);
             this.Controls.Add(this.btnprint);
@@ -208,10 +193,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnsearch;
-        private System.Windows.Forms.Label lblsearch;
-        private System.Windows.Forms.TextBox txtsearch;
         private System.Windows.Forms.Button btnexport;
         private System.Windows.Forms.Button btnrefresh;
         private System.Windows.Forms.Button btnprint;

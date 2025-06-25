@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShowStudentsForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnexport = new System.Windows.Forms.Button();
-            this.btnprint = new System.Windows.Forms.Button();
-            this.btnclose = new System.Windows.Forms.Button();
             this.lblstu = new System.Windows.Forms.Label();
             this.dtp = new System.Windows.Forms.DateTimePicker();
             this.rdofemale = new System.Windows.Forms.RadioButton();
@@ -48,47 +46,20 @@
             this.lbladd = new System.Windows.Forms.Label();
             this.txtadmission = new System.Windows.Forms.TextBox();
             this.lbladmission = new System.Windows.Forms.Label();
+            this.btnexport = new System.Windows.Forms.Button();
+            this.btnprint = new System.Windows.Forms.Button();
+            this.btnclose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(-2, 787);
+            this.groupBox1.Location = new System.Drawing.Point(-1, 645);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1309, 1);
             this.groupBox1.TabIndex = 46;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
-            // 
-            // btnexport
-            // 
-            this.btnexport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnexport.Location = new System.Drawing.Point(351, 794);
-            this.btnexport.Name = "btnexport";
-            this.btnexport.Size = new System.Drawing.Size(110, 45);
-            this.btnexport.TabIndex = 43;
-            this.btnexport.Text = "Export";
-            this.btnexport.UseVisualStyleBackColor = true;
-            // 
-            // btnprint
-            // 
-            this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnprint.Location = new System.Drawing.Point(222, 794);
-            this.btnprint.Name = "btnprint";
-            this.btnprint.Size = new System.Drawing.Size(110, 45);
-            this.btnprint.TabIndex = 41;
-            this.btnprint.Text = "Print";
-            this.btnprint.UseVisualStyleBackColor = true;
-            // 
-            // btnclose
-            // 
-            this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnclose.Location = new System.Drawing.Point(480, 794);
-            this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(110, 45);
-            this.btnclose.TabIndex = 39;
-            this.btnclose.Text = "Close";
-            this.btnclose.UseVisualStyleBackColor = true;
             // 
             // lblstu
             // 
@@ -251,11 +222,53 @@
             this.lbladmission.TabIndex = 66;
             this.lbladmission.Text = "Admission No";
             // 
+            // btnexport
+            // 
+            this.btnexport.AutoSize = true;
+            this.btnexport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnexport.Image = ((System.Drawing.Image)(resources.GetObject("btnexport.Image")));
+            this.btnexport.Location = new System.Drawing.Point(232, 663);
+            this.btnexport.Name = "btnexport";
+            this.btnexport.Size = new System.Drawing.Size(127, 45);
+            this.btnexport.TabIndex = 77;
+            this.btnexport.Text = "Export";
+            this.btnexport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnexport.UseVisualStyleBackColor = true;
+            // 
+            // btnprint
+            // 
+            this.btnprint.AutoSize = true;
+            this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnprint.Image = ((System.Drawing.Image)(resources.GetObject("btnprint.Image")));
+            this.btnprint.Location = new System.Drawing.Point(105, 663);
+            this.btnprint.Name = "btnprint";
+            this.btnprint.Size = new System.Drawing.Size(117, 45);
+            this.btnprint.TabIndex = 76;
+            this.btnprint.Text = "Print";
+            this.btnprint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnprint.UseVisualStyleBackColor = true;
+            // 
+            // btnclose
+            // 
+            this.btnclose.AutoSize = true;
+            this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnclose.Image = ((System.Drawing.Image)(resources.GetObject("btnclose.Image")));
+            this.btnclose.Location = new System.Drawing.Point(369, 663);
+            this.btnclose.Name = "btnclose";
+            this.btnclose.Size = new System.Drawing.Size(125, 45);
+            this.btnclose.TabIndex = 75;
+            this.btnclose.Text = "Close";
+            this.btnclose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnclose.UseVisualStyleBackColor = true;
+            // 
             // ShowStudentsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(598, 862);
+            this.ClientSize = new System.Drawing.Size(598, 720);
+            this.Controls.Add(this.btnexport);
+            this.Controls.Add(this.btnprint);
+            this.Controls.Add(this.btnclose);
             this.Controls.Add(this.dtp);
             this.Controls.Add(this.rdofemale);
             this.Controls.Add(this.rdomale);
@@ -272,9 +285,6 @@
             this.Controls.Add(this.txtadmission);
             this.Controls.Add(this.lbladmission);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnexport);
-            this.Controls.Add(this.btnprint);
-            this.Controls.Add(this.btnclose);
             this.Controls.Add(this.lblstu);
             this.Name = "ShowStudentsForm";
             this.Text = "ShowStudentsForm";
@@ -286,9 +296,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnexport;
-        private System.Windows.Forms.Button btnprint;
-        private System.Windows.Forms.Button btnclose;
         private System.Windows.Forms.Label lblstu;
         private System.Windows.Forms.DateTimePicker dtp;
         private System.Windows.Forms.RadioButton rdofemale;
@@ -305,5 +312,8 @@
         private System.Windows.Forms.Label lbladd;
         private System.Windows.Forms.TextBox txtadmission;
         private System.Windows.Forms.Label lbladmission;
+        private System.Windows.Forms.Button btnexport;
+        private System.Windows.Forms.Button btnprint;
+        private System.Windows.Forms.Button btnclose;
     }
 }
