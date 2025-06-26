@@ -27,3 +27,7 @@ C:\Users\user\Documents\GitHub\SchoolManagementSystem\SchoolManagementSystem\Sch
 C:\Users\user\Documents\GitHub\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.UI.Teachers.ShowTeachersForm.resources
 C:\Users\user\Documents\GitHub\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.UI.user.LoginForm.resources
 C:\Users\user\Documents\GitHub\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.UI.user.RegistrationForm.resources
+C:\Users\user\Documents\GitHub\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Debug\MySql.Data.dll
+C:\Users\user\Documents\GitHub\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Debug\System.Memory.dll
+C:\Users\user\Documents\GitHub\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\user\Documents\GitHub\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolMa.D9F7BBC0.Up2Date

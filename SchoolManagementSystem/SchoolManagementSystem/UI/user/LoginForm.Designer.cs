@@ -109,9 +109,9 @@
             this.btnreset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnreset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnreset.Image = ((System.Drawing.Image)(resources.GetObject("btnreset.Image")));
-            this.btnreset.Location = new System.Drawing.Point(46, 374);
+            this.btnreset.Location = new System.Drawing.Point(9, 374);
             this.btnreset.Name = "btnreset";
-            this.btnreset.Size = new System.Drawing.Size(89, 40);
+            this.btnreset.Size = new System.Drawing.Size(104, 40);
             this.btnreset.TabIndex = 14;
             this.btnreset.Text = "Reset";
             this.btnreset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -125,9 +125,9 @@
             this.btnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclose.Image = ((System.Drawing.Image)(resources.GetObject("btnclose.Image")));
-            this.btnclose.Location = new System.Drawing.Point(242, 374);
+            this.btnclose.Location = new System.Drawing.Point(221, 374);
             this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(87, 40);
+            this.btnclose.Size = new System.Drawing.Size(105, 40);
             this.btnclose.TabIndex = 14;
             this.btnclose.Text = "Close";
             this.btnclose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -141,9 +141,9 @@
             this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnlogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlogin.Image = ((System.Drawing.Image)(resources.GetObject("btnlogin.Image")));
-            this.btnlogin.Location = new System.Drawing.Point(145, 374);
+            this.btnlogin.Location = new System.Drawing.Point(116, 374);
             this.btnlogin.Name = "btnlogin";
-            this.btnlogin.Size = new System.Drawing.Size(87, 40);
+            this.btnlogin.Size = new System.Drawing.Size(102, 40);
             this.btnlogin.TabIndex = 14;
             this.btnlogin.Text = "Login";
             this.btnlogin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;

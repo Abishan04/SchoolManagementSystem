@@ -58,9 +58,9 @@
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.Desktop;
             this.groupBox1.Location = new System.Drawing.Point(5, 238);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(800, 1);
             this.groupBox1.TabIndex = 45;
             this.groupBox1.TabStop = false;
@@ -70,7 +70,7 @@
             // 
             this.lvsubjectsstudents.HideSelection = false;
             this.lvsubjectsstudents.Location = new System.Drawing.Point(9, 30);
-            this.lvsubjectsstudents.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lvsubjectsstudents.Margin = new System.Windows.Forms.Padding(2);
             this.lvsubjectsstudents.Name = "lvsubjectsstudents";
             this.lvsubjectsstudents.Size = new System.Drawing.Size(569, 206);
             this.lvsubjectsstudents.TabIndex = 44;
@@ -84,8 +84,8 @@
             this.btnadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnadd.Image = ((System.Drawing.Image)(resources.GetObject("btnadd.Image")));
-            this.btnadd.Location = new System.Drawing.Point(11, 243);
-            this.btnadd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnadd.Location = new System.Drawing.Point(9, 243);
+            this.btnadd.Margin = new System.Windows.Forms.Padding(2);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(75, 40);
             this.btnadd.TabIndex = 64;
@@ -101,8 +101,8 @@
             this.btndel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btndel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndel.Image = global::SchoolManagementSystem.Properties.Resources.icons8_delete_32;
-            this.btndel.Location = new System.Drawing.Point(96, 243);
-            this.btndel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btndel.Location = new System.Drawing.Point(94, 243);
+            this.btndel.Margin = new System.Windows.Forms.Padding(2);
             this.btndel.Name = "btndel";
             this.btndel.Size = new System.Drawing.Size(91, 40);
             this.btndel.TabIndex = 60;
@@ -118,8 +118,8 @@
             this.btnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclose.Image = global::SchoolManagementSystem.Properties.Resources.icons8_close_32;
-            this.btnclose.Location = new System.Drawing.Point(496, 243);
-            this.btnclose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnclose.Location = new System.Drawing.Point(494, 243);
+            this.btnclose.Margin = new System.Windows.Forms.Padding(2);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(85, 40);
             this.btnclose.TabIndex = 59;
@@ -135,8 +135,8 @@
             this.btnprint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnprint.Image = global::SchoolManagementSystem.Properties.Resources.icons8_print_32;
-            this.btnprint.Location = new System.Drawing.Point(307, 243);
-            this.btnprint.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnprint.Location = new System.Drawing.Point(305, 243);
+            this.btnprint.Margin = new System.Windows.Forms.Padding(2);
             this.btnprint.Name = "btnprint";
             this.btnprint.Size = new System.Drawing.Size(79, 40);
             this.btnprint.TabIndex = 58;
@@ -152,8 +152,8 @@
             this.btnrefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnrefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnrefresh.Image = global::SchoolManagementSystem.Properties.Resources.icons8_refresh_32;
-            this.btnrefresh.Location = new System.Drawing.Point(197, 243);
-            this.btnrefresh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnrefresh.Location = new System.Drawing.Point(195, 243);
+            this.btnrefresh.Margin = new System.Windows.Forms.Padding(2);
             this.btnrefresh.Name = "btnrefresh";
             this.btnrefresh.Size = new System.Drawing.Size(100, 40);
             this.btnrefresh.TabIndex = 57;
@@ -169,8 +169,8 @@
             this.btnex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnex.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnex.Image = global::SchoolManagementSystem.Properties.Resources.icons8_export_32;
-            this.btnex.Location = new System.Drawing.Point(396, 243);
-            this.btnex.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnex.Location = new System.Drawing.Point(394, 243);
+            this.btnex.Margin = new System.Windows.Forms.Padding(2);
             this.btnex.Name = "btnex";
             this.btnex.Size = new System.Drawing.Size(90, 40);
             this.btnex.TabIndex = 56;
@@ -193,7 +193,7 @@
             this.Controls.Add(this.lblname);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lvsubjectsstudents);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GradesSubjects";
             this.Text = "GradesSubjects";
             this.Load += new System.EventHandler(this.GradesSubjects_Load);

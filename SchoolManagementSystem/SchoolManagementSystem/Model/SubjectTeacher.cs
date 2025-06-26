@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace SchoolManagementSystem.Model
 {
-    internal class Subject
+    internal class SubjectTeacher
     {
         public int Id { get; set; }
-        public string SubjectName { get; set; }
-        public string SubjectIndex { get; set; }
-        public int SubjectOrder { get; set; }
-        public string SubjectColor { get; set; }
+        public int SubjectId { get; set; }
+        public int TeacherId { get; set; }
         public DateTime CreatedAt { get; set; }
         public string CreatedBy { get; set; }
         public DateTime UpdatedAt { get; set; }

@@ -33,7 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\Downloads\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
@@ -49,18 +53,18 @@
   <ItemGroup>
     <Compile Include="DAL\DbHelper.cs" />
     <Compile Include="DAL\GradesDal.cs" />
-    <Compile Include="DAL\GradesSubjects.cs" />
+    <Compile Include="DAL\GradesSubjectsDal.cs" />
     <Compile Include="DAL\StudentsDal.cs" />
     <Compile Include="DAL\StudentsSubjectsDal.cs" />
     <Compile Include="DAL\SubjectsDal.cs" />
     <Compile Include="DAL\SubjectsTeachersDal.cs" />
     <Compile Include="DAL\TeachersDal.cs" />
     <Compile Include="Model\Grade.cs" />
-    <Compile Include="Model\GradesSubjects.cs" />
+    <Compile Include="Model\GradeSubject.cs" />
     <Compile Include="Model\Student.cs" />
-    <Compile Include="Model\StudentsSubjects.cs" />
+    <Compile Include="Model\StudentSubject.cs" />
     <Compile Include="Model\Subject.cs" />
-    <Compile Include="Model\SubjectsTeachers.cs" />
+    <Compile Include="Model\SubjectTeacher.cs" />
     <Compile Include="Model\Teacher.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

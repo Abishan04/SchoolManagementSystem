@@ -255,10 +255,10 @@
             this.btnex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnex.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnex.Image = ((System.Drawing.Image)(resources.GetObject("btnex.Image")));
-            this.btnex.Location = new System.Drawing.Point(153, 519);
+            this.btnex.Location = new System.Drawing.Point(157, 519);
             this.btnex.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnex.Name = "btnex";
-            this.btnex.Size = new System.Drawing.Size(92, 41);
+            this.btnex.Size = new System.Drawing.Size(90, 44);
             this.btnex.TabIndex = 77;
             this.btnex.Text = "Export";
             this.btnex.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -272,10 +272,10 @@
             this.btnprint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnprint.Image = ((System.Drawing.Image)(resources.GetObject("btnprint.Image")));
-            this.btnprint.Location = new System.Drawing.Point(63, 519);
+            this.btnprint.Location = new System.Drawing.Point(70, 519);
             this.btnprint.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnprint.Name = "btnprint";
-            this.btnprint.Size = new System.Drawing.Size(81, 41);
+            this.btnprint.Size = new System.Drawing.Size(79, 44);
             this.btnprint.TabIndex = 76;
             this.btnprint.Text = "Print";
             this.btnprint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -289,10 +289,10 @@
             this.btnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclose.Image = ((System.Drawing.Image)(resources.GetObject("btnclose.Image")));
-            this.btnclose.Location = new System.Drawing.Point(254, 519);
+            this.btnclose.Location = new System.Drawing.Point(255, 519);
             this.btnclose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(87, 41);
+            this.btnclose.Size = new System.Drawing.Size(85, 44);
             this.btnclose.TabIndex = 75;
             this.btnclose.Text = "Close";
             this.btnclose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -303,7 +303,7 @@
             this.textBox2.BackColor = System.Drawing.SystemColors.Control;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(120, 290);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(217, 26);
             this.textBox2.TabIndex = 81;
@@ -324,7 +324,7 @@
             this.txttel.BackColor = System.Drawing.SystemColors.Control;
             this.txttel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttel.Location = new System.Drawing.Point(120, 246);
-            this.txttel.Margin = new System.Windows.Forms.Padding(2);
+            this.txttel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txttel.Name = "txttel";
             this.txttel.Size = new System.Drawing.Size(217, 26);
             this.txttel.TabIndex = 80;
@@ -346,7 +346,7 @@
             this.dtpA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpA.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpA.Location = new System.Drawing.Point(186, 437);
-            this.dtpA.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpA.Name = "dtpA";
             this.dtpA.Size = new System.Drawing.Size(151, 26);
             this.dtpA.TabIndex = 83;
@@ -367,7 +367,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(351, 563);
+            this.ClientSize = new System.Drawing.Size(351, 574);
             this.Controls.Add(this.dtpA);
             this.Controls.Add(this.lbldoa);
             this.Controls.Add(this.textBox2);
