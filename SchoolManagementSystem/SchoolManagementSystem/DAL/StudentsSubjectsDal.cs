@@ -90,15 +90,14 @@ namespace SchoolManagementSystem.DAL
 
         public bool DeleteStudentSubject(int id, string deletedBy)
         {
-            string query = @"UPDATE student_subject 
-                             SET deleted_at = @deletedAt, deleted_by = @deletedBy 
+            string query = @"delete student_subject 
+                             
                              WHERE id = @id";
 
             var parameters = new MySqlParameter[]
             {
                 new MySqlParameter("@id", MySqlDbType.Int32) { Value = id },
-                new MySqlParameter("@deletedAt", MySqlDbType.DateTime) { Value = DateTime.Now },
-                new MySqlParameter("@deletedBy", MySqlDbType.VarChar) { Value = deletedBy }
+
             };
 
             return DbHelper.ExecuteNonQuery(query, parameters) > 0;
