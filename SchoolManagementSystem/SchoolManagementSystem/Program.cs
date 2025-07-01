@@ -23,7 +23,7 @@ namespace SchoolManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ListTeachersForm());
+            Application.Run(new GradesForm());
         }
     }
 }

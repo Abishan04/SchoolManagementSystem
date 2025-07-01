@@ -1,4 +1,5 @@
 ﻿using ClosedXML.Excel;
+using DocumentFormat.OpenXml.Wordprocessing;
 using SchoolManagementSystem.DAL;
 using SchoolManagementSystem.Model;
 using System;
@@ -13,44 +14,36 @@ namespace SchoolManagementSystem.UI.Teachers
             InitializeComponent();
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private void btnsave_Click(object sender, EventArgs e)
         {
-            // 1. Collect input
+            // Basic validation
+            if (string.IsNullOrWhiteSpace(txtfname.Text) || string.IsNullOrWhiteSpace(txtnic.Text))
+            {
+                MessageBox.Show("First Name and NIC No are required.");
+                return;
+            }
+
             var teacher = new Teacher
             {
+                TeacherId = txtid.Text.Trim(),
                 FirstName = txtfname.Text.Trim(),
                 LastName = txtlname.Text.Trim(),
-                Gender = rdomale.Checked ? "Male" : rdofemale.Checked ? "Female" : "",
-                Telephone = txttel.Text.Trim(),
-                Nic = txtnic.Text.Trim(),
+                NIC = txtnic.Text.Trim(),
+                Gender = rdomale.Checked ? "Male" : "Female",
+                Phone = txtphone.Text.Trim(),
                 Email = txtemail.Text.Trim(),
-                Address = txtadd.Text.Trim(),
-                DateOfBirth = dtpB.Value.Date,
-                DateOfAppoint = dtpA.Value.Date,
-                CreatedAt = DateTime.Now,
-                CreatedBy = Environment.UserName // or your user tracking
+                Address = txtaddress.Text.Trim(),
+                DateOfBirth = dtpBirth.Value,
+                DateOfAppointment = dtpAppointment.Value,
+                CreatedBy = Environment.UserName,
+                CreatedAt = DateTime.Now
             };
 
-            //// 2. Validate input (simple example)
-            //if (string.IsNullOrWhiteSpace(teacher.FirstName) || string.IsNullOrWhiteSpace(teacher.LastName))
-            //{
-            //    MessageBox.Show("First Name and Last Name are required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //    return;
-            //}
+            new TeachersDal().AddTeacher(teacher);
 
-            // 3. Save to database
-            var dal = new TeachersDal();
-            try
-            {
-                int newId = dal.AddTeacher(teacher);
-                MessageBox.Show("Teacher added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.DialogResult = DialogResult.OK;
-                this.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error adding teacher: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            MessageBox.Show("Teacher saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
 
         private void btnClose_Click(object sender, EventArgs e)

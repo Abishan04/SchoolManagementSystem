@@ -1,11 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using SchoolManagementSystem.Model;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SchoolManagementSystem.DAL
 {
@@ -39,11 +35,11 @@ namespace SchoolManagementSystem.DAL
                 SubjectIndex = row["subject_index"].ToString(),
                 SubjectOrder = Convert.ToInt32(row["subject_order"]),
                 SubjectColor = row["subject_color"].ToString(),
-                CreatedAt = Convert.ToDateTime(row["created_at"]),
+                CreatedAt = row["created_at"] == DBNull.Value ? DateTime.MinValue : Convert.ToDateTime(row["created_at"]),
                 CreatedBy = row["created_by"]?.ToString(),
-                UpdatedAt = Convert.ToDateTime(row["updated_at"]),
+                UpdatedAt = row["updated_at"] == DBNull.Value ? DateTime.MinValue : Convert.ToDateTime(row["updated_at"]),
                 UpdatedBy = row["updated_by"]?.ToString(),
-                DeletedAt = Convert.ToDateTime(row["deleted_at"]),
+                DeletedAt = row["deleted_at"] == DBNull.Value ? DateTime.MinValue : Convert.ToDateTime(row["deleted_at"]),
                 DeletedBy = row["deleted_by"]?.ToString()
             };
         }
@@ -53,7 +49,7 @@ namespace SchoolManagementSystem.DAL
             string query = @"INSERT INTO subjects
                             (subject_name, subject_index, subject_order, subject_color,
                              created_at, created_by)
-                             VALUES
+                            VALUES
                             (@subjectName, @subjectIndex, @subjectOrder, @subjectColor,
                              @createdAt, @createdBy);
                              SELECT LAST_INSERT_ID();";
@@ -90,7 +86,7 @@ namespace SchoolManagementSystem.DAL
                 new MySqlParameter("@subjectOrder", MySqlDbType.Int32) { Value = subject.SubjectOrder },
                 new MySqlParameter("@subjectColor", MySqlDbType.VarChar) { Value = subject.SubjectColor },
                 new MySqlParameter("@updatedAt", MySqlDbType.DateTime) { Value = subject.UpdatedAt },
-                new MySqlParameter("@updatedBy", MySqlDbType.VarChar) { Value = subject.UpdatedBy ?? "" }
+                new MySqlParameter("@updatedBy", MySqlDbType.VarChar) { Value = subject.UpdatedBy ?? string.Empty }
             };
 
             return DbHelper.ExecuteNonQuery(query, parameters) > 0;

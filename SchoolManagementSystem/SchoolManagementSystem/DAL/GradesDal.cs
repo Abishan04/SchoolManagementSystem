@@ -1,11 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using SchoolManagementSystem.Model;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SchoolManagementSystem.DAL
 {
@@ -13,7 +9,10 @@ namespace SchoolManagementSystem.DAL
     {
         public DataTable GetAllGrades()
         {
-            string query = @"SELECT id, grade_name FROM grades ORDER BY grade_order";
+            string query = @"SELECT id, grade_name, grade_order, grade_color, grade_group 
+                             FROM grades 
+                             WHERE deleted_at IS NULL 
+                             ORDER BY grade_order";
 
             return DbHelper.GetData(query);
         }
@@ -34,12 +33,12 @@ namespace SchoolManagementSystem.DAL
                 GradeOrder = Convert.ToInt32(row["grade_order"]),
                 GradeColor = row["grade_color"].ToString(),
                 GradeGroup = row["grade_group"].ToString(),
-                CreatedAt = Convert.ToDateTime(row["created_at"]),
                 CreatedBy = row["created_by"]?.ToString(),
-                UpdatedAt = Convert.ToDateTime(row["updated_at"]),
+                CreatedAt = row["created_at"] != DBNull.Value ? Convert.ToDateTime(row["created_at"]) : DateTime.MinValue,
                 UpdatedBy = row["updated_by"]?.ToString(),
-                DeletedAt = Convert.ToDateTime(row["deleted_at"]),
-                DeletedBy = row["deleted_by"]?.ToString()
+                UpdatedAt = row["updated_at"] != DBNull.Value ? Convert.ToDateTime(row["updated_at"]) : DateTime.MinValue,
+                DeletedBy = row["deleted_by"]?.ToString(),
+                DeletedAt = row["deleted_at"] != DBNull.Value ? Convert.ToDateTime(row["deleted_at"]) : DateTime.MinValue
             };
         }
 
@@ -49,9 +48,8 @@ namespace SchoolManagementSystem.DAL
                             (grade_name, grade_order, grade_color, grade_group,
                              created_at, created_by)
                             VALUES
-                            (@gradeName, @gradeOrder, @gradeColor, @gradeGroup,
-                              @createdBy);
-                             SELECT LAST_INSERT_ID();";
+                            (@gradeName, @gradeOrder, @gradeColor, @gradeGroup, @createdAt, @createdBy);
+                            SELECT LAST_INSERT_ID();";
 
             var parameters = new MySqlParameter[]
             {
@@ -59,44 +57,49 @@ namespace SchoolManagementSystem.DAL
                 new MySqlParameter("@gradeOrder", MySqlDbType.Int32) { Value = grade.GradeOrder },
                 new MySqlParameter("@gradeColor", MySqlDbType.VarChar) { Value = grade.GradeColor },
                 new MySqlParameter("@gradeGroup", MySqlDbType.VarChar) { Value = grade.GradeGroup },
+                new MySqlParameter("@createdAt", MySqlDbType.DateTime) { Value = grade.CreatedAt },
                 new MySqlParameter("@createdBy", MySqlDbType.VarChar) { Value = grade.CreatedBy }
             };
 
             return Convert.ToInt32(DbHelper.ExecuteScalar(query, parameters));
         }
 
-        public bool UpdateGrade(Grade grade)
+        public void UpdateGrade(int id, Grade grade)
         {
-            string query = @"UPDATE grades SET
-                                grade_name = @gradeName,
-                                grade_order = @gradeOrder,
-                                grade_color = @gradeColor,
-                                grade_group = @gradeGroup,
-                                updated_by = @updatedBy
+            string query = @"UPDATE grades 
+                             SET grade_name = @name, 
+                                 grade_order = @order, 
+                                 grade_color = @color, 
+                                 grade_group = @group, 
+                                 updated_by = @user, 
+                                 updated_at = @time 
                              WHERE id = @id";
 
             var parameters = new MySqlParameter[]
             {
-                new MySqlParameter("@id", MySqlDbType.Int32) { Value = grade.Id },
-                new MySqlParameter("@gradeName", MySqlDbType.VarChar) { Value = grade.GradeName },
-                new MySqlParameter("@gradeOrder", MySqlDbType.Int32) { Value = grade.GradeOrder },
-                new MySqlParameter("@gradeColor", MySqlDbType.VarChar) { Value = grade.GradeColor },
-                new MySqlParameter("@gradeGroup", MySqlDbType.VarChar) { Value = grade.GradeGroup },
-                new MySqlParameter("@updatedAt", MySqlDbType.DateTime) { Value = grade.UpdatedAt },
-                new MySqlParameter("@updatedBy", MySqlDbType.VarChar) { Value = grade.UpdatedBy ?? "" }
+                new MySqlParameter("@name", MySqlDbType.VarChar) { Value = grade.GradeName },
+                new MySqlParameter("@order", MySqlDbType.Int32) { Value = grade.GradeOrder },
+                new MySqlParameter("@color", MySqlDbType.VarChar) { Value = grade.GradeColor },
+                new MySqlParameter("@group", MySqlDbType.VarChar) { Value = grade.GradeGroup },
+                new MySqlParameter("@user", MySqlDbType.VarChar) { Value = grade.CreatedBy },
+                new MySqlParameter("@time", MySqlDbType.DateTime) { Value = grade.CreatedAt },
+                new MySqlParameter("@id", MySqlDbType.Int32) { Value = id }
             };
 
-            return DbHelper.ExecuteNonQuery(query, parameters) > 0;
+            DbHelper.ExecuteNonQuery(query, parameters);
         }
 
-        public bool DeleteGrade(int gradeId)
+        public bool DeleteGrade(int gradeId, string deletedBy)
         {
-            string query = @"DELETE FROM grades
+            string query = @"UPDATE grades 
+                             SET deleted_at = NOW(), 
+                                 deleted_by = @deletedBy 
                              WHERE id = @gradeId";
 
             var parameters = new MySqlParameter[]
             {
                 new MySqlParameter("@gradeId", MySqlDbType.Int32) { Value = gradeId },
+                new MySqlParameter("@deletedBy", MySqlDbType.VarChar) { Value = deletedBy }
             };
 
             return DbHelper.ExecuteNonQuery(query, parameters) > 0;
