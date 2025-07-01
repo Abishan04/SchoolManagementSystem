@@ -1,10 +1,10 @@
 ﻿using MySql.Data.MySqlClient;
 using SchoolManagementSystem.Model;
-using student_management_system.DAL;
+
 using System;
 using System.Data;
 
-namespace StudentManagementSystem.DAL
+namespace SchoolManagementSystem.DAL
 {
     internal class GradeSubjectDal
     {

@@ -3,6 +3,7 @@ using SchoolManagementSystem.Model;
 using SchoolManagementSystem.UI.Grades;
 using SchoolManagementSystem.UI.Grades_Subjects;
 using SchoolManagementSystem.UI.Students;
+using SchoolManagementSystem.UI.Teachers;
 using SchoolManagementSystem.UI.user;
 using System;
 using System.Collections.Generic;
@@ -22,7 +23,7 @@ namespace SchoolManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CreateStudentsForm());
+            Application.Run(new ListTeachersForm());
         }
     }
 }

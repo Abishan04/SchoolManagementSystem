@@ -1,6 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
 using SchoolManagementSystem.Model;
-using student_management_system.DAL;
 using System;
 using System.Collections.Generic;
 using System.Data;

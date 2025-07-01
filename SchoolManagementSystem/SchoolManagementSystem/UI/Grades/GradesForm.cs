@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DocumentFormat.OpenXml.Wordprocessing;
+using SchoolManagementSystem.DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,7 +13,7 @@ using System.Windows.Forms;
 
 namespace SchoolManagementSystem.UI.Grades
 {
-    public partial class GradesForm : Form      
+    public partial class GradesForm : Form
     {
         public GradesForm()
         {
@@ -29,6 +31,7 @@ namespace SchoolManagementSystem.UI.Grades
         }
         private void GradesForm_Load(object sender, EventArgs e)
         {
+            LoadGrades();
             SetButtonRoundedRegion(btnadd);
             SetButtonRoundedRegion(btnsub);
             SetButtonRoundedRegion(btnex);
@@ -37,7 +40,37 @@ namespace SchoolManagementSystem.UI.Grades
             SetButtonRoundedRegion(btnclose);
             SetButtonRoundedRegion(btndel);
         }
+        private int selectedGradeId = 0;
+        GradesDal dal = new GradesDal();
+        private void LoadGrades()
+        {
+            dgvGrades.DataSource = dal.GetAllGrades();
+            dgvGrades.ClearSelection();
+            selectedGradeId = 0;
+        }
 
+       
+
+        private void dgvGrades_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+        
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
      
+
+           
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+       
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

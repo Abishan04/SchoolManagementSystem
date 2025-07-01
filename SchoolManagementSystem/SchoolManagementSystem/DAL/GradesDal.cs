@@ -1,6 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
 using SchoolManagementSystem.Model;
-using student_management_system.DAL;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -14,13 +13,7 @@ namespace SchoolManagementSystem.DAL
     {
         public DataTable GetAllGrades()
         {
-            string query = @"SELECT 
-                                id, grade_name, grade_order, grade_color, grade_group,
-                                created_at, created_by, updated_at, updated_by,
-                                deleted_at, deleted_by
-                             FROM grades
-                             WHERE deleted_at IS NULL
-                             ORDER BY grade_order";
+            string query = @"SELECT id, grade_name FROM grades ORDER BY grade_order";
 
             return DbHelper.GetData(query);
         }
@@ -50,7 +43,7 @@ namespace SchoolManagementSystem.DAL
             };
         }
 
-        public int AddGrade(Grade grade)
+        public int addgrade(Grade grade)
         {
             string query = @"INSERT INTO grades
                             (grade_name, grade_order, grade_color, grade_group,

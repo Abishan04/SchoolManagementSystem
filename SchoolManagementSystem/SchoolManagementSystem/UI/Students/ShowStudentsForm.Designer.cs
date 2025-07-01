@@ -78,7 +78,7 @@
             this.lblstu.Location = new System.Drawing.Point(0, 0);
             this.lblstu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblstu.Name = "lblstu";
-            this.lblstu.Size = new System.Drawing.Size(351, 28);
+            this.lblstu.Size = new System.Drawing.Size(381, 28);
             this.lblstu.TabIndex = 35;
             this.lblstu.Text = "Students Detail";
             this.lblstu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -88,17 +88,17 @@
             this.dtp.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp.Location = new System.Drawing.Point(186, 393);
+            this.dtp.Location = new System.Drawing.Point(159, 391);
             this.dtp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtp.Name = "dtp";
-            this.dtp.Size = new System.Drawing.Size(152, 26);
+            this.dtp.Size = new System.Drawing.Size(217, 26);
             this.dtp.TabIndex = 74;
             // 
             // rdofemale
             // 
             this.rdofemale.AutoSize = true;
             this.rdofemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdofemale.Location = new System.Drawing.Point(256, 204);
+            this.rdofemale.Location = new System.Drawing.Point(293, 202);
             this.rdofemale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdofemale.Name = "rdofemale";
             this.rdofemale.Size = new System.Drawing.Size(80, 24);
@@ -111,7 +111,7 @@
             // 
             this.rdomale.AutoSize = true;
             this.rdomale.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdomale.Location = new System.Drawing.Point(121, 205);
+            this.rdomale.Location = new System.Drawing.Point(159, 203);
             this.rdomale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdomale.Name = "rdomale";
             this.rdomale.Size = new System.Drawing.Size(61, 24);
@@ -124,17 +124,17 @@
             // 
             this.cbograde.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbograde.FormattingEnabled = true;
-            this.cbograde.Location = new System.Drawing.Point(186, 342);
+            this.cbograde.Location = new System.Drawing.Point(159, 340);
             this.cbograde.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbograde.Name = "cbograde";
-            this.cbograde.Size = new System.Drawing.Size(155, 28);
+            this.cbograde.Size = new System.Drawing.Size(219, 28);
             this.cbograde.TabIndex = 72;
             // 
             // txtlname
             // 
             this.txtlname.BackColor = System.Drawing.SystemColors.Control;
             this.txtlname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtlname.Location = new System.Drawing.Point(120, 155);
+            this.txtlname.Location = new System.Drawing.Point(157, 153);
             this.txtlname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtlname.Name = "txtlname";
             this.txtlname.Size = new System.Drawing.Size(217, 26);
@@ -177,7 +177,7 @@
             // 
             this.txtfname.BackColor = System.Drawing.SystemColors.Control;
             this.txtfname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtfname.Location = new System.Drawing.Point(120, 108);
+            this.txtfname.Location = new System.Drawing.Point(157, 106);
             this.txtfname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtfname.Name = "txtfname";
             this.txtfname.Size = new System.Drawing.Size(217, 26);
@@ -209,7 +209,7 @@
             // 
             this.txtadd.BackColor = System.Drawing.SystemColors.Control;
             this.txtadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtadd.Location = new System.Drawing.Point(121, 484);
+            this.txtadd.Location = new System.Drawing.Point(159, 482);
             this.txtadd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtadd.Name = "txtadd";
             this.txtadd.Size = new System.Drawing.Size(217, 26);
@@ -230,7 +230,7 @@
             // 
             this.txtadmission.BackColor = System.Drawing.SystemColors.Control;
             this.txtadmission.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtadmission.Location = new System.Drawing.Point(120, 60);
+            this.txtadmission.Location = new System.Drawing.Point(157, 58);
             this.txtadmission.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtadmission.Name = "txtadmission";
             this.txtadmission.Size = new System.Drawing.Size(217, 26);
@@ -255,7 +255,7 @@
             this.btnex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnex.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnex.Image = ((System.Drawing.Image)(resources.GetObject("btnex.Image")));
-            this.btnex.Location = new System.Drawing.Point(157, 519);
+            this.btnex.Location = new System.Drawing.Point(190, 519);
             this.btnex.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnex.Name = "btnex";
             this.btnex.Size = new System.Drawing.Size(90, 44);
@@ -272,7 +272,7 @@
             this.btnprint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnprint.Image = ((System.Drawing.Image)(resources.GetObject("btnprint.Image")));
-            this.btnprint.Location = new System.Drawing.Point(70, 519);
+            this.btnprint.Location = new System.Drawing.Point(103, 519);
             this.btnprint.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnprint.Name = "btnprint";
             this.btnprint.Size = new System.Drawing.Size(79, 44);
@@ -289,7 +289,7 @@
             this.btnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclose.Image = ((System.Drawing.Image)(resources.GetObject("btnclose.Image")));
-            this.btnclose.Location = new System.Drawing.Point(255, 519);
+            this.btnclose.Location = new System.Drawing.Point(287, 519);
             this.btnclose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(85, 44);
@@ -302,7 +302,7 @@
             // 
             this.textBox2.BackColor = System.Drawing.SystemColors.Control;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(120, 290);
+            this.textBox2.Location = new System.Drawing.Point(157, 288);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(217, 26);
@@ -323,7 +323,7 @@
             // 
             this.txttel.BackColor = System.Drawing.SystemColors.Control;
             this.txttel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttel.Location = new System.Drawing.Point(120, 246);
+            this.txttel.Location = new System.Drawing.Point(157, 244);
             this.txttel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txttel.Name = "txttel";
             this.txttel.Size = new System.Drawing.Size(217, 26);
@@ -345,10 +345,10 @@
             this.dtpA.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpA.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpA.Location = new System.Drawing.Point(186, 437);
+            this.dtpA.Location = new System.Drawing.Point(159, 435);
             this.dtpA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpA.Name = "dtpA";
-            this.dtpA.Size = new System.Drawing.Size(151, 26);
+            this.dtpA.Size = new System.Drawing.Size(215, 26);
             this.dtpA.TabIndex = 83;
             // 
             // lbldoa
@@ -367,7 +367,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(351, 574);
+            this.ClientSize = new System.Drawing.Size(381, 587);
             this.Controls.Add(this.dtpA);
             this.Controls.Add(this.lbldoa);
             this.Controls.Add(this.textBox2);

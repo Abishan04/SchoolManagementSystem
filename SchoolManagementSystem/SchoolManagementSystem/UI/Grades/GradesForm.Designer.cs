@@ -30,7 +30,6 @@
         {
             this.btnadd = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lvstudentssubjects = new System.Windows.Forms.ListView();
             this.lblgrade = new System.Windows.Forms.Label();
             this.btnsub = new System.Windows.Forms.Button();
             this.txtgrade = new System.Windows.Forms.TextBox();
@@ -46,6 +45,8 @@
             this.lblcolor = new System.Windows.Forms.Label();
             this.txtgroup = new System.Windows.Forms.TextBox();
             this.lblgroup = new System.Windows.Forms.Label();
+            this.dgvGrades = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGrades)).BeginInit();
             this.SuspendLayout();
             // 
             // btnadd
@@ -57,45 +58,32 @@
             this.btnadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnadd.ForeColor = System.Drawing.Color.Black;
             this.btnadd.Image = global::SchoolManagementSystem.Properties.Resources.icons8_add_32;
-            this.btnadd.Location = new System.Drawing.Point(720, 175);
-            this.btnadd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnadd.Location = new System.Drawing.Point(1080, 269);
             this.btnadd.Name = "btnadd";
-            this.btnadd.Size = new System.Drawing.Size(75, 38);
+            this.btnadd.Size = new System.Drawing.Size(112, 58);
             this.btnadd.TabIndex = 27;
             this.btnadd.Text = "Add";
             this.btnadd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnadd.UseVisualStyleBackColor = false;
+
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.Desktop;
-            this.groupBox1.Location = new System.Drawing.Point(3, 231);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Location = new System.Drawing.Point(4, 355);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(867, 1);
+            this.groupBox1.Size = new System.Drawing.Size(1300, 2);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
-            // 
-            // lvstudentssubjects
-            // 
-            this.lvstudentssubjects.HideSelection = false;
-            this.lvstudentssubjects.Location = new System.Drawing.Point(6, 35);
-            this.lvstudentssubjects.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.lvstudentssubjects.Name = "lvstudentssubjects";
-            this.lvstudentssubjects.Size = new System.Drawing.Size(545, 193);
-            this.lvstudentssubjects.TabIndex = 20;
-            this.lvstudentssubjects.UseCompatibleStateImageBehavior = false;
             // 
             // lblgrade
             // 
             this.lblgrade.AutoSize = true;
             this.lblgrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblgrade.Location = new System.Drawing.Point(554, 47);
-            this.lblgrade.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblgrade.Location = new System.Drawing.Point(831, 72);
             this.lblgrade.Name = "lblgrade";
-            this.lblgrade.Size = new System.Drawing.Size(100, 20);
+            this.lblgrade.Size = new System.Drawing.Size(151, 29);
             this.lblgrade.TabIndex = 29;
             this.lblgrade.Text = "Grade Name";
             // 
@@ -108,22 +96,21 @@
             this.btnsub.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsub.ForeColor = System.Drawing.Color.Black;
             this.btnsub.Image = global::SchoolManagementSystem.Properties.Resources.icons8_add_32__1_;
-            this.btnsub.Location = new System.Drawing.Point(308, 247);
-            this.btnsub.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnsub.Location = new System.Drawing.Point(462, 380);
             this.btnsub.Name = "btnsub";
-            this.btnsub.Size = new System.Drawing.Size(131, 46);
+            this.btnsub.Size = new System.Drawing.Size(196, 71);
             this.btnsub.TabIndex = 25;
             this.btnsub.Text = "Add subjects";
             this.btnsub.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnsub.UseVisualStyleBackColor = false;
+       
             // 
             // txtgrade
             // 
             this.txtgrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtgrade.Location = new System.Drawing.Point(670, 47);
-            this.txtgrade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtgrade.Location = new System.Drawing.Point(1005, 72);
             this.txtgrade.Name = "txtgrade";
-            this.txtgrade.Size = new System.Drawing.Size(125, 20);
+            this.txtgrade.Size = new System.Drawing.Size(186, 26);
             this.txtgrade.TabIndex = 28;
             // 
             // lblname
@@ -133,9 +120,8 @@
             this.lblname.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblname.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblname.Location = new System.Drawing.Point(0, 0);
-            this.lblname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblname.Name = "lblname";
-            this.lblname.Size = new System.Drawing.Size(814, 33);
+            this.lblname.Size = new System.Drawing.Size(1221, 51);
             this.lblname.TabIndex = 56;
             this.lblname.Text = "Grades";
             this.lblname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -149,10 +135,9 @@
             this.btnex.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnex.ForeColor = System.Drawing.Color.Black;
             this.btnex.Image = global::SchoolManagementSystem.Properties.Resources.icons8_export_32;
-            this.btnex.Location = new System.Drawing.Point(528, 247);
-            this.btnex.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnex.Location = new System.Drawing.Point(792, 380);
             this.btnex.Name = "btnex";
-            this.btnex.Size = new System.Drawing.Size(90, 46);
+            this.btnex.Size = new System.Drawing.Size(135, 71);
             this.btnex.TabIndex = 57;
             this.btnex.Text = "Export";
             this.btnex.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -167,10 +152,9 @@
             this.btnrefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnrefresh.ForeColor = System.Drawing.Color.Black;
             this.btnrefresh.Image = global::SchoolManagementSystem.Properties.Resources.icons8_refresh_32;
-            this.btnrefresh.Location = new System.Drawing.Point(203, 247);
-            this.btnrefresh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnrefresh.Location = new System.Drawing.Point(304, 380);
             this.btnrefresh.Name = "btnrefresh";
-            this.btnrefresh.Size = new System.Drawing.Size(100, 46);
+            this.btnrefresh.Size = new System.Drawing.Size(150, 71);
             this.btnrefresh.TabIndex = 58;
             this.btnrefresh.Text = "Refresh";
             this.btnrefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -185,10 +169,9 @@
             this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnprint.ForeColor = System.Drawing.Color.Black;
             this.btnprint.Image = global::SchoolManagementSystem.Properties.Resources.icons8_print_32;
-            this.btnprint.Location = new System.Drawing.Point(444, 247);
-            this.btnprint.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnprint.Location = new System.Drawing.Point(666, 380);
             this.btnprint.Name = "btnprint";
-            this.btnprint.Size = new System.Drawing.Size(79, 46);
+            this.btnprint.Size = new System.Drawing.Size(118, 71);
             this.btnprint.TabIndex = 59;
             this.btnprint.Text = "Print";
             this.btnprint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -203,10 +186,9 @@
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclose.ForeColor = System.Drawing.Color.Black;
             this.btnclose.Image = global::SchoolManagementSystem.Properties.Resources.icons8_close_32;
-            this.btnclose.Location = new System.Drawing.Point(623, 247);
-            this.btnclose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnclose.Location = new System.Drawing.Point(934, 380);
             this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(85, 46);
+            this.btnclose.Size = new System.Drawing.Size(128, 71);
             this.btnclose.TabIndex = 60;
             this.btnclose.Text = "Close";
             this.btnclose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -221,10 +203,9 @@
             this.btndel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndel.ForeColor = System.Drawing.Color.Black;
             this.btndel.Image = global::SchoolManagementSystem.Properties.Resources.icons8_delete_32;
-            this.btndel.Location = new System.Drawing.Point(107, 247);
-            this.btndel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btndel.Location = new System.Drawing.Point(160, 380);
             this.btndel.Name = "btndel";
-            this.btndel.Size = new System.Drawing.Size(91, 46);
+            this.btndel.Size = new System.Drawing.Size(136, 71);
             this.btndel.TabIndex = 61;
             this.btndel.Text = "Delete";
             this.btndel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -233,69 +214,74 @@
             // txtorder
             // 
             this.txtorder.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtorder.Location = new System.Drawing.Point(670, 82);
-            this.txtorder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtorder.Location = new System.Drawing.Point(1005, 126);
             this.txtorder.Name = "txtorder";
-            this.txtorder.Size = new System.Drawing.Size(125, 20);
+            this.txtorder.Size = new System.Drawing.Size(186, 26);
             this.txtorder.TabIndex = 28;
             // 
             // lblorder
             // 
             this.lblorder.AutoSize = true;
             this.lblorder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblorder.Location = new System.Drawing.Point(553, 81);
-            this.lblorder.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblorder.Location = new System.Drawing.Point(830, 125);
             this.lblorder.Name = "lblorder";
-            this.lblorder.Size = new System.Drawing.Size(98, 20);
+            this.lblorder.Size = new System.Drawing.Size(149, 29);
             this.lblorder.TabIndex = 29;
             this.lblorder.Text = "Grade Order";
             // 
             // txtcolor
             // 
             this.txtcolor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcolor.Location = new System.Drawing.Point(670, 116);
-            this.txtcolor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtcolor.Location = new System.Drawing.Point(1005, 178);
             this.txtcolor.Name = "txtcolor";
-            this.txtcolor.Size = new System.Drawing.Size(125, 20);
+            this.txtcolor.Size = new System.Drawing.Size(186, 26);
             this.txtcolor.TabIndex = 28;
             // 
             // lblcolor
             // 
             this.lblcolor.AutoSize = true;
             this.lblcolor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcolor.Location = new System.Drawing.Point(553, 114);
-            this.lblcolor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblcolor.Location = new System.Drawing.Point(830, 175);
             this.lblcolor.Name = "lblcolor";
-            this.lblcolor.Size = new System.Drawing.Size(95, 20);
+            this.lblcolor.Size = new System.Drawing.Size(145, 29);
             this.lblcolor.TabIndex = 29;
             this.lblcolor.Text = "Grade Color";
             // 
             // txtgroup
             // 
             this.txtgroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtgroup.Location = new System.Drawing.Point(670, 151);
-            this.txtgroup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtgroup.Location = new System.Drawing.Point(1005, 232);
             this.txtgroup.Name = "txtgroup";
-            this.txtgroup.Size = new System.Drawing.Size(125, 20);
+            this.txtgroup.Size = new System.Drawing.Size(186, 26);
             this.txtgroup.TabIndex = 28;
             // 
             // lblgroup
             // 
             this.lblgroup.AutoSize = true;
             this.lblgroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblgroup.Location = new System.Drawing.Point(553, 147);
-            this.lblgroup.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblgroup.Location = new System.Drawing.Point(830, 226);
             this.lblgroup.Name = "lblgroup";
-            this.lblgroup.Size = new System.Drawing.Size(103, 20);
+            this.lblgroup.Size = new System.Drawing.Size(153, 29);
             this.lblgroup.TabIndex = 29;
             this.lblgroup.Text = "Grade Group";
             // 
+            // dgvGrades
+            // 
+            this.dgvGrades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGrades.Location = new System.Drawing.Point(12, 63);
+            this.dgvGrades.Name = "dgvGrades";
+            this.dgvGrades.RowHeadersWidth = 62;
+            this.dgvGrades.RowTemplate.Height = 28;
+            this.dgvGrades.Size = new System.Drawing.Size(813, 276);
+            this.dgvGrades.TabIndex = 62;
+            // 
             // GradesForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(814, 296);
+            this.ClientSize = new System.Drawing.Size(1221, 455);
+            this.Controls.Add(this.dgvGrades);
             this.Controls.Add(this.btnex);
             this.Controls.Add(this.btnrefresh);
             this.Controls.Add(this.btnprint);
@@ -313,11 +299,10 @@
             this.Controls.Add(this.btnsub);
             this.Controls.Add(this.btnadd);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.lvstudentssubjects);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "GradesForm";
             this.Text = "GradesForm";
             this.Load += new System.EventHandler(this.GradesForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGrades)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -326,7 +311,6 @@
         #endregion
         private System.Windows.Forms.Button btnadd;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ListView lvstudentssubjects;
         private System.Windows.Forms.Label lblgrade;
         private System.Windows.Forms.Button btnsub;
         private System.Windows.Forms.TextBox txtgrade;
@@ -342,5 +326,6 @@
         private System.Windows.Forms.Label lblcolor;
         private System.Windows.Forms.TextBox txtgroup;
         private System.Windows.Forms.Label lblgroup;
+        private System.Windows.Forms.DataGridView dgvGrades;
     }
 }

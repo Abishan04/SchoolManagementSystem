@@ -1,6 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
 using SchoolManagementSystem.Model;
-using student_management_system.DAL;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -60,12 +59,12 @@ namespace SchoolManagementSystem.DAL
             string query = @"INSERT INTO teachers
                             (first_name, last_name, gender, telephone_no, nic_no, 
                              email_id, address, date_of_birth, date_of_appoint,
-                             created_at, created_by)
+                              created_by)
                              VALUES
                             (@firstName, @lastName, @gender, @telephoneNo, @nicNo, 
-                             @emailId, @address, @dob, @doa, @createdAt, @createdBy);
+                             @emailId, @address, @dob, @doa,  @createdBy);
                              SELECT LAST_INSERT_ID();";
-
+            teacher.CreatedBy = Environment.UserName;
             var parameters = new MySqlParameter[]
             {
                 new MySqlParameter("@firstName", MySqlDbType.VarChar) { Value = teacher.FirstName },
@@ -77,7 +76,7 @@ namespace SchoolManagementSystem.DAL
                 new MySqlParameter("@address", MySqlDbType.VarChar) { Value = teacher.Address },
                 new MySqlParameter("@dob", MySqlDbType.Date) { Value = teacher.DateOfBirth },
                 new MySqlParameter("@doa", MySqlDbType.Date) { Value = teacher.DateOfAppoint },
-                new MySqlParameter("@createdAt", MySqlDbType.DateTime) { Value = teacher.CreatedAt },
+         
                 new MySqlParameter("@createdBy", MySqlDbType.VarChar) { Value = teacher.CreatedBy }
             };
 
@@ -119,17 +118,17 @@ namespace SchoolManagementSystem.DAL
             return DbHelper.ExecuteNonQuery(query, parameters) > 0;
         }
 
-        public bool DeleteTeacher(int teacherId, string deletedBy)
+        public bool DeleteTeacher(int teacherId)
         {
             string query = @"UPDATE teachers 
-                             SET deleted_at = @deletedAt, deleted_by = @deletedBy 
+                               SET deleted_at = NOW()
                              WHERE id = @teacherId";
 
             var parameters = new MySqlParameter[]
             {
                 new MySqlParameter("@teacherId", MySqlDbType.Int32) { Value = teacherId },
                 new MySqlParameter("@deletedAt", MySqlDbType.DateTime) { Value = DateTime.Now },
-                new MySqlParameter("@deletedBy", MySqlDbType.VarChar) { Value = deletedBy }
+            
             };
 
             return DbHelper.ExecuteNonQuery(query, parameters) > 0;
