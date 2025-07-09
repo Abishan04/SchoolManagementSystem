@@ -18,7 +18,7 @@ namespace SchoolManagementSystem.DAL
                                 email_id, address, date_of_birth, date_of_appoint,
                                 created_at, created_by, updated_at, updated_by, deleted_at, deleted_by
                              FROM teachers
-                             WHERE deleted_at IS NULL
+                            WHERE deleted_at IS NULL
                              ORDER BY last_name, first_name";
 
             return DbHelper.GetData(query);
@@ -43,14 +43,14 @@ namespace SchoolManagementSystem.DAL
                 Nic = row["nic_no"].ToString(),
                 Email = row["email_id"].ToString(),
                 Address = row["address"].ToString(),
-                DateOfBirth = Convert.ToDateTime(row["date_of_birth"]),
-                DateOfAppoint = Convert.ToDateTime(row["date_of_appoint"]),
-                CreatedAt = Convert.ToDateTime(row["created_at"]),
-                CreatedBy = row["created_by"]?.ToString(),
-                UpdatedAt = Convert.ToDateTime(row["updated_at"]),
-                UpdatedBy = row["updated_by"]?.ToString(),
-                DeletedAt = Convert.ToDateTime(row["deleted_at"]),
-                DeletedBy = row["deleted_by"]?.ToString()
+                DateOfBirth = row["date_of_birth"] == DBNull.Value ? DateTime.MinValue : Convert.ToDateTime(row["date_of_birth"]),
+                DateOfAppoint = row["date_of_appoint"] == DBNull.Value ? DateTime.MinValue : Convert.ToDateTime(row["date_of_appoint"]),
+                CreatedAt = row["created_at"] == DBNull.Value ? DateTime.MinValue : Convert.ToDateTime(row["created_at"]),
+                CreatedBy = row["created_by"] == DBNull.Value ? null : row["created_by"].ToString(),
+                UpdatedAt = row["updated_at"] == DBNull.Value ? DateTime.MinValue : Convert.ToDateTime(row["updated_at"]),
+                UpdatedBy = row["updated_by"] == DBNull.Value ? null : row["updated_by"].ToString(),
+                DeletedAt = row["deleted_at"] == DBNull.Value ? DateTime.MinValue : Convert.ToDateTime(row["deleted_at"]),
+                DeletedBy = row["deleted_by"] == DBNull.Value ? null : row["deleted_by"].ToString()
             };
         }
 
@@ -118,17 +118,20 @@ namespace SchoolManagementSystem.DAL
             return DbHelper.ExecuteNonQuery(query, parameters) > 0;
         }
 
-        public bool DeleteTeacher(int teacherId)
+        public bool DeleteTeacher(int teacherId, string deletedBy)
         {
             string query = @"UPDATE teachers 
-                               SET deleted_at = NOW()
+                               SET deleted_at = NOW(),
+                               deleted_by = @deletedBy
+                               
                              WHERE id = @teacherId";
 
             var parameters = new MySqlParameter[]
             {
                 new MySqlParameter("@teacherId", MySqlDbType.Int32) { Value = teacherId },
-                new MySqlParameter("@deletedAt", MySqlDbType.DateTime) { Value = DateTime.Now },
-            
+        
+                new MySqlParameter("@deletedBy", MySqlDbType.VarChar) { Value = deletedBy }
+
             };
 
             return DbHelper.ExecuteNonQuery(query, parameters) > 0;

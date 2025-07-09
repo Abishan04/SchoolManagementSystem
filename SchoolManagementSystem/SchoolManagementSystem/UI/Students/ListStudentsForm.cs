@@ -29,6 +29,7 @@ namespace SchoolManagementSystem.UI.Students
         {
             LoadStudentData();
 
+
         }
         private void LoadStudentData()
         {
@@ -175,6 +176,28 @@ namespace SchoolManagementSystem.UI.Students
 
         private void btnrefresh_Click(object sender, EventArgs e)
         {
+            LoadStudentData();
+        }
+
+        private void btnsubjects_Click(object sender, EventArgs e)
+        {
+            if (dgvStudents.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a student to edit.");
+                return;
+            }
+
+            int studentId = Convert.ToInt32(dgvStudents.SelectedRows[0].Cells["id"].Value);
+            var dal = new StudentsDal();
+            var student = dal.GetStudentById(studentId);
+
+            //using (var editForm = new Students_Subjects.StudentsSubjectsForm(student))
+            //{
+            //    if (editForm.ShowDialog() == DialogResult.OK)
+            //    {
+            //        LoadStudentData();
+            //    }
+            //}
             LoadStudentData();
         }
     }

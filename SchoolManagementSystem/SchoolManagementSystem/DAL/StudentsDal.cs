@@ -66,7 +66,7 @@ namespace SchoolManagementSystem.DAL
                      VALUES 
                     (@admissionNo, @firstName, @lastName, @gender, @telephoneNo, 
                      @emailId, @address, @dob, @doa, @gradeId, @createdBy);
-                    SELECT LAST_INSERT_ID();";
+                    ";
 
             student.CreatedBy = Environment.UserName;
 
@@ -138,6 +138,7 @@ namespace SchoolManagementSystem.DAL
             {
                 new MySqlParameter("@studentId", MySqlDbType.Int32) { Value = studentId },
                 new MySqlParameter("@deletedBy", MySqlDbType.VarChar) { Value = Environment.UserName } // or any audit identity
+
             };
 
             return DbHelper.ExecuteNonQuery(query, parameters) > 0;

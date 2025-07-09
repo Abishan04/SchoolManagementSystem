@@ -25,16 +25,16 @@ namespace SchoolManagementSystem.UI.Teachers
 
             var teacher = new Teacher
             {
-                TeacherId = txtid.Text.Trim(),
+           
                 FirstName = txtfname.Text.Trim(),
                 LastName = txtlname.Text.Trim(),
-                NIC = txtnic.Text.Trim(),
+                Nic = txtnic.Text.Trim(),
                 Gender = rdomale.Checked ? "Male" : "Female",
-                Phone = txtphone.Text.Trim(),
+                Telephone = txttel.Text.Trim(),
                 Email = txtemail.Text.Trim(),
-                Address = txtaddress.Text.Trim(),
-                DateOfBirth = dtpBirth.Value,
-                DateOfAppointment = dtpAppointment.Value,
+                Address = txtadd.Text.Trim(),
+                DateOfBirth = dtpB.Value,
+                DateOfAppoint = dtpA.Value,
                 CreatedBy = Environment.UserName,
                 CreatedAt = DateTime.Now
             };
@@ -51,6 +51,6 @@ namespace SchoolManagementSystem.UI.Teachers
             this.Close();
         }
 
-     
+
     }
 }

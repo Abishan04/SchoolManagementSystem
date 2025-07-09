@@ -22,6 +22,7 @@ namespace SchoolManagementSystem.UI.Grades
 
             // Attach color picker to color textbox
             txtcolor.Click += Txtcolor_Click;
+            dgvGrades.CellClick += dgvGrades_CellClick;
         }
 
         private void GradesForm_Load(object sender, EventArgs e)
@@ -96,9 +97,22 @@ namespace SchoolManagementSystem.UI.Grades
             }
 
             var updatedGrade = GetGradeFromForm();
-            dal.UpdateGrade(selectedGradeId, updatedGrade); // ✅ Correct method now used
+            dal.UpdateGrade(selectedGradeId, updatedGrade); 
             LoadGrades();
             ClearFields();
+        }
+        private void dgvGrades_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                var row = dgvGrades.Rows[e.RowIndex];
+                selectedGradeId = Convert.ToInt32(row.Cells["id"].Value);
+                txtgrade.Text = row.Cells["grade_name"].Value.ToString();
+                txtorder.Text = row.Cells["grade_order"].Value.ToString();
+                txtgroup.Text = row.Cells["grade_group"].Value.ToString();
+                txtcolor.Text = row.Cells["grade_color"].Value.ToString();
+
+            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -112,24 +126,29 @@ namespace SchoolManagementSystem.UI.Grades
             var confirm = MessageBox.Show("Are you sure you want to delete this grade?", "Confirm", MessageBoxButtons.YesNo);
             if (confirm == DialogResult.Yes)
             {
-                dal.DeleteGrade(selectedGradeId, Environment.UserName);
-                LoadGrades();
-                ClearFields();
+                try
+                {
+                    selectedGradeId = Convert.ToInt32(dgvGrades.SelectedRows[0].Cells["id"].Value);
+                    bool deleted = dal.DeleteGrade(selectedGradeId, Environment.UserName);
+                    if (deleted)
+                    {
+                        MessageBox.Show("Grade deleted successfully.");
+                        LoadGrades();
+                        ClearFields();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed to delete the grade. It may not exist or is already deleted.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred while deleting the grade:\n" + ex.Message);
+                }
             }
         }
 
-        private void dgvGrades_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                var row = dgvGrades.Rows[e.RowIndex];
-                selectedGradeId = Convert.ToInt32(row.Cells["id"].Value);
-                txtgrade.Text = row.Cells["grade_name"].Value.ToString();
-                txtorder.Text = row.Cells["grade_order"].Value.ToString();
-                txtgroup.Text = row.Cells["grade_group"].Value.ToString();
-                txtcolor.Text = row.Cells["grade_color"].Value.ToString();
-            }
-        }
+   
 
         private void Txtcolor_Click(object sender, EventArgs e)
         {
@@ -158,6 +177,11 @@ namespace SchoolManagementSystem.UI.Grades
             }
 
             return true;
+        }
+
+        private void btnrefresh_Click(object sender, EventArgs e)
+        {
+            LoadGrades();
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using SchoolManagementSystem.DAL;
+using SchoolManagementSystem.UI.Students;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,12 +15,36 @@ namespace SchoolManagementSystem.UI.Teachers
     public partial class ListTeachersForm : Form
     {
         private TeachersDal dal = new TeachersDal();
+     
+    private const string PlaceholderText = "Enter your name";
+
         public ListTeachersForm()
         {
             InitializeComponent();
             LoadTeacherData();
+            SetPlaceholder();
+
         }
-                private void LoadTeacherData()
+        private void SetPlaceholder()
+        {
+            txtSearch.Text = PlaceholderText;
+            txtSearch.ForeColor = Color.Gray;
+        }
+
+        private void RemovePlaceholder()
+        {
+            if (txtSearch.Text == PlaceholderText)
+            {
+                txtSearch.Text = "";
+                txtSearch.ForeColor = Color.Black;
+            }
+        }
+
+
+
+
+
+        private void LoadTeacherData()
             {         
                 DataTable dt = dal.GetAllTeachers();
                 dgvTeachers.DataSource = dt;
@@ -70,7 +95,7 @@ namespace SchoolManagementSystem.UI.Teachers
 
                 if (confirm == DialogResult.Yes)
                 {
-                    bool deleted = dal.DeleteTeacher(teacherId);
+                    bool deleted = dal.DeleteTeacher(teacherId, Environment.UserName);
                     if (deleted)
                         LoadTeacherData();
                     else
@@ -85,7 +110,48 @@ namespace SchoolManagementSystem.UI.Teachers
                     $"first_name LIKE '%{filter}%' OR last_name LIKE '%{filter}%' OR email_id LIKE '%{filter}%'";
             }
 
+        private void btnedit_Click(object sender, EventArgs e)
+        {
+            if (dgvTeachers.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a student to edit.");
+                return;
+            }
+
+            int teacherId = Convert.ToInt32(dgvTeachers.SelectedRows[0].Cells["id"].Value);
+            var dal = new TeachersDal();
+            var teacher = dal.GetTeacherById(teacherId);
+
+            using (var editForm = new EditTeachersForm(teacher))
+            {
+                if (editForm.ShowDialog() == DialogResult.OK)
+                {
+                    LoadTeacherData();
+                }
+            }
+            LoadTeacherData();
 
         }
+
+        private void btnrefresh_Click(object sender, EventArgs e)
+        {
+            LoadTeacherData();
+        }
+
+        private void txtSearch_Enter(object sender, EventArgs e)
+        {
+            RemovePlaceholder();
+
+        }
+
+        private void txtSearch_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtSearch.Text))
+            {
+                SetPlaceholder();
+            }
+
+        }
+    }
     }
 

@@ -43,9 +43,7 @@
             this.lbldob = new System.Windows.Forms.Label();
             this.txtadd = new System.Windows.Forms.TextBox();
             this.lbladd = new System.Windows.Forms.Label();
-            this.txtadmission = new System.Windows.Forms.TextBox();
             this.lbltea = new System.Windows.Forms.Label();
-            this.lblid = new System.Windows.Forms.Label();
             this.lblnic = new System.Windows.Forms.Label();
             this.txtnic = new System.Windows.Forms.TextBox();
             this.lblappoint = new System.Windows.Forms.Label();
@@ -62,7 +60,7 @@
             this.dtpB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpB.Location = new System.Drawing.Point(195, 398);
-            this.dtpB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpB.Margin = new System.Windows.Forms.Padding(2);
             this.dtpB.Name = "dtpB";
             this.dtpB.Size = new System.Drawing.Size(155, 26);
             this.dtpB.TabIndex = 59;
@@ -72,7 +70,7 @@
             this.rdofemale.AutoSize = true;
             this.rdofemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdofemale.Location = new System.Drawing.Point(267, 225);
-            this.rdofemale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdofemale.Margin = new System.Windows.Forms.Padding(2);
             this.rdofemale.Name = "rdofemale";
             this.rdofemale.Size = new System.Drawing.Size(80, 24);
             this.rdofemale.TabIndex = 56;
@@ -85,7 +83,7 @@
             this.rdomale.AutoSize = true;
             this.rdomale.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdomale.Location = new System.Drawing.Point(195, 225);
-            this.rdomale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdomale.Margin = new System.Windows.Forms.Padding(2);
             this.rdomale.Name = "rdomale";
             this.rdomale.Size = new System.Drawing.Size(61, 24);
             this.rdomale.TabIndex = 55;
@@ -97,9 +95,9 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(2, 496);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(867, 1);
             this.groupBox1.TabIndex = 54;
             this.groupBox1.TabStop = false;
@@ -114,7 +112,7 @@
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclose.Image = global::SchoolManagementSystem.Properties.Resources.icons8_close_32;
             this.btnclose.Location = new System.Drawing.Point(262, 501);
-            this.btnclose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnclose.Margin = new System.Windows.Forms.Padding(2);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(83, 38);
             this.btnclose.TabIndex = 52;
@@ -131,7 +129,7 @@
             this.btnreset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnreset.Image = global::SchoolManagementSystem.Properties.Resources.icons8_reset_32;
             this.btnreset.Location = new System.Drawing.Point(84, 502);
-            this.btnreset.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnreset.Margin = new System.Windows.Forms.Padding(2);
             this.btnreset.Name = "btnreset";
             this.btnreset.Size = new System.Drawing.Size(82, 38);
             this.btnreset.TabIndex = 51;
@@ -148,21 +146,21 @@
             this.btnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsave.Image = global::SchoolManagementSystem.Properties.Resources.icons8_save_32;
             this.btnsave.Location = new System.Drawing.Point(174, 502);
-            this.btnsave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnsave.Margin = new System.Windows.Forms.Padding(2);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(80, 38);
             this.btnsave.TabIndex = 53;
             this.btnsave.Text = "save";
             this.btnsave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnsave.UseVisualStyleBackColor = false;
-            this.btnsave.Click += new System.EventHandler(this.btnSave_Click);
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // txtlname
             // 
             this.txtlname.BackColor = System.Drawing.SystemColors.Control;
             this.txtlname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtlname.Location = new System.Drawing.Point(131, 138);
-            this.txtlname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtlname.Margin = new System.Windows.Forms.Padding(2);
             this.txtlname.Name = "txtlname";
             this.txtlname.Size = new System.Drawing.Size(217, 26);
             this.txtlname.TabIndex = 50;
@@ -194,7 +192,7 @@
             this.txtfname.BackColor = System.Drawing.SystemColors.Control;
             this.txtfname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtfname.Location = new System.Drawing.Point(131, 94);
-            this.txtfname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtfname.Margin = new System.Windows.Forms.Padding(2);
             this.txtfname.Name = "txtfname";
             this.txtfname.Size = new System.Drawing.Size(217, 26);
             this.txtfname.TabIndex = 49;
@@ -225,8 +223,8 @@
             // 
             this.txtadd.BackColor = System.Drawing.SystemColors.Control;
             this.txtadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtadd.Location = new System.Drawing.Point(126, 354);
-            this.txtadd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtadd.Location = new System.Drawing.Point(133, 352);
+            this.txtadd.Margin = new System.Windows.Forms.Padding(2);
             this.txtadd.Name = "txtadd";
             this.txtadd.Size = new System.Drawing.Size(217, 26);
             this.txtadd.TabIndex = 58;
@@ -242,16 +240,6 @@
             this.lbladd.TabIndex = 40;
             this.lbladd.Text = "Address";
             // 
-            // txtadmission
-            // 
-            this.txtadmission.BackColor = System.Drawing.SystemColors.Control;
-            this.txtadmission.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtadmission.Location = new System.Drawing.Point(131, 51);
-            this.txtadmission.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtadmission.Name = "txtadmission";
-            this.txtadmission.Size = new System.Drawing.Size(217, 26);
-            this.txtadmission.TabIndex = 48;
-            // 
             // lbltea
             // 
             this.lbltea.BackColor = System.Drawing.SystemColors.MenuHighlight;
@@ -265,17 +253,6 @@
             this.lbltea.TabIndex = 46;
             this.lbltea.Text = "Create Teacher";
             this.lbltea.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblid
-            // 
-            this.lblid.AutoSize = true;
-            this.lblid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblid.Location = new System.Drawing.Point(19, 53);
-            this.lblid.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblid.Name = "lblid";
-            this.lblid.Size = new System.Drawing.Size(88, 20);
-            this.lblid.TabIndex = 47;
-            this.lblid.Text = "Teacher ID";
             // 
             // lblnic
             // 
@@ -293,7 +270,7 @@
             this.txtnic.BackColor = System.Drawing.SystemColors.Control;
             this.txtnic.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnic.Location = new System.Drawing.Point(132, 181);
-            this.txtnic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtnic.Margin = new System.Windows.Forms.Padding(2);
             this.txtnic.Name = "txtnic";
             this.txtnic.Size = new System.Drawing.Size(217, 26);
             this.txtnic.TabIndex = 48;
@@ -315,7 +292,7 @@
             this.dtpA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpA.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpA.Location = new System.Drawing.Point(195, 441);
-            this.dtpA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpA.Margin = new System.Windows.Forms.Padding(2);
             this.dtpA.Name = "dtpA";
             this.dtpA.Size = new System.Drawing.Size(155, 26);
             this.dtpA.TabIndex = 59;
@@ -325,7 +302,7 @@
             this.txtemail.BackColor = System.Drawing.SystemColors.Control;
             this.txtemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtemail.Location = new System.Drawing.Point(126, 311);
-            this.txtemail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtemail.Margin = new System.Windows.Forms.Padding(2);
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(217, 26);
             this.txtemail.TabIndex = 63;
@@ -346,7 +323,7 @@
             this.txttel.BackColor = System.Drawing.SystemColors.Control;
             this.txttel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttel.Location = new System.Drawing.Point(126, 267);
-            this.txttel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txttel.Margin = new System.Windows.Forms.Padding(2);
             this.txttel.Name = "txttel";
             this.txttel.Size = new System.Drawing.Size(217, 26);
             this.txttel.TabIndex = 62;
@@ -390,11 +367,9 @@
             this.Controls.Add(this.txtadd);
             this.Controls.Add(this.txtnic);
             this.Controls.Add(this.lbladd);
-            this.Controls.Add(this.txtadmission);
             this.Controls.Add(this.lblnic);
             this.Controls.Add(this.lbltea);
-            this.Controls.Add(this.lblid);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CreateTeachersForm";
             this.Text = "CreateTeachers";
             this.ResumeLayout(false);
@@ -419,9 +394,7 @@
         private System.Windows.Forms.Label lbldob;
         private System.Windows.Forms.TextBox txtadd;
         private System.Windows.Forms.Label lbladd;
-        private System.Windows.Forms.TextBox txtadmission;
         private System.Windows.Forms.Label lbltea;
-        private System.Windows.Forms.Label lblid;
         private System.Windows.Forms.Label lblnic;
         private System.Windows.Forms.TextBox txtnic;
         private System.Windows.Forms.Label lblappoint;

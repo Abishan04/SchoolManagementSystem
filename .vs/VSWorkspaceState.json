@@ -1,9 +1,13 @@
 {
   "ExpandedNodes": [
+    "",
     "\\SchoolManagementSystem",
+    "\\SchoolManagementSystem\\SchoolManagementSystem",
     "\\SchoolManagementSystem\\SchoolManagementSystem\\UI",
     "\\SchoolManagementSystem\\SchoolManagementSystem\\UI\\Students",
+    "\\SchoolManagementSystem\\SchoolManagementSystem\\UI\\Students-Subjects",
     "\\SchoolManagementSystem\\SchoolManagementSystem\\UI\\Teachers"
   ],
+  "SelectedNode": "\\SchoolManagementSystem\\SchoolManagementSystem\\UI\\Teachers\\ListTeachersForm.cs",
   "PreviewInSolutionExplorer": false
 }

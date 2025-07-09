@@ -32,9 +32,7 @@
             this.lbllname = new System.Windows.Forms.Label();
             this.txtfname = new System.Windows.Forms.TextBox();
             this.lblfname = new System.Windows.Forms.Label();
-            this.txtadmission = new System.Windows.Forms.TextBox();
             this.lblstu = new System.Windows.Forms.Label();
-            this.lbladmission = new System.Windows.Forms.Label();
             this.btnsave = new System.Windows.Forms.Button();
             this.btnreset = new System.Windows.Forms.Button();
             this.btnclose = new System.Windows.Forms.Button();
@@ -43,8 +41,8 @@
             this.lblemail = new System.Windows.Forms.Label();
             this.txtphone = new System.Windows.Forms.TextBox();
             this.lblphone = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dtp = new System.Windows.Forms.DateTimePicker();
+            this.dtpA = new System.Windows.Forms.DateTimePicker();
+            this.dtpB = new System.Windows.Forms.DateTimePicker();
             this.rdofemale = new System.Windows.Forms.RadioButton();
             this.rdomale = new System.Windows.Forms.RadioButton();
             this.lblgender = new System.Windows.Forms.Label();
@@ -61,7 +59,7 @@
             this.txtlname.BackColor = System.Drawing.SystemColors.Control;
             this.txtlname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtlname.Location = new System.Drawing.Point(127, 136);
-            this.txtlname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtlname.Margin = new System.Windows.Forms.Padding(2);
             this.txtlname.Name = "txtlname";
             this.txtlname.Size = new System.Drawing.Size(217, 26);
             this.txtlname.TabIndex = 50;
@@ -82,7 +80,7 @@
             this.txtfname.BackColor = System.Drawing.SystemColors.Control;
             this.txtfname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtfname.Location = new System.Drawing.Point(127, 92);
-            this.txtfname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtfname.Margin = new System.Windows.Forms.Padding(2);
             this.txtfname.Name = "txtfname";
             this.txtfname.Size = new System.Drawing.Size(217, 26);
             this.txtfname.TabIndex = 49;
@@ -98,16 +96,6 @@
             this.lblfname.TabIndex = 42;
             this.lblfname.Text = "First Name";
             // 
-            // txtadmission
-            // 
-            this.txtadmission.BackColor = System.Drawing.SystemColors.Control;
-            this.txtadmission.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtadmission.Location = new System.Drawing.Point(127, 45);
-            this.txtadmission.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtadmission.Name = "txtadmission";
-            this.txtadmission.Size = new System.Drawing.Size(217, 26);
-            this.txtadmission.TabIndex = 48;
-            // 
             // lblstu
             // 
             this.lblstu.BackColor = System.Drawing.SystemColors.MenuHighlight;
@@ -122,17 +110,6 @@
             this.lblstu.Text = "Edit Teacher";
             this.lblstu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbladmission
-            // 
-            this.lbladmission.AutoSize = true;
-            this.lbladmission.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbladmission.Location = new System.Drawing.Point(15, 47);
-            this.lbladmission.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbladmission.Name = "lbladmission";
-            this.lbladmission.Size = new System.Drawing.Size(106, 20);
-            this.lbladmission.TabIndex = 47;
-            this.lbladmission.Text = "Admission No";
-            // 
             // btnsave
             // 
             this.btnsave.AutoSize = true;
@@ -142,13 +119,14 @@
             this.btnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsave.Image = global::SchoolManagementSystem.Properties.Resources.icons8_save_32;
             this.btnsave.Location = new System.Drawing.Point(178, 486);
-            this.btnsave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnsave.Margin = new System.Windows.Forms.Padding(2);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(80, 38);
             this.btnsave.TabIndex = 53;
             this.btnsave.Text = "save";
             this.btnsave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnsave.UseVisualStyleBackColor = false;
+            this.btnsave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnreset
             // 
@@ -159,7 +137,7 @@
             this.btnreset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnreset.Image = global::SchoolManagementSystem.Properties.Resources.icons8_reset_32;
             this.btnreset.Location = new System.Drawing.Point(90, 486);
-            this.btnreset.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnreset.Margin = new System.Windows.Forms.Padding(2);
             this.btnreset.Name = "btnreset";
             this.btnreset.Size = new System.Drawing.Size(82, 38);
             this.btnreset.TabIndex = 51;
@@ -176,7 +154,7 @@
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclose.Image = global::SchoolManagementSystem.Properties.Resources.icons8_close_32;
             this.btnclose.Location = new System.Drawing.Point(266, 486);
-            this.btnclose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnclose.Margin = new System.Windows.Forms.Padding(2);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(83, 38);
             this.btnclose.TabIndex = 52;
@@ -188,9 +166,9 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(7, 481);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(867, 1);
             this.groupBox1.TabIndex = 54;
             this.groupBox1.TabStop = false;
@@ -201,7 +179,7 @@
             this.txtemail.BackColor = System.Drawing.SystemColors.Control;
             this.txtemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtemail.Location = new System.Drawing.Point(127, 312);
-            this.txtemail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtemail.Margin = new System.Windows.Forms.Padding(2);
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(217, 26);
             this.txtemail.TabIndex = 78;
@@ -222,7 +200,7 @@
             this.txtphone.BackColor = System.Drawing.SystemColors.Control;
             this.txtphone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtphone.Location = new System.Drawing.Point(127, 271);
-            this.txtphone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtphone.Margin = new System.Windows.Forms.Padding(2);
             this.txtphone.Name = "txtphone";
             this.txtphone.Size = new System.Drawing.Size(217, 26);
             this.txtphone.TabIndex = 77;
@@ -238,34 +216,34 @@
             this.lblphone.TabIndex = 75;
             this.lblphone.Text = "Phone No";
             // 
-            // dateTimePicker1
+            // dtpA
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(190, 445);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(155, 26);
-            this.dateTimePicker1.TabIndex = 73;
+            this.dtpA.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpA.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpA.Location = new System.Drawing.Point(190, 445);
+            this.dtpA.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpA.Name = "dtpA";
+            this.dtpA.Size = new System.Drawing.Size(155, 26);
+            this.dtpA.TabIndex = 73;
             // 
-            // dtp
+            // dtpB
             // 
-            this.dtp.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp.Location = new System.Drawing.Point(190, 402);
-            this.dtp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dtp.Name = "dtp";
-            this.dtp.Size = new System.Drawing.Size(155, 26);
-            this.dtp.TabIndex = 74;
+            this.dtpB.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpB.Location = new System.Drawing.Point(190, 402);
+            this.dtpB.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpB.Name = "dtpB";
+            this.dtpB.Size = new System.Drawing.Size(155, 26);
+            this.dtpB.TabIndex = 74;
             // 
             // rdofemale
             // 
             this.rdofemale.AutoSize = true;
             this.rdofemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdofemale.Location = new System.Drawing.Point(263, 226);
-            this.rdofemale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdofemale.Margin = new System.Windows.Forms.Padding(2);
             this.rdofemale.Name = "rdofemale";
             this.rdofemale.Size = new System.Drawing.Size(80, 24);
             this.rdofemale.TabIndex = 71;
@@ -278,7 +256,7 @@
             this.rdomale.AutoSize = true;
             this.rdomale.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdomale.Location = new System.Drawing.Point(190, 226);
-            this.rdomale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdomale.Margin = new System.Windows.Forms.Padding(2);
             this.rdomale.Name = "rdomale";
             this.rdomale.Size = new System.Drawing.Size(61, 24);
             this.rdomale.TabIndex = 70;
@@ -324,7 +302,7 @@
             this.txtadd.BackColor = System.Drawing.SystemColors.Control;
             this.txtadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtadd.Location = new System.Drawing.Point(127, 359);
-            this.txtadd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtadd.Margin = new System.Windows.Forms.Padding(2);
             this.txtadd.Name = "txtadd";
             this.txtadd.Size = new System.Drawing.Size(217, 26);
             this.txtadd.TabIndex = 72;
@@ -334,7 +312,7 @@
             this.txtnic.BackColor = System.Drawing.SystemColors.Control;
             this.txtnic.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnic.Location = new System.Drawing.Point(127, 181);
-            this.txtnic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtnic.Margin = new System.Windows.Forms.Padding(2);
             this.txtnic.Name = "txtnic";
             this.txtnic.Size = new System.Drawing.Size(217, 26);
             this.txtnic.TabIndex = 69;
@@ -371,8 +349,8 @@
             this.Controls.Add(this.lblemail);
             this.Controls.Add(this.txtphone);
             this.Controls.Add(this.lblphone);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.dtp);
+            this.Controls.Add(this.dtpA);
+            this.Controls.Add(this.dtpB);
             this.Controls.Add(this.rdofemale);
             this.Controls.Add(this.rdomale);
             this.Controls.Add(this.lblgender);
@@ -390,10 +368,8 @@
             this.Controls.Add(this.lbllname);
             this.Controls.Add(this.txtfname);
             this.Controls.Add(this.lblfname);
-            this.Controls.Add(this.txtadmission);
             this.Controls.Add(this.lblstu);
-            this.Controls.Add(this.lbladmission);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "EditTeachersForm";
             this.Text = "EditTeachers";
             this.Load += new System.EventHandler(this.EditTeachersForm_Load);
@@ -407,9 +383,7 @@
         private System.Windows.Forms.Label lbllname;
         private System.Windows.Forms.TextBox txtfname;
         private System.Windows.Forms.Label lblfname;
-        private System.Windows.Forms.TextBox txtadmission;
         private System.Windows.Forms.Label lblstu;
-        private System.Windows.Forms.Label lbladmission;
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.Button btnreset;
         private System.Windows.Forms.Button btnclose;
@@ -418,8 +392,8 @@
         private System.Windows.Forms.Label lblemail;
         private System.Windows.Forms.TextBox txtphone;
         private System.Windows.Forms.Label lblphone;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dtp;
+        private System.Windows.Forms.DateTimePicker dtpA;
+        private System.Windows.Forms.DateTimePicker dtpB;
         private System.Windows.Forms.RadioButton rdofemale;
         private System.Windows.Forms.RadioButton rdomale;
         private System.Windows.Forms.Label lblgender;

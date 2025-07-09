@@ -10,11 +10,9 @@ namespace SchoolManagementSystem.DAL
         public DataTable GetAllGrades()
         {
             string query = @"SELECT id, grade_name, grade_order, grade_color, grade_group 
-                             FROM grades 
-                             WHERE deleted_at IS NULL 
-                             ORDER BY grade_order";
-
-            return DbHelper.GetData(query);
+                     FROM grades  WHERE deleted_at IS NULL
+                     ";
+                return DbHelper.GetData(query);
         }
 
         public Grade GetGradeById(int gradeId)
@@ -72,7 +70,7 @@ namespace SchoolManagementSystem.DAL
                                  grade_color = @color, 
                                  grade_group = @group, 
                                  updated_by = @user, 
-                                 updated_at = @time 
+                                 updated_at = NOW() 
                              WHERE id = @id";
 
             var parameters = new MySqlParameter[]
@@ -82,7 +80,7 @@ namespace SchoolManagementSystem.DAL
                 new MySqlParameter("@color", MySqlDbType.VarChar) { Value = grade.GradeColor },
                 new MySqlParameter("@group", MySqlDbType.VarChar) { Value = grade.GradeGroup },
                 new MySqlParameter("@user", MySqlDbType.VarChar) { Value = grade.CreatedBy },
-                new MySqlParameter("@time", MySqlDbType.DateTime) { Value = grade.CreatedAt },
+               // new MySqlParameter("@time", MySqlDbType.DateTime) { Value = grade.CreatedAt },
                 new MySqlParameter("@id", MySqlDbType.Int32) { Value = id }
             };
 
@@ -93,7 +91,8 @@ namespace SchoolManagementSystem.DAL
         {
             string query = @"UPDATE grades 
                              SET deleted_at = NOW(), 
-                                 deleted_by = @deletedBy 
+                                 deleted_by = @deletedBy
+                                
                              WHERE id = @gradeId";
 
             var parameters = new MySqlParameter[]

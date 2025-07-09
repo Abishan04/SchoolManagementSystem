@@ -48,6 +48,7 @@
             this.txtcolor = new System.Windows.Forms.TextBox();
             this.txtindex = new System.Windows.Forms.TextBox();
             this.dgvSubjects = new System.Windows.Forms.DataGridView();
+            this.btnedit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSubjects)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,10 +60,9 @@
             this.btnex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnex.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnex.Image = global::SchoolManagementSystem.Properties.Resources.icons8_export_32;
-            this.btnex.Location = new System.Drawing.Point(698, 256);
-            this.btnex.Margin = new System.Windows.Forms.Padding(2);
+            this.btnex.Location = new System.Drawing.Point(1047, 394);
             this.btnex.Name = "btnex";
-            this.btnex.Size = new System.Drawing.Size(90, 38);
+            this.btnex.Size = new System.Drawing.Size(135, 58);
             this.btnex.TabIndex = 18;
             this.btnex.Text = "Export";
             this.btnex.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -76,14 +76,14 @@
             this.btnrefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnrefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnrefresh.Image = global::SchoolManagementSystem.Properties.Resources.icons8_refresh_32;
-            this.btnrefresh.Location = new System.Drawing.Point(110, 256);
-            this.btnrefresh.Margin = new System.Windows.Forms.Padding(2);
+            this.btnrefresh.Location = new System.Drawing.Point(165, 394);
             this.btnrefresh.Name = "btnrefresh";
-            this.btnrefresh.Size = new System.Drawing.Size(100, 38);
+            this.btnrefresh.Size = new System.Drawing.Size(150, 58);
             this.btnrefresh.TabIndex = 19;
             this.btnrefresh.Text = "Refresh";
             this.btnrefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnrefresh.UseVisualStyleBackColor = false;
+            this.btnrefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnprint
             // 
@@ -93,15 +93,13 @@
             this.btnprint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnprint.Image = global::SchoolManagementSystem.Properties.Resources.icons8_print_32;
-            this.btnprint.Location = new System.Drawing.Point(611, 256);
-            this.btnprint.Margin = new System.Windows.Forms.Padding(2);
+            this.btnprint.Location = new System.Drawing.Point(916, 394);
             this.btnprint.Name = "btnprint";
-            this.btnprint.Size = new System.Drawing.Size(79, 38);
+            this.btnprint.Size = new System.Drawing.Size(118, 58);
             this.btnprint.TabIndex = 20;
             this.btnprint.Text = "Print";
             this.btnprint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnprint.UseVisualStyleBackColor = false;
-            this.btnprint.Click += new System.EventHandler(this.btnprint_Click);
             // 
             // btnclose
             // 
@@ -111,14 +109,14 @@
             this.btnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclose.Image = global::SchoolManagementSystem.Properties.Resources.icons8_close_32;
-            this.btnclose.Location = new System.Drawing.Point(796, 256);
-            this.btnclose.Margin = new System.Windows.Forms.Padding(2);
+            this.btnclose.Location = new System.Drawing.Point(1194, 394);
             this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(85, 38);
+            this.btnclose.Size = new System.Drawing.Size(128, 58);
             this.btnclose.TabIndex = 21;
             this.btnclose.Text = "Close";
             this.btnclose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnclose.UseVisualStyleBackColor = false;
+            this.btnclose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btndelete
             // 
@@ -128,23 +126,21 @@
             this.btndelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btndelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndelete.Image = global::SchoolManagementSystem.Properties.Resources.icons8_delete_32;
-            this.btndelete.Location = new System.Drawing.Point(11, 256);
-            this.btndelete.Margin = new System.Windows.Forms.Padding(2);
+            this.btndelete.Location = new System.Drawing.Point(16, 394);
             this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(91, 38);
+            this.btndelete.Size = new System.Drawing.Size(136, 58);
             this.btndelete.TabIndex = 22;
             this.btndelete.Text = "Delete";
             this.btndelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btndelete.UseVisualStyleBackColor = false;
+            this.btndelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.Desktop;
-            this.groupBox1.Location = new System.Drawing.Point(5, 251);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Location = new System.Drawing.Point(8, 386);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(1000, 1);
+            this.groupBox1.Size = new System.Drawing.Size(1500, 2);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
@@ -156,9 +152,8 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(892, 32);
+            this.label1.Size = new System.Drawing.Size(1338, 49);
             this.label1.TabIndex = 24;
             this.label1.Text = "Subjects";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -167,20 +162,18 @@
             // 
             this.lblsub.AutoSize = true;
             this.lblsub.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblsub.Location = new System.Drawing.Point(624, 44);
-            this.lblsub.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblsub.Location = new System.Drawing.Point(936, 68);
             this.lblsub.Name = "lblsub";
-            this.lblsub.Size = new System.Drawing.Size(109, 20);
+            this.lblsub.Size = new System.Drawing.Size(165, 29);
             this.lblsub.TabIndex = 32;
             this.lblsub.Text = "Subject Name";
             // 
             // txtsubject
             // 
             this.txtsubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsubject.Location = new System.Drawing.Point(751, 47);
-            this.txtsubject.Margin = new System.Windows.Forms.Padding(2);
+            this.txtsubject.Location = new System.Drawing.Point(1126, 72);
             this.txtsubject.Name = "txtsubject";
-            this.txtsubject.Size = new System.Drawing.Size(125, 20);
+            this.txtsubject.Size = new System.Drawing.Size(186, 26);
             this.txtsubject.TabIndex = 31;
             // 
             // btnadd
@@ -191,14 +184,14 @@
             this.btnadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnadd.Image = global::SchoolManagementSystem.Properties.Resources.icons8_add_32;
-            this.btnadd.Location = new System.Drawing.Point(801, 174);
-            this.btnadd.Margin = new System.Windows.Forms.Padding(2);
+            this.btnadd.Location = new System.Drawing.Point(1202, 268);
             this.btnadd.Name = "btnadd";
-            this.btnadd.Size = new System.Drawing.Size(75, 38);
+            this.btnadd.Size = new System.Drawing.Size(112, 58);
             this.btnadd.TabIndex = 30;
             this.btnadd.Text = "Add";
             this.btnadd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnadd.UseVisualStyleBackColor = false;
+            this.btnadd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnstudent
             // 
@@ -208,15 +201,13 @@
             this.btnstudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnstudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnstudent.Image = global::SchoolManagementSystem.Properties.Resources.icons8_add_32__1_;
-            this.btnstudent.Location = new System.Drawing.Point(218, 256);
-            this.btnstudent.Margin = new System.Windows.Forms.Padding(2);
+            this.btnstudent.Location = new System.Drawing.Point(327, 394);
             this.btnstudent.Name = "btnstudent";
-            this.btnstudent.Size = new System.Drawing.Size(126, 38);
+            this.btnstudent.Size = new System.Drawing.Size(189, 58);
             this.btnstudent.TabIndex = 20;
             this.btnstudent.Text = "Add student";
             this.btnstudent.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnstudent.UseVisualStyleBackColor = false;
-            this.btnstudent.Click += new System.EventHandler(this.btnprint_Click);
             // 
             // btnteacher
             // 
@@ -226,15 +217,13 @@
             this.btnteacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnteacher.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnteacher.Image = global::SchoolManagementSystem.Properties.Resources.icons8_add_32__1_;
-            this.btnteacher.Location = new System.Drawing.Point(352, 256);
-            this.btnteacher.Margin = new System.Windows.Forms.Padding(2);
+            this.btnteacher.Location = new System.Drawing.Point(528, 394);
             this.btnteacher.Name = "btnteacher";
-            this.btnteacher.Size = new System.Drawing.Size(127, 38);
+            this.btnteacher.Size = new System.Drawing.Size(190, 58);
             this.btnteacher.TabIndex = 20;
             this.btnteacher.Text = "Add teacher";
             this.btnteacher.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnteacher.UseVisualStyleBackColor = false;
-            this.btnteacher.Click += new System.EventHandler(this.btnprint_Click);
             // 
             // btngrade
             // 
@@ -244,24 +233,21 @@
             this.btngrade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btngrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btngrade.Image = global::SchoolManagementSystem.Properties.Resources.icons8_add_32__1_;
-            this.btngrade.Location = new System.Drawing.Point(487, 256);
-            this.btngrade.Margin = new System.Windows.Forms.Padding(2);
+            this.btngrade.Location = new System.Drawing.Point(730, 394);
             this.btngrade.Name = "btngrade";
-            this.btngrade.Size = new System.Drawing.Size(116, 38);
+            this.btngrade.Size = new System.Drawing.Size(174, 58);
             this.btngrade.TabIndex = 20;
             this.btngrade.Text = "Add grade";
             this.btngrade.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btngrade.UseVisualStyleBackColor = false;
-            this.btngrade.Click += new System.EventHandler(this.btnprint_Click);
             // 
             // lblorder
             // 
             this.lblorder.AutoSize = true;
             this.lblorder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblorder.Location = new System.Drawing.Point(624, 151);
-            this.lblorder.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblorder.Location = new System.Drawing.Point(936, 232);
             this.lblorder.Name = "lblorder";
-            this.lblorder.Size = new System.Drawing.Size(107, 20);
+            this.lblorder.Size = new System.Drawing.Size(163, 29);
             this.lblorder.TabIndex = 36;
             this.lblorder.Text = "Subject Order";
             // 
@@ -269,10 +255,9 @@
             // 
             this.lblcolor.AutoSize = true;
             this.lblcolor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcolor.Location = new System.Drawing.Point(624, 116);
-            this.lblcolor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblcolor.Location = new System.Drawing.Point(936, 178);
             this.lblcolor.Name = "lblcolor";
-            this.lblcolor.Size = new System.Drawing.Size(104, 20);
+            this.lblcolor.Size = new System.Drawing.Size(159, 29);
             this.lblcolor.TabIndex = 37;
             this.lblcolor.Text = "Subject Color";
             // 
@@ -280,54 +265,69 @@
             // 
             this.lblindex.AutoSize = true;
             this.lblindex.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblindex.Location = new System.Drawing.Point(624, 80);
-            this.lblindex.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblindex.Location = new System.Drawing.Point(936, 123);
             this.lblindex.Name = "lblindex";
-            this.lblindex.Size = new System.Drawing.Size(106, 20);
+            this.lblindex.Size = new System.Drawing.Size(158, 29);
             this.lblindex.TabIndex = 38;
             this.lblindex.Text = "Subject Index";
             // 
             // txtorder
             // 
             this.txtorder.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtorder.Location = new System.Drawing.Point(751, 150);
-            this.txtorder.Margin = new System.Windows.Forms.Padding(2);
+            this.txtorder.Location = new System.Drawing.Point(1126, 231);
             this.txtorder.Name = "txtorder";
-            this.txtorder.Size = new System.Drawing.Size(125, 20);
+            this.txtorder.Size = new System.Drawing.Size(186, 26);
             this.txtorder.TabIndex = 33;
             // 
             // txtcolor
             // 
             this.txtcolor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcolor.Location = new System.Drawing.Point(751, 116);
-            this.txtcolor.Margin = new System.Windows.Forms.Padding(2);
+            this.txtcolor.Location = new System.Drawing.Point(1126, 178);
             this.txtcolor.Name = "txtcolor";
-            this.txtcolor.Size = new System.Drawing.Size(125, 20);
+            this.txtcolor.Size = new System.Drawing.Size(186, 26);
             this.txtcolor.TabIndex = 34;
             // 
             // txtindex
             // 
             this.txtindex.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtindex.Location = new System.Drawing.Point(751, 81);
-            this.txtindex.Margin = new System.Windows.Forms.Padding(2);
+            this.txtindex.Location = new System.Drawing.Point(1126, 125);
             this.txtindex.Name = "txtindex";
-            this.txtindex.Size = new System.Drawing.Size(125, 20);
+            this.txtindex.Size = new System.Drawing.Size(186, 26);
             this.txtindex.TabIndex = 35;
             // 
             // dgvSubjects
             // 
             this.dgvSubjects.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSubjects.Location = new System.Drawing.Point(12, 35);
+            this.dgvSubjects.Location = new System.Drawing.Point(18, 54);
+            this.dgvSubjects.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvSubjects.Name = "dgvSubjects";
-            this.dgvSubjects.Size = new System.Drawing.Size(607, 211);
+            this.dgvSubjects.RowHeadersWidth = 62;
+            this.dgvSubjects.Size = new System.Drawing.Size(910, 325);
             this.dgvSubjects.TabIndex = 39;
+            // 
+            // btnedit
+            // 
+            this.btnedit.AutoSize = true;
+            this.btnedit.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnedit.FlatAppearance.BorderSize = 0;
+            this.btnedit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnedit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnedit.Image = global::SchoolManagementSystem.Properties.Resources.icons8_add_32;
+            this.btnedit.Location = new System.Drawing.Point(1084, 268);
+            this.btnedit.Name = "btnedit";
+            this.btnedit.Size = new System.Drawing.Size(112, 58);
+            this.btnedit.TabIndex = 30;
+            this.btnedit.Text = "Edit";
+            this.btnedit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnedit.UseVisualStyleBackColor = false;
+            this.btnedit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // SubjectsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(892, 295);
+            this.ClientSize = new System.Drawing.Size(1338, 454);
             this.Controls.Add(this.dgvSubjects);
             this.Controls.Add(this.lblorder);
             this.Controls.Add(this.lblcolor);
@@ -337,6 +337,7 @@
             this.Controls.Add(this.txtindex);
             this.Controls.Add(this.lblsub);
             this.Controls.Add(this.txtsubject);
+            this.Controls.Add(this.btnedit);
             this.Controls.Add(this.btnadd);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnex);
@@ -348,7 +349,6 @@
             this.Controls.Add(this.btnclose);
             this.Controls.Add(this.btndelete);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "SubjectsForm";
             this.Text = "SubjectsForm";
             ((System.ComponentModel.ISupportInitialize)(this.dgvSubjects)).EndInit();
@@ -378,5 +378,6 @@
         private System.Windows.Forms.TextBox txtcolor;
         private System.Windows.Forms.TextBox txtindex;
         private System.Windows.Forms.DataGridView dgvSubjects;
+        private System.Windows.Forms.Button btnedit;
     }
 }

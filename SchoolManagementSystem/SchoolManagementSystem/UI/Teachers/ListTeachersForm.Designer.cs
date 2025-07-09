@@ -67,7 +67,7 @@
             this.lblstu.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblstu.Location = new System.Drawing.Point(0, 0);
             this.lblstu.Name = "lblstu";
-            this.lblstu.Size = new System.Drawing.Size(1834, 43);
+            this.lblstu.Size = new System.Drawing.Size(1653, 43);
             this.lblstu.TabIndex = 35;
             this.lblstu.Text = "Teachers Details";
             this.lblstu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -96,6 +96,9 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(186, 35);
             this.txtSearch.TabIndex = 29;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            this.txtSearch.Enter += new System.EventHandler(this.txtSearch_Enter);
+            this.txtSearch.Leave += new System.EventHandler(this.txtSearch_Leave);
             // 
             // btnsubjects
             // 
@@ -192,6 +195,7 @@
             this.btnrefresh.Text = "Refresh";
             this.btnrefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnrefresh.UseVisualStyleBackColor = false;
+            this.btnrefresh.Click += new System.EventHandler(this.btnrefresh_Click);
             // 
             // btnshow
             // 
@@ -237,6 +241,7 @@
             this.btnadd.Text = "Add";
             this.btnadd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnadd.UseVisualStyleBackColor = false;
+            this.btnadd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btndel
             // 
@@ -252,6 +257,7 @@
             this.btndel.Text = "Delete";
             this.btndel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btndel.UseVisualStyleBackColor = false;
+            this.btndel.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnedit
             // 
@@ -267,13 +273,14 @@
             this.btnedit.Text = "Edit";
             this.btnedit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnedit.UseVisualStyleBackColor = false;
+            this.btnedit.Click += new System.EventHandler(this.btnedit_Click);
             // 
             // ListTeachersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1834, 902);
+            this.ClientSize = new System.Drawing.Size(1653, 903);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnsubjects);
             this.Controls.Add(this.btnex);
@@ -293,7 +300,6 @@
             this.Controls.Add(this.txtSearch);
             this.Name = "ListTeachersForm";
             this.Text = "ListTeachersForm";
-          
             ((System.ComponentModel.ISupportInitialize)(this.dgvTeachers)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

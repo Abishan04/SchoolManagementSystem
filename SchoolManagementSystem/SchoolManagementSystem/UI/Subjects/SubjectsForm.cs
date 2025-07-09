@@ -14,6 +14,7 @@ namespace SchoolManagementSystem.UI.Subjects
         public SubjectsForm()
         {
             InitializeComponent();
+            dgvSubjects.CellClick += dgvSubjects_CellClick;
             LoadSubjects();
         }
 
@@ -86,12 +87,13 @@ namespace SchoolManagementSystem.UI.Subjects
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            selectedSubjectId = Convert.ToInt32(dgvSubjects.SelectedRows[0].Cells["id"].Value);
             if (selectedSubjectId == 0)
             {
                 MessageBox.Show("Select a subject to delete.");
                 return;
             }
-
+            selectedSubjectId = Convert.ToInt32(dgvSubjects.SelectedRows[0].Cells["id"].Value);
             var confirm = MessageBox.Show("Are you sure you want to delete this subject?", "Confirm", MessageBoxButtons.YesNo);
             if (confirm == DialogResult.Yes)
             {
