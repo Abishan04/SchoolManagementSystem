@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtlname = new System.Windows.Forms.TextBox();
             this.lbllname = new System.Windows.Forms.Label();
             this.txtfname = new System.Windows.Forms.TextBox();
@@ -39,7 +40,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtemail = new System.Windows.Forms.TextBox();
             this.lblemail = new System.Windows.Forms.Label();
-            this.txtphone = new System.Windows.Forms.TextBox();
+            this.txttel = new System.Windows.Forms.TextBox();
             this.lblphone = new System.Windows.Forms.Label();
             this.dtpA = new System.Windows.Forms.DateTimePicker();
             this.dtpB = new System.Windows.Forms.DateTimePicker();
@@ -52,6 +53,7 @@
             this.txtnic = new System.Windows.Forms.TextBox();
             this.lbladd = new System.Windows.Forms.Label();
             this.lblnic = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // txtlname
@@ -195,15 +197,15 @@
             this.lblemail.TabIndex = 76;
             this.lblemail.Text = "Email ID";
             // 
-            // txtphone
+            // txttel
             // 
-            this.txtphone.BackColor = System.Drawing.SystemColors.Control;
-            this.txtphone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtphone.Location = new System.Drawing.Point(127, 271);
-            this.txtphone.Margin = new System.Windows.Forms.Padding(2);
-            this.txtphone.Name = "txtphone";
-            this.txtphone.Size = new System.Drawing.Size(217, 26);
-            this.txtphone.TabIndex = 77;
+            this.txttel.BackColor = System.Drawing.SystemColors.Control;
+            this.txttel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttel.Location = new System.Drawing.Point(127, 271);
+            this.txttel.Margin = new System.Windows.Forms.Padding(2);
+            this.txttel.Name = "txttel";
+            this.txttel.Size = new System.Drawing.Size(217, 26);
+            this.txttel.TabIndex = 77;
             // 
             // lblphone
             // 
@@ -347,7 +349,7 @@
             this.ClientSize = new System.Drawing.Size(360, 529);
             this.Controls.Add(this.txtemail);
             this.Controls.Add(this.lblemail);
-            this.Controls.Add(this.txtphone);
+            this.Controls.Add(this.txttel);
             this.Controls.Add(this.lblphone);
             this.Controls.Add(this.dtpA);
             this.Controls.Add(this.dtpB);
@@ -390,7 +392,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.Label lblemail;
-        private System.Windows.Forms.TextBox txtphone;
+        private System.Windows.Forms.TextBox txttel;
         private System.Windows.Forms.Label lblphone;
         private System.Windows.Forms.DateTimePicker dtpA;
         private System.Windows.Forms.DateTimePicker dtpB;
@@ -403,5 +405,6 @@
         private System.Windows.Forms.TextBox txtnic;
         private System.Windows.Forms.Label lbladd;
         private System.Windows.Forms.Label lblnic;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
