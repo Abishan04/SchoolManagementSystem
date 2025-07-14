@@ -22,28 +22,9 @@ namespace SchoolManagementSystem.UI.Teachers
         {
             InitializeComponent();
             LoadTeacherData();
-            SetPlaceholder();
 
         }
-        private void SetPlaceholder()
-        {
-            txtSearch.Text = PlaceholderText;
-            txtSearch.ForeColor = Color.Gray;
-        }
-
-        private void RemovePlaceholder()
-        {
-            if (txtSearch.Text == PlaceholderText)
-            {
-                txtSearch.Text = "";
-                txtSearch.ForeColor = Color.Black;
-            }
-        }
-
-
-
-
-
+      
         private void LoadTeacherData()
             {         
                 DataTable dt = dal.GetAllTeachers();
@@ -138,20 +119,9 @@ namespace SchoolManagementSystem.UI.Teachers
             LoadTeacherData();
         }
 
-        private void txtSearch_Enter(object sender, EventArgs e)
-        {
-            RemovePlaceholder();
 
-        }
 
-        private void txtSearch_Leave(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(txtSearch.Text))
-            {
-                SetPlaceholder();
-            }
-
-        }
+   
     }
     }
 
